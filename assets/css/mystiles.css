@@ -1,0 +1,13 @@
+.ancho-letras{
+	text-align: center;
+}
+.letras-slider{
+	width: 70%;
+	margin: auto;
+}
+.letras-slider h1{
+	color: #78909c;
+	font-family: rale;
+	font-size: 70px;
+}
+
