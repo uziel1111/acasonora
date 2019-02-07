@@ -15,7 +15,18 @@ class Index extends CI_Controller
     {
         $data = array();
         Utilerias::pagina_basica($this,"index", $data);
+    }
 
+    public function concentrado()
+    {
+        $data = array();
+        Utilerias::pagina_basica($this,"estadistica/concentrado", $data);
+    }
+
+    public function estadistica_e_indicadores()
+    {
+        $data = array();
+        Utilerias::pagina_basica($this,"estadistica/estadistica_eindicadores", $data);
     }
 
 

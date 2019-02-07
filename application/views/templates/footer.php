@@ -2,14 +2,14 @@
 <footer class="footer">
 	<nav class="navbar navbar-light" style="background-color: #00796b;">
 	        <div class="inner-footer-top">
-           <div class="row">
-              <div class="col-lg-3 footerinfo1">
-                 <i class="fa fa-phone"></i> Teléfono: 01 800 623 77 00
-              </div>
-              <div class="col-lg-4 footerinfo1">
-                <i class="fa fa-envelope"></i> Correo Electrónico: correoinfo@dominio.edu.mx
-              </div>
-              <div class="col-lg-5">
+            <div class="row">
+                <div class="col-lg-4">
+                  <i class="fa fa-phone"></i> Teléfono: 01 800 623 77 00
+                </div>
+                <div class="col-lg-4">
+                  <i class="fa fa-envelope"></i> Correo Electrónico: correoinfo@dominio.edu.mx
+                </div>
+                <div class="col-lg-4">
                   <div class="text-right">
                     <a class="btn btn-social-icon btn-facebook" href="https://www.facebook.com/SECSonoraOficial/"><i class="fa fa-facebook"></i></a>
                     <a class="btn btn-social-icon btn-twitter" href="https://twitter.com/secsonora/"><i class="fa fa-twitter"></i></a>
@@ -51,7 +51,7 @@
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 50px;
+  height: 70px;
   color: black;
   text-align: center;
 }
