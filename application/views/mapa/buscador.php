@@ -1,0 +1,68 @@
+<div class="card mb-3 card-style-1">
+  <div class="card-body pb-1 pt-1">
+    <div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-lg-4">
+          <div class="form-group form-group-style-1">
+            <label for="minicipio" class="mr-sm-2">Municipio</label>          
+            <select name="minicipio" class="form-control" id="slt_municipio_mapa">
+              <option value="0">TODOS</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-lg-4">
+          <div class="form-group form-group-style-1">
+            <label for="nivel">Nivel</label>          <select name="nivel" class="form-control" id="slt_nivel_mapa">
+              <option value="0">TODOS</option>
+              <option value="1">ESPECIAL</option>
+              <option value="2">INICIAL</option>
+              <option value="3">PREESCOLAR</option>
+              <option value="4">PRIMARIA</option>
+              <option value="5">SECUNDARIA</option>
+              <option value="6">MEDIA SUPERIOR</option>
+              <option value="7">SUPERIOR</option>
+              <option value="8">FORMACION PARA EL TRABAJO</option>
+              <option value="9">OTRO NIVEL EDUCATIVO</option>
+              <option value="10">NO APLICA</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-lg-4">
+          <div class="form-group form-group-style-1">
+            <label for="sostenimiento">Sostenimiento</label>            <select name="sostenimiento" class="form-control" id="slt_sostenimiento_mapa">
+              <option value="0">TODOS</option>
+              <option value="1">PUBLICO</option>
+              <option value="2">PRIVADO</option>
+              <option value="3">AUTONOMO</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="row mb-15">
+        <div class="col-xs-12 col-sm-6 col-lg-4">
+          <div class="form-group form-group-style-1">
+            <label for="n_escuela">Nombre de la escuela (opcional)</label>            <input type="text" name="n_escuela" value="" class="form-control" id="txt_nombre_escuela">
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-lg-4">
+          <div class="form-group form-group-style-1">
+           <label for="cct">Clave Centro de Trabajo (opcional)</label>            <div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text fw800" id="btnGroupAddon">05</div>
+            </div>
+            <input type="text" name="cct" value="" class="form-control fw800" id="txt_cct_escuela">
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-lg-4 mt-2">
+        <label></label>            <button class="btn btn-success btn-block btn-style-1" id="btn_ayuda_mapa">Ayuda</button>
+      </div><!--  col-sm-6 -->
+
+      <div class="col-xs-12 col-sm-6 col-lg-4 mt-2">
+        <label></label>            <button class="btn btn-info btn-block btn-style-1" id="btn_buscar_mapa">Buscar</button>
+      </div><!--  col-sm-6 -->
+    </div>
+    <script src="http://www.sarape.gob.mx/assets/js/mapa/funcionalidad_mapa.js"></script>
+  </div>
+</div><!-- card-body -->
+</div>
