@@ -23,6 +23,8 @@
   	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   	<script src="<?= base_url('assets/bootstrap-411/js/bootstrap.min.js'); ?>"></script>
 	<script src="<?= base_url('assets/js/src_up.js') ?>"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+	<script src="<?= base_url();?>assets/js/load.js"></script>
 
 </head>
 	<header class="main-header">

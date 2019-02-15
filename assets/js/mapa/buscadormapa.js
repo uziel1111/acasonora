@@ -20,7 +20,7 @@ Buscador.prototype.get_marcadores_filtro = function(){
         data: {idmunicipio: $("#slt_municipio_mapa").val(), idnivel: $("#slt_nivel_mapa").val(),
         idsostenimiento: $("#slt_sostenimiento_mapa").val(), nombre: $("#txt_nombre_escuela").val(), cct: $("#txt_cct_escuela").val()},
         beforeSend: function(xhr) {
-            Notification.loading("Cargando");
+            // Notification.loading("Cargando");
       },
     })
     .done(function(result) {
@@ -39,7 +39,7 @@ Buscador.prototype.get_marcadores_filtro = function(){
 
 
 Buscador.prototype.pinta_en_mapa = function(marcadores){
-    document.getElementById('contenedor_mapa_id').scrollIntoView();
+    // document.getElementById('contenedor_mapa_id').scrollIntoView();
     // console.table(marcadores);
     // console.log(marcadores[0][4]);
     var map = new google.maps.Map(document.getElementById('map'), {
@@ -62,9 +62,9 @@ Buscador.prototype.pinta_en_mapa = function(marcadores){
           });
 
           var marker, i;
-          var iconBase = '../../assets/img/markets/';
+          var iconBase = base_url+'assets/img/markets/';
           for (i = 0; i < marcadores.length; i++) {
-            var iconBase = '../../assets/img/markets/'+obj_buscador.retur_icon(marcadores[i][4])+".png";
+            var iconBase = base_url+'assets/img/markets/'+obj_buscador.retur_icon(marcadores[i][4])+".png";
             // iconBase += obj_buscador.retur_icon(marcadores[i][3]);
               marker = new google.maps.Marker({
                position: new google.maps.LatLng(marcadores[i][1], marcadores[i][2]),
@@ -194,6 +194,7 @@ Buscador.prototype.cct_siguiente_nivel = function(idcct){
     });
 
 }
+
 Buscador.prototype.get_info = function(id_cct){
     var form = document.createElement("form");
     var element1 = document.createElement("input");

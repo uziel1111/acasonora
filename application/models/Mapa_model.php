@@ -46,7 +46,7 @@ class Mapa_model extends CI_Model {
     }// get_xcentro()
 
     function get_xparams($id_municipio,$id_nivel,$id_sostenimiento,$nombre_escuela){
-      $this->db->select('es.id_cct, es.cve_centro, tu.turno_single, es.nombre_centro,ni.nivel,sso.subsostenimiento, mo.modalidad,mu.municipio,loc.localidad,es.domicilio, es.latitud, es.longitud, es.id_nivel, s.zona_escolar, so.sostenimiento');
+      $this->db->select('es.id_cct, es.cve_centro, tu.turno_single, es.nombre_centro,ni.nivel,sso.subsostenimiento, mo.modalidad,mu.municipio,es.domicilio, es.latitud, es.longitud, es.id_nivel, s.zona_escolar, so.sostenimiento');
       $this->db->from('escuela as es');
       $this->db->join('turno_single as tu', 'es.id_turno_single = tu.id_turno_single');
       $this->db->join('nivel as ni', 'es.id_nivel = ni.id_nivel');
@@ -55,7 +55,7 @@ class Mapa_model extends CI_Model {
       $this->db->join('modalidad as mo', 'es.id_modalidad = mo.id_modalidad');
       $this->db->join('municipio as mu', 'es.id_municipio = mu.id_municipio');
       $this->db->join('supervision as s', 'es.id_supervision = s.id_supervision');
-      $this->db->join('localidad as loc', 'mu.id_municipio = loc.id_municipio AND es.id_localidad = loc.cve_localidad');
+      // $this->db->join('localidad as loc', 'mu.id_municipio = loc.id_municipio AND es.id_localidad = loc.cve_localidad');
       $where_au = "(es.id_estatus !=2 AND es.id_estatus !=3)";
       $this->db->where($where_au);
       $this->db->where('es.latitud !=',0);
