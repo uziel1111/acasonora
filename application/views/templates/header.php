@@ -4,7 +4,6 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="icon" type="image/png" href="http://coahuila.gob.mx/images/favicon-electoral.png">
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 	<meta charset="UTF-8">
@@ -15,14 +14,12 @@
     <link rel="stylesheet" href="<?= base_url('assets/css/linearicons.css'); ?>">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   	<link href="<?= base_url('assets/bootstrap-411/css/bootstrap.min.css'); ?>" rel="stylesheet" media="screen">
-  	<link href="<?= base_url('assets/fonts/fontawesome5/css/all.css') ?>" rel="stylesheet" media="screen">
   	<link href="<?= base_url('assets/css/loader.css') ?>" rel="stylesheet" media="screen">
   	<link href="<?= base_url('assets/css/src_up.css') ?>" rel="stylesheet" media="screen">
   	<link rel="stylesheet" href="<?= base_url('assets/css/main.css'); ?>">
   	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
   	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   	<script src="<?= base_url('assets/bootstrap-411/js/bootstrap.min.js'); ?>"></script>
-	<script src="<?= base_url('assets/js/src_up.js') ?>"></script>
 
 </head>
 	<header class="main-header">
@@ -61,9 +58,9 @@
 		                            <a class="nav-link hcolor-2" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 		                                          Estadística educativa
 		                            </a>
-		                            <div class="dropdown-menu dropdown-menu-right ddm-color-1" aria-labelledby="navbarDropdownMenuLink"><a class="dropdown-item hcolor-1" href="<?= base_url("index/concentrado"); ?>">General</a>
-		                                <a class="dropdown-item hcolor-1" href="<?= base_url("index/estadistica_e_indicadores"); ?>">Específica (por búsqueda)</a>
-		                                <a class="dropdown-item hcolor-1" href="<?= base_url("index/riesgo_de_abandono"); ?>">Riesgo de abandono escolar</a>
+		                            <div class="dropdown-menu dropdown-menu-right ddm-color-2" aria-labelledby="navbarDropdownMenuLink"><a class="dropdown-item hcolor-1" href="<?= base_url("index.php/Estadistica/estad_indi_general"); ?>">General</a>
+		                                <a class="dropdown-item hcolor-2" href="<?= base_url("index.php/Estadistica/estad_indi_generales"); ?>">Específica (por búsqueda)</a>
+		                                <a class="dropdown-item hcolor-2" href="<?= base_url("index.php/Riesgo/riesgo_x_muni_zona"); ?>">Riesgo de abandono escolar</a>
 		                            </div>
 		                        </li>
 		                        <li class="nav-item dropdown">
@@ -79,15 +76,15 @@
 		                            <a class="nav-link hcolor-2" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 		                                          Información para padres de familia
 		                            </a>
-		                            <div class="dropdown-menu dropdown-menu-right ddm-color-3" aria-labelledby="navbarDropdownMenuLink">
-		                                <a class="dropdown-item hcolor-3" id="btn_index_guiaspadres" href="<?= base_url("index/pdf_696"); ?>">¿Sabía usted que...?</a>
+		                            <div class="dropdown-menu dropdown-menu-right ddm-color-2" aria-labelledby="navbarDropdownMenuLink">
+		                                <a class="dropdown-item hcolor-2" id="btn_index_guiaspadres" href="<?= base_url("index/pdf_696"); ?>">¿Sabía usted que...?</a>
 		                            </div>
 		                        </li>
 		                        <li class="nav-item dropdown">
 		                            <a class="nav-link hcolor-2" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 		                                         Buenas prácticas escolares
 		                            </a>
-		                            <div class="dropdown-menu dropdown-menu-right ddm-color-4" aria-labelledby="navbarDropdownMenuLink">
+		                            <div class="dropdown-menu dropdown-menu-right ddm-color-2" aria-labelledby="navbarDropdownMenuLink">
 		                            	<a class="dropdown-item hcolor-4" id="btn_index_modeloeducativo" href="<?=base_url("index/buenas_prac_esc");?>"> Buenas prácticas</a>
 		                            </div>
 		                        </li>
@@ -95,7 +92,7 @@
 		                            <a class="nav-link hcolor-2" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 		                                         Modelo Educativo Sonora
 		                            </a>
-		                            <div class="dropdown-menu dropdown-menu-right ddm-color-4" aria-labelledby="navbarDropdownMenuLink">
+		                            <div class="dropdown-menu dropdown-menu-right ddm-color-2" aria-labelledby="navbarDropdownMenuLink">
 		                                <a class="dropdown-item hcolor-2" id="btn_index_modeloeducativo" href="<?=base_url("index/vista_pdf");?>"> Modelo ACA</a>
 		                            </div>
 		                        </li>
@@ -103,25 +100,25 @@
 		                            <a class="nav-link hcolor-2" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 		                                         Guías de consejo técnico
 		                            </a>
-		                            <div class="dropdown-menu dropdown-menu-right ddm-color-4" aria-labelledby="navbarDropdownMenuLink">
-		                                <a class="dropdown-item hcolor-4" id="btn_index_modeloeducativo" href="<?=base_url("index/guias_cte");?>"> Guías CTE 2016-2017</a>
+		                            <div class="dropdown-menu dropdown-menu-right ddm-color-2" aria-labelledby="navbarDropdownMenuLink">
+		                                <a class="dropdown-item hcolor-2" id="btn_index_modeloeducativo" href="<?=base_url("index/guias_cte");?>"> Guías CTE 2016-2017</a>
 		                            </div>
 		                        </li>
 		                        <li class="nav-item dropdown">
-		                            <a class="nav-link hcolor-4" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		                            <a class="nav-link hcolor-2" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 		                                         Control escolar
 		                            </a>
-		                            <div class="dropdown-menu dropdown-menu-right ddm-color-4" aria-labelledby="navbarDropdownMenuLink">
-		                                <a class="dropdown-item hcolor-4" id="btn_index_modeloeducativo" href="http://www.sicres.gob.mx/" target="_blank">SICRES v2.O</a>
-		                                <a class="dropdown-item hcolor-4" id="btn_index_modeloeducativo" href="<?=base_url("index/yoremia");?>"> ACA YOEMIA</a>
+		                            <div class="dropdown-menu dropdown-menu-right ddm-color-2" aria-labelledby="navbarDropdownMenuLink">
+		                                <a class="dropdown-item hcolor-2" id="btn_index_modeloeducativo" href="http://www.sicres.gob.mx/" target="_blank">SICRES v2.O</a>
+		                                <a class="dropdown-item hcolor-2" id="btn_index_modeloeducativo" href="<?=base_url("index/yoremia");?>"> ACA YOEMIA</a>
 		                            </div>
 		                        </li>
 		                        <li class="nav-item dropdown">
-		                            <a class="nav-link hcolor-4" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		                            <a class="nav-link hcolor-2" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 		                                         Calendarios escolares
 		                            </a>
-		                            <div class="dropdown-menu dropdown-menu-right ddm-color-4" aria-labelledby="navbarDropdownMenuLink">
-		                                <a class="dropdown-item hcolor-4" id="btn_index_modeloeducativo" href="<?=base_url("index/vista_calendario");?>"> 2016-2017</a>
+		                            <div class="dropdown-menu dropdown-menu-right ddm-color-2" aria-labelledby="navbarDropdownMenuLink">
+		                                <a class="dropdown-item hcolor-2" id="btn_index_modeloeducativo" href="<?=base_url("index/vista_calendario");?>"> 2016-2017</a>
 		                            </div>
 		                        </li>
 		                    </ul>        

@@ -14,8 +14,8 @@
 					      		<p class="card-text">Integra datos las estadísticas básicas que describen la situación actual y los avances en la prestación de los servicios educativos.</p>
 					      		<ul >
 						            <li id="gen_submenu"><a class="nav-link pl-0" href="est_concentrado.php"><i class="fa fa-list"></i> General</a></li>
-						            <li id="esp_submenu"><a class="nav-link pl-0" href="<?=base_url("index/estadistica_e_indicadores")?>"><i class="fa fa-list"></i> Específica (por búsqueda)</a></li>
-						            <li id="rie_submenu"><a class="nav-link pl-0" href="<?=base_url("index/riesgo_de_abandono")?>"><i class="fa fa-list"></i> Riesgo de abandono escolar</a></li>
+						            <li id="esp_submenu"><a class="nav-link pl-0" href="<?=base_url("index.php/Estadistica/estad_indi_generales")?>"><i class="fa fa-list"></i> Específica (por búsqueda)</a></li>
+						            <li id="rie_submenu"><a class="nav-link pl-0" href="<?=base_url("index.php/Riesgo/riesgo_x_muni_zona")?>"><i class="fa fa-list"></i> Riesgo de abandono escolar</a></li>
 					          	</ul>
 					    	</div>
 					  	</div>

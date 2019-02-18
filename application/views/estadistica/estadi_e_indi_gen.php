@@ -1,21 +1,24 @@
         <!-- Start Main Area -->
 
         <div class="row">
-          <div data-toggle="collapse" data-target="#demo" class="card-header card-1-header bg-light">Seleccione tipo de búsqueda:</div>
+          <div data-toggle="collapse" data-target="#demo" class="card-header card-1-header bg-light">Estadística educativa específica</div>
           <div id="demo" class="collapse show">
       <?= form_label('', 'lb_titbusq') ?>
-      <ul class="nav nav-tabs nav-tabs-style-1" id="tab_busqg" role="tablist">
-        <li class="nav-item">
-          <a class='<?=$tmuni?>' id="xest_muni-tab" data-toggle="tab" href="#xest_muni" role="tab" aria-controls="xest_muni" aria-selected="true">Por Estado / Municipio</a>
-        </li>
-        <li class="nav-item">
-          <a class='<?=$tzona?>' id="xzona-tab" data-toggle="tab" href="#xzona" role="tab" aria-controls="xzona" aria-selected="false">Por zona escolar</a>
-        </li>
-      </ul>
+        <ul class="nav nav-tabs nav-tabs-style-1" id="tab_busqg" role="tablist">
+          <li class="nav-item">
+            <a class='<?=$tmuni?>' id="xest_muni-tab" data-toggle="tab" href="#xest_muni" role="tab" aria-controls="xest_muni" aria-selected="true">Por Estado / Municipio</a>
+          </li>
+          <li class="nav-item">
+            <a class='<?=$tzona?>' id="xzona-tab" data-toggle="tab" href="#xzona" role="tab" aria-controls="xzona" aria-selected="false">Por zona escolar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-style-1" id="xcct-tab" data-toggle="tab" href="#xcct" role="tab" aria-controls="xcct" aria-selected="false">Por Clave de Centro de Trabajo</a>
+          </li>
+        </ul>
               <div class="tab-content tab-content-style-1" id="myTabContent_busqg">
 
                 <div class="tab-pane fade show <?=$tmuni?>" id="xest_muni" role="tabpanel" aria-labelledby="xest_muni-tab">
-                  <?= form_open('estadistica/xest_muni_x/', array('class' => 'form', 'id' => 'form_xest_muni')) ?>
+            
                   <div class="row">
 
                     <div class="col-12 col-sm-12 col-md-3 col-lg-3 mt-2">
@@ -110,13 +113,69 @@
                       <?= form_submit('mysubmit', 'Buscar', array('id' => 'btn_buscar_zona', 'class'=>'btn btn-info btn-block btn-style-1' )); ?>
                     </div><!--  col-sm-6 -->
                   </div><!-- row -->
+
                   <?= form_close() ?>
                   </div>
+                  <div class="tab-pane fade" id="xcct" role="tabpanel" aria-labelledby="xcct-tab">
+                  <div class="row">
+                    <div class="col-12 col-sm-6 col-md-3 col-lg-3 mt-2">
+                      <div class="form-group form-group-style-1">
+                          <?= form_label('Escriba su CCT', 'itxt_busquedalista_cct') ?>
+                          <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text label_cct">26</span>
+                            </div>
+                              <?= form_input('itxt_busquedalista_cct', '', array('id' => 'itxt_busquedalista_cct', 'class'=>'form-control input_cct' )) ?>
+                        </div>
+                      </div>
+                    </div><!--  col-sm-12 -->
+                  </div><!-- row -->
+
+                  <div class="row">
+                    <div class="col-0 col-sm-0 col-md-8 col-lg-8 mt-2"></div><!--  col-0 -->
+                    <div class="col-6 col-sm-6 col-md-2 col-lg-2 mt-2">
+                      <?= anchor(base_url(), 'Regresar', array('class' => 'btn btn-light btn-block btn-style-1')) ?>
+                    </div><!--  col-sm-6 -->
+
+                    <div class="col-6 col-sm-6 col-md-2 col-lg-2 mt-2">
+                      <?= form_submit('mysubmit', 'Buscar', array('id' => '', 'class'=>'btn btn-info btn-block btn-style-1' )); ?>
+                    </div><!--  col-sm-6 -->
+                  </div><!-- row -->
+                </div>
                 </div>
               </div>
-
-
         </div>
         <!-- End Main Area -->
+<div id='busquedalista_modal' class="modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Seleccione una escuela</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+        <?= form_open('Info/index', array('class' => '', 'id' => '')) ?>
+        <div class="row">
+          <div class="col-12">
+            <?= form_dropdown('id_cct', array(), '', array('id' => 'id_cct', 'class'=>'form-control')) ?>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-12">
+            <?= form_submit('mysubmit', 'Ver', array('id' => '', 'class'=>'btn btn-info btn-block' )); ?>
+          </div>
+        </div>
+        <?= form_close() ?>
+
+      </div>
+    </div>
+  </div>
+</div><!-- modal -->
+<div class="temporales" id="visor_estadistica"></div>
+
+
 
 <script src="<?= base_url('assets/js/est_e_ind/est_e_ind_g.js'); ?>"></script>
