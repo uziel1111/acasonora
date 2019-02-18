@@ -34,6 +34,9 @@ class Mapa extends CI_Controller {
 	}
 
 	public function get_marcadores_filtro(){
+		// echo"<pre>";
+		// print_r($_POST);
+		// die();
 			$idmunicipio       = $this->input->post("idmunicipio");
 			$idnivel           = $this->input->post("idnivel");
 			$id_sostenimiento  = $this->input->post("idsostenimiento");
@@ -59,7 +62,7 @@ class Mapa extends CI_Controller {
 	            array_push($marcadorb, $marcador['turno_single']);
 	            array_push($marcadorb, $marcador['id_cct']);
 	            array_push($marcadorb, $marcador['nivel']);
-	            array_push($marcadorb, $marcador['localidad']);
+	            // array_push($marcadorb, $marcador['localidad']);
 	            array_push($marcadorb, $marcador['zona_escolar']);
 	            array_push($marcadorb, $marcador['sostenimiento']);
 	            array_push($vfinal, $marcadorb);

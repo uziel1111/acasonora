@@ -77,7 +77,7 @@
         });
       }
     </script>
-
+    <script src="http://jawj.github.io/OverlappingMarkerSpiderfier/bin/oms.min.js"></script>
     <script src="<?= base_url();?>assets/js/mapa/mapaindex.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqGxPT1KkV0q3eSoIOpuZeSrsLm_A5Uhs&callback=initMap"
     async defer></script>

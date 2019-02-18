@@ -69,3 +69,5 @@
   </div>
 </div><!-- card-body -->
 </div>
+
+<script src="<?= base_url();?>assets/js/mapa/buscadormapa.js"></script>
