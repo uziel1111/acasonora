@@ -25,7 +25,7 @@ class Escuela_model extends CI_Model
       $this->db->where($where_au);
       $this->db->where('es.latitud !=',0);
       $this->db->where('es.latitud !=','');
-      $this->db->where('es.latitud !=','#VALUE!');
+      // $this->db->where('es.latitud !=','#VALUE!');
       $this->db->group_by("tu.id_turno_single");
       // $this->db->get();
       // $str = $this->db->last_query();

@@ -59,6 +59,8 @@ class Riesgo_alumn_esc_bim_model extends CI_Model
       WHERE ".$var_aux." esc.id_nivel=".$id_nivel." AND rie.ciclo='".$ciclo."'
       ";
 
+      // echo $str_query;
+      // die();
       $query = $this->db->query($str_query);
         return $query->result_array();
 

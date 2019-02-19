@@ -127,7 +127,8 @@ class Estadistica extends CI_Controller {
 
 			// Utilerias::pagina_basica($this, "estadistica/estadi_e_indi_gen", $data);
 
-			$string = $this->load->view('estadistica/estadi_e_indi_gen', $data, TRUE);
+			// $string = $this->load->view('estadistica/estadi_e_indi_gen', $data, TRUE);
+			$string = $this->load->view('estadistica/visor_xedoxmuni', $data, TRUE);
 
 			$data2["tipo_busqueda"] = "";
 			$data2["id_municipio"] = "";
@@ -151,6 +152,7 @@ class Estadistica extends CI_Controller {
 			$data2["srt_tab_analf_inegi"] = "";
 
 			$data2['buscador'] = $string;
+			// $data2=[];
 			Utilerias::pagina_basica($this,"estadistica/estadi_e_indi_gen_tab", $data2);
 		}//estad_indi_generales()
 
@@ -426,7 +428,7 @@ class Estadistica extends CI_Controller {
 			// echo "<pre>";
 			// print_r($data);
 			// die();
-			$str_view = $this->load->view("estadistica/visor_xedoxmuni", $data, TRUE);
+			$str_view = $this->load->view("estadistica/estadistica_xedoxmuni", $data, TRUE);
 
 			$response = array(
 				'str_view'=>$str_view
@@ -1312,11 +1314,20 @@ class Estadistica extends CI_Controller {
 					$data2['tzona'] = 'nav-link nav-link-style-1';
 				}
 
-				$string = $this->load->view('estadistica/estadi_e_indi_gen', $data2, TRUE);
-				$data['buscador'] = $string;
-				///
+				// $string = $this->load->view('estadistica/estadi_e_indi_gen', $data2, TRUE);
+				// $data['buscador'] = $string;
+				// ///
 
-				Utilerias::pagina_basica($this,"estadistica/estadi_e_indi_gen_tab", $data);
+				// Utilerias::pagina_basica($this,"estadistica/estadi_e_indi_gen_tab", $data);
+				$str_view = $this->load->view("estadistica/estadistica_xedoxmuni", $data, TRUE);
+
+				$response = array(
+					'str_view'=>$str_view
+					
+				);
+				Utilerias::enviaDataJson(200, $response, $this);
+				exit;
+		
 			}
 
 
@@ -1324,7 +1335,7 @@ class Estadistica extends CI_Controller {
 
 			public function escuelas_xcvecentro(){
 			$cve_centro = $this->input->post('cve_centro');
-			$cve_centro = '05'.trim($cve_centro);
+			$cve_centro = '26'.trim($cve_centro);
 			// echo "<pre>"; print_r($cve_centro); die();
 			$result_escuelas = $this->Escuela_model->get_xcvecentro($cve_centro);
 			// echo "<pre>"; print_r($result_escuelas); die();

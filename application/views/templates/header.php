@@ -81,7 +81,7 @@
 		                                          Información para padres de familia
 		                            </a>
 		                            <div class="dropdown-menu dropdown-menu-right ddm-color-2" aria-labelledby="navbarDropdownMenuLink">
-		                                <a class="dropdown-item hcolor-2" id="btn_index_guiaspadres" href="<?= base_url("index/pdf_696"); ?>">¿Sabía usted que...?</a>
+		                                <a class="dropdown-item hcolor-2" id="btn_index_guiaspadres" href="<?= base_url("index/guiaparapadres"); ?>">¿Sabía usted que...?</a>
 		                            </div>
 		                        </li>
 		                        <li class="nav-item dropdown">

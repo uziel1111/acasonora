@@ -1,3 +1,4 @@
+$("#modal_visor_xedoxmuni").modal("show");
 function Regularexpression(){
 }
 
@@ -192,6 +193,7 @@ $("#btn_buscar_zona").click(function(){
   var id_nivel = $( "#slc_xest_nivel_zona" ).val();
   var id_subsost = $( "#slc_xest_sostenimiento_zona" ).val();
   var id_zona = $( "#slc_xest_zona" ).val();
+  var id_ciclo_z = $('#slc_xest_cicloe_zona').val();
 
   if (id_nivel=='0') {
     alert("Seleccione nivel");
@@ -201,6 +203,25 @@ $("#btn_buscar_zona").click(function(){
   }
   else if (id_zona=='0') {
     alert("Seleccione número de zona escolar");
+  }
+  if(id_nivel!='0' && id_subsost!='0' && id_zona!='0'){
+      $.ajax({
+        url: base_url+"estadistica/xest_zona_x/",
+        method: 'POST',
+        data: {slc_xest_nivel_zona:id_nivel,slc_xest_sostenimiento_zona:id_subsost,
+          slc_xest_zona:id_zona,slc_xest_cicloe_zona:id_ciclo_z},
+      })
+      .done(function( data ) {
+        console.log(data);
+        $("#visor_estadistica").empty();
+        $("#visor_estadistica").append(data.str_view);
+        $("#modal_visor_xedoxmuni").modal("hide");
+ 
+      })
+      .fail(function(e) {
+        console.error("Error in xest_zona_x()"); console.table(e);
+      })
+
   }
 });
 
@@ -226,7 +247,8 @@ $("#btn_buscar_mun_est").click(function(){
         console.log(data);
         $("#visor_estadistica").empty();
         $("#visor_estadistica").append(data.str_view);
-        $("#modal_visor_xedoxmuni").modal("show");
+        $("#modal_visor_xedoxmuni").modal("hide");
+        // $('.modal-backdrop').remove(); 
  
       })
       .fail(function(e) {

@@ -17,6 +17,13 @@ class Index extends CI_Controller
         Utilerias::pagina_basica($this,"index", $data);
     }
 
+    public function guiaparapadres(){
+        $strView = $this->load->view("visor_pdf/visorpdf", array(), TRUE);
+        $response = array('strView' => $strView );
+        Utilerias::enviaDataJson(200, $response, $this);
+        exit;
+    }
+
 }
 
 

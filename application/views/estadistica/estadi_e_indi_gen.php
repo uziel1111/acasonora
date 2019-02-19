@@ -174,7 +174,7 @@
     </div>
   </div>
 </div><!-- modal -->
-<div class="temporales" id="visor_estadistica"></div>
+<div  id="visor_estadistica"></div>
 
 
 

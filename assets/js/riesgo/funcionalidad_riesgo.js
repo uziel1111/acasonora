@@ -1,3 +1,4 @@
+$("#modal_visor_xedoxmuni").modal("show");
 $(function() {
     obj_riesgo = new Riesgo();
 });
