@@ -19,6 +19,8 @@ class Index extends CI_Controller
 
     public function guiaparapadres(){
         $strView = $this->load->view("visor_pdf/visorpdf", array(), TRUE);
+        // echo $strView;
+        // die();
         $response = array('strView' => $strView );
         Utilerias::enviaDataJson(200, $response, $this);
         exit;

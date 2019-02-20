@@ -54,7 +54,7 @@
 </body>
 </html>
 
-<div id="modal_visor_pdf" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" data-keyboard="false" data-backdrop="static">
+<!-- <div id="modal_visor_pdf" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" data-keyboard="false" data-backdrop="static">
   <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header  bgcolor-2">
@@ -66,6 +66,11 @@
       </div>
     </div>
   </div>
+  
+</div> -->
+
+<div id="visor_generico">
+  <script src="<?= base_url();?>assets/js/index/index.js"></script>
 </div>
 
 
