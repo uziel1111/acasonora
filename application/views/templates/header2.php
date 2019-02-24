@@ -50,7 +50,7 @@
                             <a href="<?= base_url("index.php/Estadistica/estad_indi_general"); ?>">General</a>
                         </li>
                         <li>
-                            <a href="<?= base_url("index.php/Estadistica/estad_indi_generales"); ?>" role="button" id="est_gral">Específica</a>
+                            <a href="" role="button" id="est_gral">Específica</a>
                         </li>
                         <li>
                             <a href="<?= base_url("index.php/Riesgo/riesgo_x_muni_zona"); ?>">Risgo de Abandono</a>

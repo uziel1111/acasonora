@@ -75,10 +75,13 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => '',
-	'database' => '',
+	// 'hostname' => 'localhost',
+	// 'username' => 'root',
+	// 'password' => '',
+	'hostname' => 'acasonora.org',
+	'username' => 'acasoaah_root',
+	'password' => 'S34rtn&1',
+	'database' => 'acasoaah_acasonora',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,

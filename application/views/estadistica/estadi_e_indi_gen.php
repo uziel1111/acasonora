@@ -175,7 +175,4 @@
   </div>
 </div><!-- modal -->
 <div  id="visor_estadistica"></div>
-
-
-
 <script src="<?= base_url('assets/js/est_e_ind/est_e_ind_g.js'); ?>"></script>

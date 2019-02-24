@@ -1,4 +1,7 @@
-$("#modal_visor_xedoxmuni").modal("show");
+// $("#modal_visor_xedoxmuni").modal("show");
+
+    console.log("estoy aca");
+
 function Regularexpression(){
 }
 
@@ -7,12 +10,14 @@ Regularexpression.prototype.cct = function(value){
   return regex.test(value);
 };
 
-$(function () {
- this_buscador = new Buscador();
-});
+
 
 function Buscador(){
 }
+
+$(function () {
+ this_buscador = new Buscador();
+});
 
 $("#slc_xest_muni_estmunicipio").change(function(){
   var id_municipio = $( "#slc_xest_muni_estmunicipio" ).val();

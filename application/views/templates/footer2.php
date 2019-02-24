@@ -25,7 +25,9 @@
   	</div>	
 	</div>
 </div>
-
+      <div id="visor_generico">
+      <script src="<?= base_url();?>assets/js/est_e_ind/est_e_ind_g.js"></script>
+    </div>
 	<script>
 function rotArrow() {
 	$('#rtarrow').toggleClass('rotarrow');
@@ -45,9 +47,6 @@ function rotArrow() {
             });
         });
     </script>
-    <div id="visor_generico">
-      <script src="<?= base_url();?>assets/js/index/index.js"></script>
-    </div>
 </body>
 </html>
 
