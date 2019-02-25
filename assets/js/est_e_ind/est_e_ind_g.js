@@ -1,6 +1,4 @@
-// $("#modal_visor_xedoxmuni").modal("show");
-
-    console.log("estoy aca");
+$("#modal_visor_xedoxmuni").modal("show");
 
 function Regularexpression(){
 }
@@ -15,7 +13,7 @@ Regularexpression.prototype.cct = function(value){
 function Buscador(){
 }
 
-$(function () {
+$(function(){
  this_buscador = new Buscador();
 });
 
@@ -250,8 +248,8 @@ $("#btn_buscar_mun_est").click(function(){
       })
       .done(function( data ) {
         console.log(data);
-        $("#visor_estadistica").empty();
-        $("#visor_estadistica").append(data.str_view);
+        $("#resultado_estadistica").empty();
+        $("#resultado_estadistica").append(data.str_view);
         $("#modal_visor_xedoxmuni").modal("hide");
         // $('.modal-backdrop').remove(); 
  

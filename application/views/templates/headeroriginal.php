@@ -15,12 +15,10 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   	<link href="<?= base_url('assets/bootstrap-411/css/bootstrap.min.css'); ?>" rel="stylesheet" media="screen">
   	<link href="<?= base_url('assets/css/loader.css') ?>" rel="stylesheet" media="screen">
-  	<link href="<?= base_url('assets/css/src_up.css') ?>" rel="stylesheet" media="screen">
   	<link rel="stylesheet" href="<?= base_url('assets/css/main.css'); ?>">
   	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
   	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   	<script src="<?= base_url('assets/bootstrap-411/js/bootstrap.min.js'); ?>"></script>
-	<script src="<?= base_url('assets/js/src_up.js') ?>"></script>
 	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
 	<script src="<?= base_url();?>assets/js/load.js"></script>
 

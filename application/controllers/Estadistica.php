@@ -128,7 +128,7 @@ class Estadistica extends CI_Controller {
 			// Utilerias::pagina_basica($this, "estadistica/estadi_e_indi_gen", $data);
 
 			// $string = $this->load->view('estadistica/estadi_e_indi_gen', $data, TRUE);
-			// $string = $this->load->view('estadistica/visor_xedoxmuni', $data, TRUE);
+			$string = $this->load->view('estadistica/visor_xedoxmuni', $data, TRUE);
 
 			$data2["tipo_busqueda"] = "";
 			$data2["id_municipio"] = "";
@@ -153,9 +153,8 @@ class Estadistica extends CI_Controller {
 
 			// $data2['buscador'] = $string;
 			// $data2=[];
-			Utilerias::pagina($this,"estadistica/estadi_e_indi_gen_tab", $data);
-			$string = $this->load->view('estadistica/visor_xedoxmuni', $data, TRUE);
-			// Utilerias::enviaDataJson(200, $string, $this);
+			Utilerias::pagina_basica($this,"estadistica/estadi_e_indi_gen_tab", []);
+
 			// $str_view = $this->load->view("estadistica/estadistica_xedoxmuni", $data, TRUE);
 
 			// $response = array(
@@ -272,7 +271,7 @@ class Estadistica extends CI_Controller {
 			// Utilerias::pagina_basica($this, "estadistica/estadi_e_indi_gen", $data);
 
 			// $string = $this->load->view('estadistica/estadi_e_indi_gen', $data, TRUE);
-			// $string = $this->load->view('estadistica/visor_xedoxmuni', $data, TRUE);
+			$string = $this->load->view('estadistica/visor_xedoxmuni', $data, TRUE);
 
 			$data2["tipo_busqueda"] = "";
 			$data2["id_municipio"] = "";
@@ -300,13 +299,13 @@ class Estadistica extends CI_Controller {
 			// Utilerias::enviaDataJson(200, $string, $this);
 			// $str_view = $this->load->view("estadistica/estadistica_xedoxmuni", $data, TRUE);
 
-			$response = array(
-				'str_view'=>$str_view
+			// $response = array(
+			// 	'str_view'=>$str_view
 				
-			);
+			// );
 		
-			Utilerias::enviaDataJson(200, $response, $this);
-			exit;
+			// Utilerias::enviaDataJson(200, $response, $this);
+			// exit;
 		}//estad_indi_generales()
 
 		public function estad_indi_generales_getnivel()

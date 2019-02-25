@@ -18,10 +18,28 @@
 	  
 	<!--Fontawesome  -->
 	  <script defer src="https://use.fontawesome.com/releases/v5.7.1/js/all.js" integrity="sha384-eVEQC9zshBn0rFj4+TU78eNA19HMNigMviK/PU/FFjLXqa/GKPgX58rvt5Z8PLs7" crossorigin="anonymous"></script>
-	  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <script src="<?=base_url('assets/jquery/jquery-3.2.1.min.js')?>"></script>
+    <script src="<?=base_url('assets/jquery/jquery.validate.js')?>"></script>
+    <link href="<?= base_url('assets/css/main.css'); ?>" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="<?= base_url('assets/css/linearicons.css'); ?>">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="<?= base_url('assets/bootstrap-411/css/bootstrap.min.css'); ?>" rel="stylesheet" media="screen">
+    <link href="<?= base_url('assets/css/loader.css') ?>" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="<?= base_url('assets/css/main.css'); ?>">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+   <!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script> -->
+    <script src="<?= base_url('assets/bootstrap-411/js/bootstrap.min.js'); ?>"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    <script src="<?= base_url();?>assets/js/load.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 	<link rel="stylesheet" href="<?=base_url('assets/css/style.css')?>"> 
 	  
-
+    <script type="text/javascript">
+        $(function() {
+            base_url = live_url = "<?=base_url()?>";
+        });
+    </script>
 
   </head>
 <body>

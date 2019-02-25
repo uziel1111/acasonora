@@ -1,4 +1,4 @@
-<!-- <div class="modal fade" id="modal_visor_xedoxmuni" tabindex="-1" role="dialog" aria-hidden="true" style="overflow-y: scroll;">
+<div class="modal fade" id="modal_visor_xedoxmuni" tabindex="-1" role="dialog" aria-hidden="true" style="overflow-y: scroll;">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content modal-style-1">
       <div class="modal-header bgcolor-2">
@@ -6,7 +6,7 @@
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
-      </div> -->
+      </div>
 
         <!-- Start Main Area -->
       <div class="container">
@@ -157,9 +157,9 @@
         </div>
       </div>
 
-   <!--  </div>
+    </div>
   </div>
-</div> -->
+</div>
 
 <script src="<?= base_url('assets/js/est_e_ind/est_e_ind_g.js'); ?>"></script>
 

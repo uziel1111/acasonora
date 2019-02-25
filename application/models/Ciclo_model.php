@@ -69,9 +69,9 @@ class Ciclo_model extends CI_Model
       $this->db->where('ci.id_ciclo', 2);
       $this->db->group_by(" ci.id_ciclo");
 
-      // $this->db->get();
-      // $str = $this->db->last_query();
-      // echo $str; die();
+      $this->db->get();
+      $str = $this->db->last_query();
+      echo $str; die();
       return  $this->db->get()->result_array();
 
     }// getciclo_idnivel_xsost_xzona
