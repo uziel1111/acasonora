@@ -23,7 +23,7 @@
             <a class='<?=$tzona?>' id="xzona-tab" data-toggle="tab" href="#xzona" role="tab" aria-controls="xzona" aria-selected="false">Por zona escolar</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link nav-link-style-1" id="xcct-tab" data-toggle="tab" href="#xcct" role="tab" aria-controls="xcct" aria-selected="false">Por CCT</a>
+            <a class="nav-link nav-link-style-1" id="xcct-tab" data-toggle="tab" href="#xcct" role="tab" aria-controls="xcct" aria-selected="false">Por Clave Centro</a>
           </li>
         </ul>
               <div class="tab-content tab-content-style-1" id="myTabContent_busqg">
@@ -128,30 +128,40 @@
                   <?= form_close() ?>
                   </div>
                   <div class="tab-pane fade" id="xcct" role="tabpanel" aria-labelledby="xcct-tab">
-                  <div class="row">
-                    <div class="col-12 col-sm-6 col-md-3 col-lg-3 mt-2">
+                    <div class="row">
+                    <div class="col-sm-12">
                       <div class="form-group form-group-style-1">
-                          <?= form_label('Escriba su CCT', 'itxt_busquedalista_cct') ?>
-                          <div class="input-group mb-3">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text label_cct">26</span>
-                            </div>
-                              <?= form_input('itxt_busquedalista_cct', '', array('id' => 'itxt_busquedalista_cct', 'class'=>'form-control input_cct' )) ?>
+
+
+                    <div class="row">
+                      <div class="col-12 col-sm-6 col-md-6 col-lg-6 mt-2">
+                        <div class="form-group form-group-style-1">
+                            <?= form_label('Escriba su CCT', 'itxt_busquedalista_cct') ?>
+                            <div class="input-group mb-3">
+                              <div class="input-group-prepend">
+                                  <span class="input-group-text label_cct">26</span>
+                              </div>
+                                <?= form_input('itxt_busquedalista_cct', '', array('id' => 'itxt_busquedalista_cct', 'class'=>'form-control input_cct' )) ?>
+                          </div>
                         </div>
-                      </div>
-                    </div><!--  col-sm-12 -->
-                  </div><!-- row -->
+                      </div><!--  col-sm-12 -->
+                    </div><!-- row -->
 
-                  <div class="row">
-                    <div class="col-0 col-sm-0 col-md-8 col-lg-8 mt-2"></div><!--  col-0 -->
-                    <div class="col-6 col-sm-6 col-md-2 col-lg-2 mt-2">
-                      <?= anchor(base_url(), 'Regresar', array('class' => 'btn btn-light btn-block btn-style-1')) ?>
-                    </div><!--  col-sm-6 -->
+                    <div class="row">
+                      <div class="col-0 col-sm-0 col-md-8 col-lg-8 mt-2"></div><!--  col-0 -->
+                      <div class="col-6 col-sm-6 col-md-2 col-lg-2 mt-2">
+                        <?= anchor(base_url(), 'Regresar', array('class' => 'btn btn-light btn-block btn-style-1')) ?>
+                      </div><!--  col-sm-6 -->
 
-                    <div class="col-6 col-sm-6 col-md-2 col-lg-2 mt-2">
-                      <?= form_submit('mysubmit', 'Buscar', array('id' => 'btn_buscar_xcct', 'class'=>'btn btn-info btn-block btn-style-1' )); ?>
-                    </div><!--  col-sm-6 -->
-                  </div><!-- row -->
+                      <div class="col-6 col-sm-6 col-md-2 col-lg-2 mt-2">
+                        <?= form_submit('mysubmit', 'Buscar', array('id' => 'btn_buscar_xcct', 'class'=>'btn btn-info btn-block btn-style-1' )); ?>
+                      </div><!--  col-sm-6 -->
+                    </div><!-- row -->
+
+                  </div>
+                </div>
+              </div>
+
                 </div>
                 </div>
               </div>

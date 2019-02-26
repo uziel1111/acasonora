@@ -95,31 +95,6 @@
 			<div class="card-header card-1-header bgcolor-2 text-white">Indicadores del Modelo Educativo de Sonora</div>
 			<div class="card-body">
 				<div class="row">
-					<div class="col-md-6 mb-2">
-						<div class="alert alert-info h-100" role="alert">
-							<h4 class="alert-heading"><i class="fas fa-book"></i> Modelo educativo</h4>
-							<hr>
-							<p>Conozca datos relevantes de la escuela haciendo clic en cada sección correspondiente a un indicador del modelo educativo del estado: <strong>Asistencia</strong>, <strong>Permanencia</strong> y <strong>Aprendizaje</strong>.</p>
-						</div>
-					</div>
-					<div class="col-md-6 mb-2">
-						<div class="alert alert-success h-100" role="alert">
-							<h4 class="alert-heading"><i class="fas fa-hand-holding-heart"></i> Salud escolar</h4>
-							<hr>
-							<p>Asimismo puede consultar un resumen general sobre los indicadores de peso en la escuela haciendo clic en el siguiente botón: </p>
-							<p class="text-center mb-0">
-								<?php if ($trae_indicpeso > 0): ?>
-									<button class="btn btn-lg btn-success btn-style-1" id="btn_indice_peso">Índice de peso</button>
-								<?php endif; ?>
-								<?php if ($trae_indicpeso == 0): ?>
-									<b>Información no disponible por el momento.</b>
-								<?php endif; ?>
-
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="row">
 					<div class="col-12 text-center">
 						<ul class="nav nav-pills nav-apa nav-fill">
 							<li class="nav-item">

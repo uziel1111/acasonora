@@ -71,7 +71,7 @@
                             <a href="<?= base_url("index.php/Estadistica/estad_indi_generales"); ?>" role="button" id="est_gral">Específica</a>
                         </li>
                         <li>
-                            <a href="<?= base_url("index.php/Riesgo/riesgo_x_muni_zona"); ?>">Risgo de Abandono</a>
+                            <a href="<?= base_url("index.php/Riesgo/riesgo_x_muni_zona"); ?>">Riesgo de Abandono</a>
                         </li>
                     </ul>
                 </li>
@@ -106,7 +106,7 @@
                 </li>
 				<li>
 					<div class="sidebar-header p-0 bg-transparent">
-                    <a href="" class="navitem">
+                    <a href="#" class="navitem">
                         <i class="fas fa-image"></i>
                         <span>Buenas prácticas</span>
                     </a>
@@ -114,7 +114,7 @@
 				</li>
 				<li>
 					<div class="sidebar-header p-0 bg-transparent">
-                    <a href="#" class="navitem">
+                    <a role="button" class="navitem" id="btn_pdf_modelo_educ">
                         <i class="fas fa-question"></i>
                         <span>Modelo Educativo</span>
                     </a>

@@ -10,9 +10,9 @@
         <p class="card-text text-justify">Integra datos las estadísticas básicas que describen la situación actual y los avances en la prestación de los servicios educativos.</p>
       </div>
       <ul class="list-group list-group-flush">
-    	  <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-genderless text-muted"></i> General</a>
-    	  <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-genderless text-muted"></i> Específica (por búsqueda)</a>
-    	  <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-genderless text-muted"></i> Riesgo de abandono escolar</a>
+    	  <a href="" class="list-group-item list-group-item-action"><i class="fas fa-genderless text-muted"></i> General</a>
+    	  <a href="<?= base_url("index.php/Estadistica/estad_indi_generales"); ?>" class="list-group-item list-group-item-action"><i class="fas fa-genderless text-muted"></i> Específica (por búsqueda)</a>
+    	  <a href="<?= base_url("index.php/Riesgo/riesgo_x_muni_zona"); ?>" class="list-group-item list-group-item-action"><i class="fas fa-genderless text-muted"></i> Riesgo de abandono escolar</a>
       </ul>
     </div>
     <div class="card card-index shadow mb-4">

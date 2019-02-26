@@ -1,4 +1,4 @@
-console.log("en el index js");
+
 var Utiles = {
   path_docs : "http://localhost/acasonora/assets/docs/",
 
@@ -61,4 +61,27 @@ $("#btn_index_calendario").click(function(e){
 });
   
   
+  
+  $("#btn_pdf_modelo_educ").click(function(e){
+    var ruta = base_url+"Index/guiaparapadres";
+    $.ajax({
+      url: ruta,
+      method: 'POST',
+      data: { 'folder':1, 'file':1 },
+      beforeSend: function(xhr) {
+        Notification.loading("");
+      }
+    })
+    .done(function( data ) {
+      $("#visor_generico").empty();
+      $("#visor_generico").append(data.strView);
+      Utiles.showPDF("modal_visor_pdf", "ModeloEducativoSonora.pdf");
+    })
+    .fail(function(e) {
+      console.error("Error in guiaparapadres()"); console.table(e);
+    })
+    .always(function() {
+      swal.close();
+    });
+});
     
