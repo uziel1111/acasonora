@@ -100,7 +100,7 @@
 					</div>	
                     <ul class="collapse list-unstyled" id="navFamilia">
                         <li>
-                            <a href="#" id="btn_index_guiaspadres">¿Sabía usted que?</a>
+                            <a  role="button" id="btn_index_guiaspadres">¿Sabía usted que?</a>
                         </li>
                     </ul>
                 </li>
@@ -151,7 +151,7 @@
                 </li>				
                 <li>
 					<div class="sidebar-header p-0 bg-transparent">
-                    <a  id="btn_index_calendario" class="navitem">
+                    <a role="button" id="btn_index_calendario" class="navitem">
                         <i class="fas fa-paper-plane"></i>
                         <span>Calendario</span>
                     </a>

@@ -9,13 +9,39 @@ Regularexpression.prototype.cct = function(value){
 };
 
 
+$("#itxt_busquedalista_cct").keyup(function() {
+    $("#itxt_busquedalista_nombreescuela_reporte").val($(this).val());
+});
+
+// $(document).on("click", "#table_escuelas tbody tr", function(e) {
+//     var idescuela = $(this).data('idescuela');
+
+//     var form = document.createElement("form");
+//     var element1 = document.createElement("input");
+
+//     element1.type = "hidden";
+//     element1.name="id_cct";
+//     element1.value = idescuela;
+
+//     form.name = "form_escuelas_getinfo";
+//     form.id = "form_escuelas_getinfo";
+//     form.method = "POST";
+//     // form.target = "_self";
+//     form.action = base_url+"info/index/";
+
+//     document.body.appendChild(form);
+//     form.appendChild(element1);
+//     form.submit();
+// });
+
 
 function Buscador(){
 }
 
-$(function(){
+$(function () {
  this_buscador = new Buscador();
 });
+
 
 $("#slc_xest_muni_estmunicipio").change(function(){
   var id_municipio = $( "#slc_xest_muni_estmunicipio" ).val();
@@ -149,7 +175,7 @@ $("#slc_xest_sostenimiento_zona").change(function(){
       // $("#wait").modal("show");
     },
     success:function(data){
-      console.table(data.array);
+      // console.table(data.array);
       // $("#wait").modal("hide");
       $("#slc_xest_zona").empty();
       $("#slc_xest_zona").append(data.array);
@@ -216,8 +242,8 @@ $("#btn_buscar_zona").click(function(){
       })
       .done(function( data ) {
         console.log(data);
-        $("#visor_estadistica").empty();
-        $("#visor_estadistica").append(data.str_view);
+        $("#resultado_estadistica").empty();
+        $("#resultado_estadistica").append(data.str_view);
         $("#modal_visor_xedoxmuni").modal("hide");
  
       })
@@ -247,7 +273,7 @@ $("#btn_buscar_mun_est").click(function(){
           slc_xest_muni_cicloe:id_ciclo},
       })
       .done(function( data ) {
-        console.log(data);
+        // console.log(data);
         $("#resultado_estadistica").empty();
         $("#resultado_estadistica").append(data.str_view);
         $("#modal_visor_xedoxmuni").modal("hide");
@@ -271,21 +297,6 @@ $("#xzona-tab").click(function(){
   $(".dv_filtro").empty();
 });
 
-$("#itxt_busquedalista_cct").keyup(function() {
-  console.log("llego a la funcion");
-  if($(this).val().length==8){
-      let obj_re = new Regularexpression();
-      let valid = obj_re.cct(this.value);
-      if(valid){
-        this_buscador.get_xcvecentro(this.value);
-      }
-  }
-  else if ($(this).val().length>8) {
-    alert('longitud incorrecta');
-    this.value = this.value.substring(0, this.value.length - 1);
-  }
-});
-
 Buscador.prototype.get_xcvecentro = function get_xcvecentro(cve_centro){
     // let ruta = base_url+"Estadistica/escuelas_xcvecentro";
       $.ajax({
@@ -300,8 +311,10 @@ Buscador.prototype.get_xcvecentro = function get_xcvecentro(cve_centro){
         console.log(data);
         if(data.total_escuelas==0){
           alert('sin resultados');
+        
         }
         if(data.total_escuelas==1){
+          console.log(this_buscador);
           this_buscador.form(data.id_cct);
         }
         else if (data.total_escuelas>1) {
@@ -317,3 +330,67 @@ Buscador.prototype.get_xcvecentro = function get_xcvecentro(cve_centro){
         swal.close();
       });
 };
+
+
+
+$("#itxt_busquedalista_cct").keyup(function() {
+  // console.log("llego a la funcion");
+
+  if($(this).val().length==8){
+      let obj_re = new Regularexpression();
+      let valid = obj_re.cct(this.value);
+      if(valid){
+        this_buscador.get_xcvecentro(this.value);
+      }
+  }
+  else if ($(this).val().length>8) {
+    alert('longitud incorrecta');
+    this.value = this.value.substring(0, this.value.length - 1);
+  }
+});
+
+
+
+
+$("#btn_buscar_xcct").click(function(){
+  var cct= $( "#itxt_busquedalista_cct" ).val();
+  $.ajax({
+    url: base_url+"estadistica/xcct/",
+    method: 'POST',
+    data: {cct:cct},
+  })
+  .done(function(data) {
+    console.log(data);
+    $("#resultado_estadistica").empty();
+    $("#resultado_estadistica").append(data.str_view);
+    $("#modal_visor_xedoxmuni").modal("hide");
+  })
+  .fail(function(e) {
+    console.error("Error in xest_zona_x()"); 
+    console.table(e);
+  })
+
+});
+
+
+Buscador.prototype.form = function(id_cct){
+  var form = document.createElement("form");
+  form.name = "form_getinfo";
+  form.id = "form_getinfo";
+  form.method = "POST";
+  form.target = "_self";
+  form.action = base_url+"info/index/";
+
+  var element1 = document.createElement("input");
+  element1.type="hidden";
+  element1.name="id_cct";
+  element1.value=id_cct;
+  form.appendChild(element1);
+
+  document.body.appendChild(form);
+  form.submit();
+};
+
+$('#busquedalista_modal').on('hidden.bs.modal', function (e) {
+  $("#id_cct").empty();
+})

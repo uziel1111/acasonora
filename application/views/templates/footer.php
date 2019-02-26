@@ -45,9 +45,7 @@ function rotArrow() {
             });
         });
     </script>
-    <div id="visor_generico">
-      <script src="<?= base_url();?>assets/js/index/index.js"></script>
-    </div>
+   
 </body>
 </html>
 

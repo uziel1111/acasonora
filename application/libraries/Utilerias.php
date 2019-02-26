@@ -46,10 +46,5 @@ class Utilerias
 
     } // destroy_all_session()
 
-    public static function pagina($contexto, $vista = '', $data)
-    {
-        $contexto->load->view('templates/header2', $data);
-        $contexto->load->view($vista, $data);
-        $contexto->load->view('templates/footer2', $data);
-    } // pagina_basica_visorp()
+  
 } // class Utilerias
