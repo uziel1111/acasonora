@@ -8,7 +8,7 @@
 /* =================================== */
 /* Theme Colors        */
 /* color-1: #f22727;   */
-/* color-2: #7ea629;   */
+/* color-2: #23c6c6;   */
 /* color-3: #f27304;   */
 /* color-4: #ff006c;   */
 /* color-5: #202020;   */
@@ -175,7 +175,7 @@ td, th {
     color: #f22727 !important;
 }
 .color-2 {
-    color: #7ea629 !important;
+    color: #23c6c6 !important;
 }
 .color-3 {
     color: #f27304 !important;
@@ -194,7 +194,7 @@ td, th {
     background: #f22727;
 }
 .bgcolor-2 {
-    background: #7ea629;
+    background: #23c6c6;
 }
 .bgcolor-3 {
     background: #f27304;
@@ -213,7 +213,7 @@ td, th {
     color: #f22727 !important;
 }
 .hcolor-2:hover {
-    color: #7ea629 !important;
+    color: #23c6c6 !important;
 }
 .hcolor-3:hover {
     color: #f27304 !important;
@@ -852,7 +852,7 @@ td, th {
   border: 2px solid transparent !important;
 }
 .btn-color-2:hover {
-  background: #7ea629 !important;
+  background: #23c6c6 !important;
   border: 2px solid transparent !important;
 }
 .btn-color-3:hover {
@@ -876,7 +876,7 @@ td, th {
   padding: 0 40px;
   border-radius: 20px;
   background: transparent;
-  border: 2px solid #3baf29;
+  border: 2px solid #23c6c6;
   color: #000;
   display: inline-block;
   font-weight: 600;
@@ -897,12 +897,12 @@ td, th {
   margin-left: 15px;
 }
 .primary-btn:hover {
-  background: #3baf29;
+  background: #23c6c6;
   color: #fff;
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.8);
 }
 .details-btn {
-  border: 1px solid #3baf29;
+  border: 1px solid #23c6c6;
   width: 40px;
   height: 40px;
   border-radius: 20px;
@@ -927,7 +927,7 @@ td, th {
 }
 .details-btn:hover {
   width: 140px;
-  background: #3baf29;
+  background: #23c6c6;
   box-shadow: 0px 10px 20px 0px rgba(60, 64, 143, 0.2);
 }
 .details-btn:hover .details {
@@ -974,7 +974,7 @@ td, th {
     height: 40px;
 }
 .form-group-style-1 label {
-    color: #7ea629;
+    color: #23c6c6;
 }
 .form-group-style-1 .input-group-text {
     border-radius:20px 0 0 20px;
@@ -1025,7 +1025,7 @@ td, th {
   background-color:#ccc;
 }
 .form-group-style-1 .custom-checkbox .custom-control-input:checked~.custom-control-label::before{
-  background-color:#7ea629;
+  background-color:#23c6c6;
 }
 .form-group-style-1 textarea.form-control {
     border-radius:20px 20px 0 20px;
@@ -1080,7 +1080,7 @@ td, th {
     font-size: 20px;
     color: #fff;
     font-weight: 800;
-    background: #3baf29;
+    background: #23c6c6;
     padding: 20px;
     border-radius:20px 20px 0 0;
     -moz-border-radius:20px 20px 0 0;
@@ -1169,7 +1169,7 @@ td, th {
 .nav-tabs-style-1 .nav-link-style-1 {
     font-family: 'Boogaloo', cursive !important;
     font-size: 22px;
-    background-color: #7ea629;
+    background-color: #23c6c6;
     color: #eeeeee;
     border-radius:20px 20px 0 0;
     -moz-border-radius:20px 20px 0 0;
@@ -1217,7 +1217,7 @@ td, th {
 }
 .nav-apa .nav-link-apa.active {
     color: #fff !important;
-  background-color: #7ea629;
+  background-color: #23c6c6;
 
 }
 /* End Nav-tabs */
@@ -1282,10 +1282,10 @@ td, th {
   padding: 0px;
 }
 .list:hover .progressBar-circle {
-  stroke: #3baf29;
+  stroke: #23c6c6;
 }
 .list:hover .progressBar-percentage {
-  color: #3baf29;
+  color: #23c6c6;
 }
 .list-item {
   height: 150px;
@@ -1440,7 +1440,7 @@ td, th {
     border-top: 4px solid #f22727;
 }
 .ddm-color-2{
-    border-top: 4px solid #7ea629;
+    border-top: 4px solid #23c6c6;
 }
 .ddm-color-3{
     border-top: 4px solid #f27304;
@@ -1535,7 +1535,7 @@ td, th {
     border-top: 4px solid #f22727;
 }
 .ddm-color-2{
-    border-top: 4px solid #7ea629;
+    border-top: 4px solid #23c6c6;
 }
 .ddm-color-3{
     border-top: 4px solid #f27304;
@@ -1577,7 +1577,7 @@ td, th {
 }
 
 .footer-social a:hover {
-  color: #3baf29;
+  color: #23c6c6;
 }
 
 .title-bg {
@@ -1813,11 +1813,11 @@ font-size: 25px;
 }
 
 .controls .filter:hover {
-  color: #3baf29 !important;
+  color: #23c6c6 !important;
 }
 
 .controls .filter.active {
-  color: #3baf29 !important;
+  color: #23c6c6 !important;
 }
 
 .single-filter-content {
@@ -1902,7 +1902,7 @@ font-size: 25px;
 
 .single-table .top .head span {
   font-size: 48px;
-  color: #3baf29;
+  color: #23c6c6;
 }
 
 .single-table .top .head h5 {
@@ -1915,7 +1915,7 @@ font-size: 25px;
 }
 
 .single-table .top .package .price {
-  color: #3baf29;
+  color: #23c6c6;
   font-size: 36px;
   margin-bottom: 10px;
   line-height: 1em;
@@ -1951,7 +1951,7 @@ font-size: 25px;
 }
 
 .active-test-carousel .single-test .author h6 a:hover {
-  color: #3baf29;
+  color: #23c6c6;
 }
 
 .active-test-carousel .owl-dots {
@@ -2073,7 +2073,7 @@ footer .footer-nav li {
 }
 
 footer .footer-nav li a:hover {
-  color: #3baf29;
+  color: #23c6c6;
 }
 
 .single-footer-widget {
@@ -2086,5 +2086,5 @@ footer .footer-nav li a:hover {
 }
 
 .footer-bottom .footer-text a:hover {
-  color: #3baf29;
+  color: #23c6c6;
 }

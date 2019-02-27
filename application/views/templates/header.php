@@ -65,7 +65,7 @@
 					</div>	
                     <ul class="collapse list-unstyled" id="navEstadistica">
                         <li>
-                            <a href="<?= base_url("index.php/Estadistica/estad_indi_general"); ?>">General</a>
+                            <a href="<?= base_url("index.php/Estadistica/estadistica_general"); ?>">General</a>
                         </li>
                         <li>
                             <a href="<?= base_url("index.php/Estadistica/estad_indi_generales"); ?>" role="button" id="est_gral">Específica</a>

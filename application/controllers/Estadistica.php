@@ -22,6 +22,10 @@ class Estadistica extends CI_Controller {
 			$this->load->model('Escuela_model');
 
 		}
+		public function estadistica_general()
+		{
+			Utilerias::pagina_basica($this,"estadistica/concentrado", []);
+		}
 
 		public function estad_indi_generales($tipo='muni')
 		{
