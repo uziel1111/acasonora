@@ -1,4 +1,4 @@
-/*--------------------------- Escuela Coahuila Main Stylesheet ----------------------*/
+/*--------------------------- Escuela sonora Main Stylesheet ----------------------*/
 /* Medium Layout: 1280px */
 /* Tablet Layout: 768px */
 /* Mobile Layout: 320px */
@@ -1166,7 +1166,7 @@ td, th {
     -webkit-border-radius:20px 20px 0 0;
     margin-left: 5px;
     border-style: solid;
-    border-color: #709522;
+    border-color: #01BBB5;
     border-width: 0 0 4px 0;
 }
 .tab-content-style-1>.active{

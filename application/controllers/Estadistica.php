@@ -24,7 +24,27 @@ class Estadistica extends CI_Controller {
 		}
 		public function estadistica_general()
 		{
-			Utilerias::pagina_basica($this,"estadistica/concentrado", []);
+			$result_municipios = $this->Municipio_model->getall_xest_ind();
+			if(count($result_municipios)==0){
+				$data['arr_municipio'] = array(	'0' => 'Error recuperando los municipios' );
+			}else{
+				$arr_municipios['0'] = 'TODOS';
+				foreach ($result_municipios as $row){
+					 $arr_municipios[$row['id_municipio']] = $row['municipio'];
+				}
+			}
+			$result_ciclo=$this->Ciclo_model->getall_ciclo();
+			// echo "<pre>";
+			// print_r($result_ciclo);
+			// die();
+			$arr_ciclos['0'] = 'TODOS';
+				foreach ($result_ciclo as $row){
+					$arr_ciclos[$row['id_ciclo']] = $row['ciclo'];
+				}
+			$data["arr_ciclos"] = $arr_ciclos;
+			$data['arr_municipio'] =$arr_municipios; 
+
+			Utilerias::pagina_basica($this,"estadistica/concentrado", $data);
 		}
 
 		public function estad_indi_generales($tipo='muni')

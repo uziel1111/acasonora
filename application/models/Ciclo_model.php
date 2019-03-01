@@ -90,4 +90,10 @@ class Ciclo_model extends CI_Model
 
     }// get_ciclo()
 
+    function getall_ciclo(){
+        $this->db->select('ci.id_ciclo,ci.ciclo');
+        $this->db->from('ciclo ci');
+        return  $this->db->get()->result_array('ciclo');
+    }// get_ciclo()
+
 }// Municipio_model

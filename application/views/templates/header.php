@@ -57,9 +57,17 @@
             </div>
             <ul class="list-unstyled components">
                 <li class="active">
+                    <div class="sidebar-header p-0 bg-transparent">
+                    <a href="<?= base_url("index"); ?>" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle navitem">
+                        <i class="fas fa-home"></i>
+                        <span>Inicio</span>
+                    </a>
+                    </div>  
+                </li>
+                <li>
 					<div class="sidebar-header p-0 bg-transparent">
                     <a href="#navEstadistica" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle navitem">
-                        <i class="fas fa-home"></i>
+                        <i class="fa fa-signal"></i>
                         <span>Estadística</span>
 					</a>
 					</div>	

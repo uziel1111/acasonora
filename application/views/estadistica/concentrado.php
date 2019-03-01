@@ -1,11 +1,32 @@
+<div class="container">
+    <h4 align="center">Estadística educativa General</h4>                  
+      <div class="row">
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4 mt-2">
+          <div class="form-group">
+            <?= form_label('Estado/Municipio', 'xedomuni') ?>
+            <?= form_dropdown('xedomuni', $arr_municipio, '', array('id' => 'xedomuni', 'class'=>'form-control')) ?>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4 mt-2">
+          <div class="form-group">
+            <?= form_label('Ciclo escolar', 'slc_xest_cicloe_zona') ?>
+            <?= form_dropdown('slc_xest_cicloe_zona', $arr_ciclos, '', array('id' => 'slc_xest_cicloe_zona', 'class'=>'form-control')) ?>
+          </div>
+        </div><!-- col-md-4 -->
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4 mt-4">
+          <?= form_submit('mysubmit', 'Mostrar Detalle', array('id' => 'btn_detalle', 'class'=>'btn btn-info btn-block btn-style-1' )); ?>
+        </div><!--  col-sm-6 -->
+      </div>
+      <?= form_close() ?>
+</div>
 
 <div class="container">
-  <div class="panel-body">
-    <div class="panel-group" id="accordion">
-      <div class="panel box">
+  <div class="card">
+    <div class="card-header" id="accordion">
+      <div class="card-body">
         <div class="card-header">
-          <h4 class="box-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#collapseEspecial">
+          <h4 class="card-text">
+            <a class="btn btn-info" data-toggle="collapse" data-parent="#accordion" href="#collapseEspecial">
               <span class="fa fa-book" aria-hidden="true"></span> Educación Especial
             </a>
           </h4>
@@ -255,10 +276,10 @@
         </div>
       </div>
 
-      <div class="panel box box-inicial">
+      <div class="card-body">
         <div class="card-header">
-          <h4 class="box-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#collapseInicial">
+          <h4 class="card-text">
+            <a class="btn btn-info" data-toggle="collapse" data-parent="#accordion" href="#collapseInicial">
               <span class="fa fa-bars" aria-hidden="true"></span> Educación Inicial
             </a>
           </h4>
@@ -508,10 +529,10 @@
         </div>
       </div>
 
-      <div class="panel box box-preescolar">
+      <div class="card-body">
         <div class="card-header">
-          <h4 class="box-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#collapsePreescolar">
+          <h4 class="card-text">
+            <a class="btn btn-info" data-toggle="collapse" data-parent="#accordion" href="#collapsePreescolar">
              <span class="fa fa-paint-brush" aria-hidden="true"></span> Educación Preescolar
             </a>
           </h4>
@@ -806,10 +827,10 @@
         </div>
       </div>
 
-      <div class="panel box box-primaria">
+      <div class="card-body">
         <div class="card-header">
-          <h4 class="box-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#collapsePrimaria">
+          <h4 class="card-text">
+            <a class="btn btn-info" data-toggle="collapse" data-parent="#accordion" href="#collapsePrimaria">
               <span class="fa fa-balance-scale" aria-hidden="true"></span> Educación Primaria
             </a>
           </h4>
@@ -1134,10 +1155,10 @@
         </div>
       </div>
 
-      <div class="panel box box-secundaria">
+      <div class="card-body">
         <div class="card-header">
-          <h4 class="box-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#collapseSecundaria">
+          <h4 class="card-text">
+            <a class="btn btn-info" data-toggle="collapse" data-parent="#accordion" href="#collapseSecundaria">
               <span class="fa fa-flask" aria-hidden="true"></span> Educación Secundaria
             </a>
           </h4>
@@ -1431,10 +1452,11 @@
           </div>
         </div>
       </div>
-      <div class="panel box box-msuperior">
+
+      <div class="card-body">
         <div class="card-header">
-          <h4 class="box-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#collapseMSuperior">
+          <h4 class="card-text">
+            <a class="btn btn-info" data-toggle="collapse" data-parent="#accordion" href="#collapseMSuperior">
               <span class="fa fa-superscript" aria-hidden="true"></span> Educación Media Superior
             </a>
           </h4>
@@ -1728,9 +1750,10 @@
           </div>
         </div>
       </div>
-      <div class="panel box box-superior">
+
+      <div class="card-body">
         <div class="card-header">
-          <h4 class="box-title">
+          <h4 class="card-text">
             <a class="btn btn-info" data-toggle="collapse" data-parent="#accordion" href="#collapseSuperior">
               <span class="fa fa-university" aria-hidden="true"></span> Educación Superior
             </a>
@@ -1975,6 +1998,8 @@
           </div>
         </div>
       </div>
+
     </div>
   </div>
 </div>
+

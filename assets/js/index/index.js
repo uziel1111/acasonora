@@ -61,6 +61,11 @@ $("#btn_index_calendario").click(function(e){
 });
   
   
+
+// $("#close_modal_visor_xedoxmuni").click(function(e){
+  
+// });
+
   
   $("#btn_pdf_modelo_educ").click(function(e){
     var ruta = base_url+"Index/guiaparapadres";

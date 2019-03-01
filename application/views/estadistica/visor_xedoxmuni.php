@@ -3,7 +3,8 @@
     <div class="modal-content modal-style-1">
       <div class="modal-header bgcolor-2">
         <h5 class="modal-title text-white" id="exampleModalLabel"></h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <button type="button" class="close" data-dismiss="modal"  aria-label="Close">
+          <a href="<?= base_url("index.php/index/index"); ?>"></a>
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
