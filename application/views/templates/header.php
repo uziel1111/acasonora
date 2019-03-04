@@ -58,7 +58,7 @@
             <ul class="list-unstyled components">
                 <li class="active">
                     <div class="sidebar-header p-0 bg-transparent">
-                    <a href="<?= base_url("index"); ?>" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle navitem">
+                    <a href="<?= base_url("index"); ?>" >
                         <i class="fas fa-home"></i>
                         <span>Inicio</span>
                     </a>
@@ -95,7 +95,7 @@
                             <a href="#">Localiza tu escuela</a>
                         </li>
                         <li>
-                            <a href="#">Escuela en el mapa</a>
+                            <a href="<?= base_url("index.php/Mapa/index"); ?>">Escuela en el mapa</a>
                         </li>
                     </ul>
                 </li>
@@ -114,7 +114,7 @@
                 </li>
 				<li>
 					<div class="sidebar-header p-0 bg-transparent">
-                    <a href="#" class="navitem">
+                    <a href="<?= base_url("index.php/Index/buenas_practicas"); ?>"" class="navitem">
                         <i class="fas fa-image"></i>
                         <span>Buenas prácticas</span>
                     </a>
@@ -137,7 +137,7 @@
 					</div>	
                     <ul class="collapse list-unstyled" id="navCTec">
                         <li>
-                            <a href="#">Guías CTE</a>
+                            <a href="<?= base_url("index.php/Index/guia_cte"); ?>">Guías CTE</a>
                         </li>
                     </ul>
                 </li>	
@@ -150,7 +150,7 @@
 					</div>	
                     <ul class="collapse list-unstyled" id="navCE">
                         <li>
-                            <a href="#">SICRES</a>
+                            <a href="http://www.sicres.gob.mx/" target="_blank">SICRES</a>
                         </li>
                         <li>
                             <a href="#">ACA Yoremia</a>

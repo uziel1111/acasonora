@@ -120,8 +120,11 @@ class Estadistica extends CI_Controller {
 			}
 
 			$result_ciclo = $this->Ciclo_model->ciclo_est_e_ind();
-			$arr_ciclo['2'] = '2017-2018';
-
+			// $arr_ciclo['2'] = '2017-2018';
+			$arr_ciclo['0'] = 'TODOS';
+				foreach ($result_ciclo as $row){
+					 $arr_ciclo[$row['id_ciclo']] = $row['ciclo'];
+				}
 			$result_nzonae = $this->Supervision_model->allzonas();
 			if(count($result_nzonae)==0){
 				$data['arr_nzonae'] = array(	'0' => 'Error recuperando los sostenimientos' );
@@ -320,7 +323,9 @@ class Estadistica extends CI_Controller {
 			$data["srt_tab_planea"] = $this->tabla_planea($id_municipio,$id_nivel,$id_sostenimiento,$id_modalidad, $id_ciclo);
 			$data["srt_tab_rezag_inegi"] = $this->tabla_rezinegi($id_municipio,$id_nivel,$id_sostenimiento,$id_modalidad, $id_ciclo);
 			$data["srt_tab_analf_inegi"] = $this->tabla_analfinegi($id_municipio,$id_nivel,$id_sostenimiento,$id_modalidad, $id_ciclo);
-
+			// echo "<pre>";
+			// print_r($data);
+			// die();
 			
 			// $string = $this->load->view('estadistica/estadi_e_indi_gen', $data2, TRUE);
 			// $data['buscador'] = $string;
@@ -898,10 +903,10 @@ class Estadistica extends CI_Controller {
 		function tabla_asistencia($id_municipio, $id_ciclo){
 			$result_asistencia = array();
 			if ($id_municipio==0) {
-				$result_asistencia_nv = $this->Indicadoresxestado_model->get_ind_asistenciaxestadoidciclo(1);
+				$result_asistencia_nv = $this->Indicadoresxestado_model->get_ind_asistenciaxestadoidciclo($id_ciclo);
 			}
 			else {
-				$result_asistencia_nv = $this->Indicadoresxmuni_model->get_ind_asistenciaxmuniidciclo($id_municipio, 1);
+				$result_asistencia_nv = $this->Indicadoresxmuni_model->get_ind_asistenciaxmuniidciclo($id_municipio, $id_ciclo);
 			}
 
 
@@ -938,10 +943,10 @@ class Estadistica extends CI_Controller {
 		function tabla_permanencia($id_municipio, $id_ciclo){
 			$result_planea = array();
 			if ($id_municipio==0) {
-				$result_permanencia_nv = $this->Indicadoresxestado_model->get_ind_permanenciaxestadoidciclo(1);
+				$result_permanencia_nv = $this->Indicadoresxestado_model->get_ind_permanenciaxestadoidciclo($id_ciclo);
 			}
 			else {
-				$result_permanencia_nv = $this->Indicadoresxmuni_model->get_ind_permanenciaxmuniidciclo($id_municipio, 1);
+				$result_permanencia_nv = $this->Indicadoresxmuni_model->get_ind_permanenciaxmuniidciclo($id_municipio, $id_ciclo);
 			}
 
 

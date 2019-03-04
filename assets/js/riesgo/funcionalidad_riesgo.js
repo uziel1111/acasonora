@@ -1,4 +1,10 @@
-$("#modal_visor_xedoxmuni").modal("show");
+$("#modal_visor_riesgo").modal("show");
+
+$("#close_modal_riesgo").click(function(e){
+  e.preventDefault();
+  window.location=base_url;
+});
+
 $(function() {
     obj_riesgo = new Riesgo();
 });

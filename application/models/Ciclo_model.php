@@ -15,8 +15,8 @@ class Ciclo_model extends CI_Model
     function ciclo_est_e_ind(){
       $this->db->select('id_ciclo, ciclo');
       $this->db->from('ciclo');
-      $this->db->order_by("id_ciclo", "desc");
-      $this->db->where('id_ciclo', 2);
+      // $this->db->order_by("id_ciclo", "desc");
+      // $this->db->where('id_ciclo', 2);
       // $this->db->get();
       // $str = $this->db->last_query();
       // echo $str; die();

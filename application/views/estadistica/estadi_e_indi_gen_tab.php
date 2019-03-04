@@ -3,16 +3,19 @@
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content modal-style-1">
       <div class="modal-header bgcolor-2">
-        <h5 class="modal-title text-white" id="exampleModalLabel"></h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+          
+          <h5 class="modal-title text-white" id="exampleModalLabel">Estadística educativa específica</h5>
+          <button type="button" class="close" data-dismiss="modal" id='close_destin'>
+           x
+          </button>
+ 
+ 
       </div>
 
         <!-- Start Main Area -->
       <div class="container">
         <div class="row">
-          <div data-toggle="collapse" data-target="#demo" class="card-header card-1-header bg-light">Estadística educativa específica</div>
+
           <div id="demo" class="collapse show">
       <?= form_label('', 'lb_titbusq') ?>
         <ul class="nav nav-tabs nav-tabs-style-1" id="tab_busqg" role="tablist">

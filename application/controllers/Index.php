@@ -27,6 +27,18 @@ class Index extends CI_Controller
         exit;
     }
 
+    public function guia_cte()
+    {
+        $data = array();
+        Utilerias::pagina_basica($this,"guias_cte/guia_cte", $data);
+    }
+
+    public function buenas_practicas()
+    {
+        $data = array();
+        Utilerias::pagina_basica($this,"buenas_practicas_esc/buenas_pract_esc", $data);
+    }
+
 }
 
 

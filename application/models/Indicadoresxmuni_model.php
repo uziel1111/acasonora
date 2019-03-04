@@ -13,6 +13,9 @@ class Indicadoresxmuni_model extends CI_Model
       $this->db->from('indicadoresxmuni');
       $this->db->where('id_municipio', $id_municipio);
       $this->db->where('id_ciclo', $id_ciclo);
+      // $this->db->get();
+      // $str = $this->db->last_query();
+      // echo $str; die();
       return  $this->db->get()->result_array();
       }
       else {
@@ -29,6 +32,9 @@ class Indicadoresxmuni_model extends CI_Model
       $this->db->from('indicadoresxmuni');
       $this->db->where('id_municipio', $id_municipio);
       $this->db->where('id_ciclo', $id_ciclo);
+      // $this->db->get();
+      // $str = $this->db->last_query();
+      // echo $str; die();
       return  $this->db->get()->result_array();
       }
       else {
