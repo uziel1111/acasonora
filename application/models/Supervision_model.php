@@ -13,6 +13,14 @@ class Supervision_model extends CI_Model
       return  $this->db->get()->result_array();
     }// all()
 
+    function getallzonas(){
+      $this->db->select('id_supervision,zona_escolar');
+      $this->db->from('supervision');
+      $this->db->group_by("zona_escolar");
+      $this->db->order_by("zona_escolar");
+      return  $this->db->get()->result_array();
+    }// all()
+
     function getzona_idnivel_xsost($id_nivel,$id_subsostenimiento){
 
       $this->db->select('su.id_supervision, su.zona_escolar');

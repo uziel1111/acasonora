@@ -7,6 +7,7 @@ class Mapa extends CI_Controller {
 		parent::__construct();
 		$this->load->library('Utilerias');
 		$this->load->model('Mapa_model');
+		$this->load->model('Escuela_model');
 	}// __construct()
 
 	public function index(){
@@ -137,5 +138,30 @@ class Mapa extends CI_Controller {
 		        Utilerias::enviaDataJson(200, $response, $this);
 		        exit;
 			}
-		}
+	}
+
+	public function localiza_escuela(){
+		$id_municipio = $this->input->post('id_municipio');
+		$id_nivel = $this->input->post('id_nivel');
+		$zona_escolar = $this->input->post('zona_escolar');
+		$nombre_cct = $this->input->post('nombre_cct');
+		$clave_cct = $this->input->post('clave_cct');
+		$data["result"] = $this->Escuela_model->getInfoEscuela($id_municipio,$id_nivel,$zona_escolar,$nombre_cct,$clave_cct);
+		// print_r($data);
+		// die();
+		$str_view = $this->load->view("mapa/resultado_busqueda", $data, TRUE);
+		// echo $str_view;
+		// die();
+		$response = array(
+			'str_view'=>$str_view
+		);
+		
+		Utilerias::enviaDataJson(200, $response, $this);
+		exit;
+
+	}//xest_muni_x
+
+
+
+
 }// class

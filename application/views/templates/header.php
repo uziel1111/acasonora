@@ -92,7 +92,7 @@
 					</div>	
                     <ul class="collapse list-unstyled" id="navInformacion">
                         <li>
-                            <a href="#">Localiza tu escuela</a>
+                            <a href="<?= base_url("index.php/Index/localiza_tu_escuela"); ?>">Localiza tu escuela</a>
                         </li>
                         <li>
                             <a href="<?= base_url("index.php/Mapa/index"); ?>">Escuela en el mapa</a>

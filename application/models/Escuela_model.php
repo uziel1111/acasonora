@@ -61,6 +61,35 @@ class Escuela_model extends CI_Model
         return  $this->db->get()->row('id_nivel');
     }
     
+    function getInfoEscuela($id_municipio,$id_nivel,$zona_escolar,$nombre_cct,$clave_cct){
+      $where_aux="";
+      if($id_nivel!=0){
+        $where_aux=" AND n.id_nivel={$id_nivel}";
+      }
+      if($zona_escolar!=0){
+        $where_aux=" AND e.zona_escolar={$zona_escolar}";
+      }
+      if($nombre_cct!=""){
+        $where_aux=" AND e.nombre_centro='{$nombre_cct}'";
+      }
+      if($clave_cct!=""){
+        $where_aux=" AND e.cve_centro='{$clave_cct}'";
+      }
+
+      $this->db->select('c.cve_centro as cct,c.id_turno_single as turno,
+        c.nombre_centro as nom_esc,n.nivel,l.localidad,m.municipio,c.domicilio as domicilio_esc');
+      $this->db->from('escuela as c');
+      $this->db->join('municipio as m', 'm.id_municipio =c.id_municipio');
+      $this->db->join('localidad l', 'l.id_localidad=c.id_localidad');
+      $this->db->join('nivel n', 'n.id_nivel=c.id_nivel');
+      $this->db->where('m.id_municipio', $id_municipio);
+      if($where_aux!=""){
+        $this->db->where($where_aux);
+      }
+      
+       return  $this->db->get()->result_array();
+  
+    }
 
 
    
