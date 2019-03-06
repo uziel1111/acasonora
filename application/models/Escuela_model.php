@@ -76,13 +76,14 @@ class Escuela_model extends CI_Model
         $where_aux=" AND e.cve_centro='{$clave_cct}'";
       }
 
-      $this->db->select('c.cve_centro as cct,c.id_turno_single as turno,
+      $this->db->select('c.id_cct,c.cve_centro as cct,c.id_turno_single as turno,
         c.nombre_centro as nom_esc,n.nivel,l.localidad,m.municipio,c.domicilio as domicilio_esc');
       $this->db->from('escuela as c');
       $this->db->join('municipio as m', 'm.id_municipio =c.id_municipio');
       $this->db->join('localidad l', 'l.id_localidad=c.id_localidad');
       $this->db->join('nivel n', 'n.id_nivel=c.id_nivel');
       $this->db->where('m.id_municipio', $id_municipio);
+      $this->db->where('c.id_estatus in(1,4)');
       if($where_aux!=""){
         $this->db->where($where_aux);
       }

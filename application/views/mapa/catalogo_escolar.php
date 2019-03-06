@@ -1,12 +1,12 @@
 
 <div class="container">
-  <div class="row">
-    <h2 aling="center">Localiza Tu  Escuela</h2>
-  </div>
+
+    <h2><center>Localiza Tu  Escuela</center></h2>
+
   <div id="resultado_busqueda">
     
   </div>
-</div>
+</div>       
 <div class="modal fade" id="modal_localiza_tu_escuela" tabindex="-1" role="dialog" aria-hidden="true" style="overflow-y: scroll;">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content modal-style-1">
@@ -20,7 +20,7 @@
         <div class="row">
           <div class="col-12 col-sm-12 col-md-6 col-lg-6 mt-2">
             <div class="form-group form-group-style-1">
-              <?= form_label('Nombre de la Escuela', 'municipio') ?>
+              <?= form_label('Nombre de la Escuela', 'nombre') ?>
               <?= form_input('nombreBusqueda', '', array('id' => 'nombreBusqueda', 'class'=>'form-control input_cct')) ?>
             </div>
           </div>

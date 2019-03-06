@@ -1,5 +1,6 @@
 $("#modal_localiza_tu_escuela").modal("show");
 
+
 if($('#check_busquedaAvanzada').is(':checked')){
 	$('#divBusquedaAvanzada').show();
 }else{
@@ -32,6 +33,10 @@ $("#btn_localizar_escuela").click(function(e){
 				$("#resultado_busqueda").empty();
         		$("#resultado_busqueda").append(data.str_view);
         		$("#modal_localiza_tu_escuela").modal("hide");
+        		// var id;
+				// id=document.getElementById('id_cct');
+				// console.log(id);
+				// id.type = 'hidden';
 		    },
 		    error: function(error){
 		      console.log(error);
@@ -67,3 +72,8 @@ function validaFormulario(){
 	}
 	return bandera;
 }
+
+$("#close_modal_localiza_tu_escuela").click(function(e){
+  e.preventDefault();
+  window.location=base_url;
+});

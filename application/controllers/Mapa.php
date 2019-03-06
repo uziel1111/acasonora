@@ -6,6 +6,7 @@ class Mapa extends CI_Controller {
 	function __construct() {
 		parent::__construct();
 		$this->load->library('Utilerias');
+		$this->load->helper('form');
 		$this->load->model('Mapa_model');
 		$this->load->model('Escuela_model');
 	}// __construct()
@@ -147,11 +148,7 @@ class Mapa extends CI_Controller {
 		$nombre_cct = $this->input->post('nombre_cct');
 		$clave_cct = $this->input->post('clave_cct');
 		$data["result"] = $this->Escuela_model->getInfoEscuela($id_municipio,$id_nivel,$zona_escolar,$nombre_cct,$clave_cct);
-		// print_r($data);
-		// die();
 		$str_view = $this->load->view("mapa/resultado_busqueda", $data, TRUE);
-		// echo $str_view;
-		// die();
 		$response = array(
 			'str_view'=>$str_view
 		);
@@ -159,7 +156,30 @@ class Mapa extends CI_Controller {
 		Utilerias::enviaDataJson(200, $response, $this);
 		exit;
 
-	}//xest_muni_x
+	}
+
+	public function estadistica(){
+		// echo $id_cct;
+		// die();
+		// $id_municipio = $this->input->post('id_municipio');
+		// $id_nivel = $this->input->post('id_nivel');
+		// $zona_escolar = $this->input->post('zona_escolar');
+		// $nombre_cct = $this->input->post('nombre_cct');
+		// $clave_cct = $this->input->post('clave_cct');
+		// $data["result"] = $this->Escuela_model->getInfoEscuela($id_municipio,$id_nivel,$zona_escolar,$nombre_cct,$clave_cct);
+		$data=[];
+		$str_view = $this->load->view("mapa/resultado_estadistica", $data, TRUE);
+		$response = array(
+			'str_view'=>$str_view
+		);
+		
+		Utilerias::enviaDataJson(200, $response, $this);
+		exit;
+		// $data=[];
+		// Utilerias::pagina_basica($this,"mapa/resultado_estadistica", $data);
+
+
+	}
 
 
 
