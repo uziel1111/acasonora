@@ -48,3 +48,4 @@
 </div>
 <script src="<?= base_url('assets/js/mapa/estadistica.js'); ?>"></script>
 <div id="visor_estadistica"></div>
+

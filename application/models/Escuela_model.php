@@ -64,16 +64,16 @@ class Escuela_model extends CI_Model
     function getInfoEscuela($id_municipio,$id_nivel,$zona_escolar,$nombre_cct,$clave_cct){
       $where_aux="";
       if($id_nivel!=0){
-        $where_aux=" AND n.id_nivel={$id_nivel}";
+        $where_aux="  c.id_nivel={$id_nivel}";
       }
       if($zona_escolar!=0){
-        $where_aux=" AND e.zona_escolar={$zona_escolar}";
+        $where_aux="s.zona_escolar={$zona_escolar}";
       }
       if($nombre_cct!=""){
-        $where_aux=" AND e.nombre_centro='{$nombre_cct}'";
+        $where_aux="  e.nombre_centro='{$nombre_cct}'";
       }
       if($clave_cct!=""){
-        $where_aux=" AND e.cve_centro='{$clave_cct}'";
+        $where_aux="  e.cve_centro='{$clave_cct}'";
       }
 
       $this->db->select('c.id_cct,c.cve_centro as cct,c.id_turno_single as turno,
@@ -82,6 +82,7 @@ class Escuela_model extends CI_Model
       $this->db->join('municipio as m', 'm.id_municipio =c.id_municipio');
       $this->db->join('localidad l', 'l.id_localidad=c.id_localidad');
       $this->db->join('nivel n', 'n.id_nivel=c.id_nivel');
+      $this->db->join('supervision s', 's.id_supervision=c.id_supervision');
       $this->db->where('m.id_municipio', $id_municipio);
       $this->db->where('c.id_estatus in(1,4)');
       if($where_aux!=""){
@@ -92,6 +93,25 @@ class Escuela_model extends CI_Model
   
     }
 
+    function getInfo($id_cct){
+      
 
+      $this->db->select('c.id_cct,c.cve_centro as cct,c.id_turno_single as turno,
+        c.nombre_centro,n.nivel,c.id_region as region,l.localidad,m.municipio,c.domicilio,
+        s.zona_escolar as zona,sos.sostenimiento,if(c.id_estatus=0,"INACTIVA","ACTIVA" ) estatus,
+        mo.modalidad,c.nombre_director');
+      $this->db->from('escuela as c');
+      $this->db->join('municipio as m', 'm.id_municipio =c.id_municipio');
+      $this->db->join('localidad l', 'l.id_localidad=c.id_localidad');
+      $this->db->join('nivel n', 'n.id_nivel=c.id_nivel');
+      $this->db->join('modalidad mo', 'mo.id_modalidad=c.id_modalidad');
+      $this->db->join('subsostenimiento sub', 'sub.id_subsostenimiento=c.id_subsostenimiento');
+      $this->db->join('sostenimiento sos', 'sos.id_sostenimiento=sub.id_sostenimiento');
+      $this->db->join('supervision s', 's.id_supervision=c.id_supervision');
+      $this->db->where('c.id_cct', $id_cct);
+
+       return  $this->db->get()->result_array();
+  
+    }
    
 }// Municipio_model
