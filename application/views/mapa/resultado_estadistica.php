@@ -1,3 +1,4 @@
+
 <div class="modal fade" id="modal_resultado_estadistica" tabindex="-1" role="dialog" aria-hidden="true" style="overflow-y: scroll;">
   	<div class="modal-dialog modal-lg" role="document">
 	    <div class="modal-content modal-style-1">
@@ -75,13 +76,7 @@
 		              		<?= $result[0]['localidad']?>
 		            	</div>
 		          	</div>
-		          <!-- 	<div class="col-12 col-sm-12 col-md-4 col-lg-4 mt-2">
-			            <div class="form-group form-group-style-1">
-			              	<?= form_label('Sector:', 'sector') ?>
-			              	<?= $result[0]['sector']?>
-			             
-			            </div>
-		          	</div> -->
+		         
 		            <div class="col-12 col-sm-12 col-md-4 col-lg-4 mt-2">
 			            <div class="form-group form-group-style-1">
 			              	<?= form_label('Nombre del director:', 'nombre_director') ?>
@@ -89,24 +84,37 @@
 			            </div>
 		          	</div>
 		        </div>
-		        <div  id="visor_graficas_estadistica" class="row">
-		        	
-		        </div>
+		        <h2><center>Estadística</center></h2>
+			       <div  id="visor_graficas_estadistica" class="row">	
+			       </div>
 		        <br>
+		       	<h2><center>Indicadores de permanencia</h2></center>
 		        <div  class="row">
 		        	<div class="col-12 col-sm-12 col-md-4 col-lg-4">
-				       	<div id="visor_graficas_indicadores_permanencia">
+				       	<div id="visor_graficas_indicadores_permanencia"  style="width: 200px; height: 200px;">
 				        </div>
+				        <div data-toggle="popover" data-placement="bottom" data-placement="top" data-content="Porcentaje de alumnos que permanecen en la escuela entre ciclos escolares consecutivos antes de concluir el nivel educativo de referencia, por cada cien alumnos matriculados al inicio del ciclo escolar. Fuente: INEE">
+					    	<center>Retención</center>	
+	            		</div> 
+
 				    </div>
 				    <div class="col-12 col-sm-12 col-md-4 col-lg-4">
-				       	<div id="visor_graficas_indicadores_permanencia1">
+				       	<div id="visor_graficas_indicadores_permanencia1" style="width: 200px; height: 200px;">
 				        </div>
+				        <div data-toggle="popover" data-placement="bottom" data-placement="top" data-content="Porcentaje de alumnos aprobados de un determinado grado, por cada cien alumnos que están matriculados al final del ciclo escolar. Fuente: INEE">
+					    	<center>Aprobación</center>	
+	            		</div> 
 				    </div>
 				    <div class="col-12 col-sm-12 col-md-4 col-lg-4">
-				       	<div id="visor_graficas_indicadores_permanencia2">
+				       	<div id="visor_graficas_indicadores_permanencia2" style="width: 200px; height: 200px;">
 				        </div>
+				        <div data-toggle="popover" data-placement="bottom" data-placement="top" data-content="Porcentaje de alumnos que egresan de cierto nivel o tipo educativo en un determinado ciclo escolar por cada cien alumnos de nuevo ingreso, inscritos tantos ciclos escolares atrás como dure el nivel o tipo educativo en cuestión. Fuente: INEE">
+					    	<center>Eficiencia Terminal</center>	
+	            		</div> 
 				    </div>
 		        </div>
+		        <div id="container"></div>
+		        <h2><center>Indicadores de aprendizaje</center></h2>
 			    <div  class="row">
 			    	<div class="col-12 col-sm-12 col-md-6 col-lg-6">
 				       	<div id="visor_graficas_indicadores_aprendizaje" style="width:20%; height:20%" 
@@ -118,7 +126,7 @@
 				        </div>
 				    </div>
 			    </div>
-			    <div class="row">
+			    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
 			    	<table class='table table-bordered'>
 		              	<thead>
 			                <tr class="bg-info">
@@ -165,6 +173,7 @@
             		</table>
 			    </div>
 			    <br>
+			    <h2><center>Riesgo de abandono escolar</center></h2>
 		        <div  class="row">
 		        	<div class="col-12 col-sm-12 col-md-6 col-lg-6">
 				       	<div id="visor_graficas_riesgo" style="width:20%; height:20%" 
@@ -253,21 +262,49 @@
 			            </table>
 		          	</div>
         		</div>
-		        <div class="row">
-			        <div class="col-sm-12 etiq_titulo">
-			          <center>Ubicación geográfica</center>
-			        </div>
-		      	</div>
-		      	<div class="row" style="background-color:#C4EDDE"> <!--background-color:#C4EDDE-->
+        		<h2> <center>Ubicación geográfica</center></h2>
+		      	<div class="row"> <!--background-color:#C4EDDE-->
 			        <div class="col-sm-12">
 			          <div id="googleMap" style="padding-top:10px; maring-bottom:10px; height:350px;width:100%;"></div>
 			        </div>
 		      	</div>
+		      	
 	      	</div>
 	    </div>
   	</div>
 </div>
-
 <script src="<?= base_url('assets/highcharts5.0.3/highcharts.js'); ?>"></script><!--Problemas con esta versión <script src="https://code.highcharts.com/highcharts.js"></script>-->
 <script src="<?= base_url('assets/highcharts5.0.3/modules/data.js'); ?>"></script><!--Problemas con esta versión <script src="https://code.highcharts.com/modules/data.js"></script>-->
 <script src="<?= base_url('assets/highcharts5.0.3/modules/drilldown.js'); ?>"></script><!--Problemas con esta versión<script src="https://code.highcharts.com/modules/drilldown.js"></script>-->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqGxPT1KkV0q3eSoIOpuZeSrsLm_A5Uhs&callback=initMap"
+    async defer></script>
+
+
+
+<script>
+$(document).ready(function(){
+  $('[data-toggle="popover"]').popover();   
+});
+
+  // var myCenter = new google.maps.LatLng(26.581389, -109.328056);
+
+ function initMap() {
+  var mapProp = {
+    center:{lat:26.581389,lng: -109.328056},
+    zoom:12,
+    scrollwheel:false,
+    draggable:false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+    };
+
+  var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+  var marker = new google.maps.Marker({
+    position:new google.maps.LatLng(26.581389,-109.328056),
+    });
+
+  marker.setMap(map);
+  }
+
+</script>
+

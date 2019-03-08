@@ -310,46 +310,7 @@ Grafica.prototype.TablaEstadistica = function(){
     });
 }
 
-// Grafica.prototype.TablaIndicadoresPermanencia = function(){
-//   var bar = new ProgressBar.Circle(visor_graficas_indicadores_permanencia, {
-//     color: '#008080',//#07A4B5
-//     // This has to be the same size as the maximum width to
-//     // prevent clipping
-//     strokeWidth: 8,
-//     trailWidth: 5,
-//     easing: 'easeInOut',
-//     duration: 9400,
-//     text: {
-//       autoStyleContainer: false
-//     },
-//     from: { color: '#D6DADC', width: 5 },
-//     to: { color: '#008080', width: 8 }, //#07A4B5
-//     // Set default step function for all animate calls
-//     step: function(state, circle) {
-//       circle.path.setAttribute('stroke', state.color);
-//       circle.path.setAttribute('stroke-width', state.width);
 
-//       if(circle.value()==1.0){
-//         var value = Math.round(circle.value() * 100);
-//       }
-//       else {
-//         var value = circle.value() * 100;
-//       value = value.toFixed(2);
-//       }
-//       if (value === 0) {
-//         circle.setText('');
-//       } else {
-//         circle.setText(value+'%');
-//       }
-
-//     }
-//   });
-//   bar.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
-//   bar.text.style.fontSize = '2rem';
-
-//   bar.animate(1.0);  // Number from 0.0 to 1.0
-
-// }
 
 Grafica.prototype.TablaRiesgo = function(){
     Highcharts.chart('visor_graficas_riesgo', {
@@ -452,7 +413,118 @@ Grafica.prototype.TablaRiesgo1 = function(){
     });
 }
 
+
+
+function grafica_permanencia() {
+
+	chart = new Highcharts.Chart({
+        chart: {
+            renderTo: 'visor_graficas_indicadores_permanencia',
+            type: 'pie'
+        },
+        title: {
+            text: ''
+        },
+        plotOptions: {
+            pie: {
+                shadow: false,
+            }
+        },
+        series: [{
+            name: 'Retencion',
+            data: [
+               [ "Completed", 90],
+               { 
+                   "name": "Incomplete",
+                   "y": 10,
+                   "color": 'rgba(0,0,0,0)'
+               }
+            ],
+            size: '100%',
+            innerSize: '65%',
+            showInLegend:false,
+            dataLabels: {
+                enabled: false
+            }
+        }]
+    });
+
+}
+
+function grafica_permanencia1() {
+
+	chart = new Highcharts.Chart({
+        chart: {
+            renderTo: 'visor_graficas_indicadores_permanencia1',
+            type: 'pie'
+        },
+        title: {
+            text: ''
+        },
+        plotOptions: {
+            pie: {
+                shadow: false
+            }
+        },
+        series: [{
+            name: 'Aprobacion',
+            data: [
+               [ "Completed", 95],
+               { 
+                   "name": "Incomplete",
+                   "y": 5,
+                   "color": 'rgba(0,0,0,0)'
+               }
+            ],
+            size: '100%',
+            innerSize: '65%',
+            showInLegend:false,
+            dataLabels: {
+                enabled: false
+            }
+        }]
+    });
+
+}
+
+function grafica_permanencia2() {
+
+	chart = new Highcharts.Chart({
+        chart: {
+            renderTo: 'visor_graficas_indicadores_permanencia2',
+            type: 'pie'
+        },
+        title: {
+            text: ''
+        },
+        plotOptions: {
+            pie: {
+                shadow: false
+            }
+        },
+        series: [{
+            name: 'Eficiencia Terminal',
+            data: [
+               [ "Completed", 80],
+               { 
+                   "name": "Incomplete",
+                   "y": 20,
+                   "color": 'rgba(0,0,0,0)'
+               }
+            ],
+            size: '100%',
+            innerSize: '65%',
+            showInLegend:false,
+            dataLabels: {
+                enabled: false
+            }
+        }]
+    });
+
+}
+
 $("#ver_detalle").click(function(e){
+	console.log("llegue a la funcion");
 	var obj_grafica = new Grafica();
   	e.preventDefault();
   		$.ajax({
@@ -471,6 +543,9 @@ $("#ver_detalle").click(function(e){
         		obj_grafica.TablaIndicadores1();
         		obj_grafica.TablaRiesgo();
         		obj_grafica.TablaRiesgo1();
+        		grafica_permanencia();
+        		grafica_permanencia1();
+        		grafica_permanencia2();
         		
         		$("#modal_resultado_estadistica").modal("show");
 		    },

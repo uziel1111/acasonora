@@ -14,7 +14,7 @@
   <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet">	  
 
     <!-- Bootstrap core CSS -->
-    <link href="https://getbootstrap.com/docs/4.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="https://getbootstrap.com/docs/4.1/dist/css/bootstrap.min.css" rel="stylesheet"> -->
 	  
 	<!--Fontawesome  -->
 	  <script defer src="https://use.fontawesome.com/releases/v5.7.1/js/all.js" integrity="sha384-eVEQC9zshBn0rFj4+TU78eNA19HMNigMviK/PU/FFjLXqa/GKPgX58rvt5Z8PLs7" crossorigin="anonymous"></script>
@@ -28,7 +28,7 @@
     <link href="<?= base_url('assets/css/loader.css') ?>" rel="stylesheet" media="screen">
     <link rel="stylesheet" href="<?= base_url('assets/css/main.css'); ?>">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-   <!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="<?= base_url('assets/bootstrap-411/js/bootstrap.min.js'); ?>"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
     <script src="<?= base_url();?>assets/js/load.js"></script>
@@ -153,7 +153,7 @@
                             <a href="http://www.sicres.gob.mx/" target="_blank">SICRES</a>
                         </li>
                         <li>
-                            <a href="#">ACA Yoremia</a>
+                            <a href="https://www.yoremia.org/" target="_blank">ACA Yoremia</a>
                         </li>						
                     </ul>					
                 </li>				
