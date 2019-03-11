@@ -5,14 +5,14 @@
   <br>
   <div class="container">
     <div class='row'>
-        <a class="fancybox fancybox.iframe linksp"  href="<?=base_url('assets/docs/PRIMARIA_26EPR0001CTM11_01_1617.pdf')?>" style="" target="_blank"> 1.- Reporte ACA riesgo de abandono escolar primaria</a>
+        <a class="navitem"  role="button" id="btn_reporte_aca"  style="" > 1.- Reporte ACA riesgo de abandono escolar primaria</a>
     </div>
     <div class="row">
-      <a class="fancybox fancybox.iframe linksp"  href="<?=base_url('assets/docs/BP_Educacion_Indigena.pdf')?>" target="_blank"> 
+      <a class="navitem"  role="button" id="btn_buenas_practicas"> 
         2.- Buenas prácticas sobre educación indígena UNICEF</a>
     </div>
     <div class="row">
-        3.- <a class="fancybox fancybox.iframe linksp"  href="<?=base_url('assets/docs/buenas_practicas2.pdf')?>" target="_blank"> Programa Escuelas de Tiempo Completo
+        3.- <a class="navitem"  role="button" id="btn_programa_escuelas"> Programa Escuelas de Tiempo Completo
         </a>
     </div>
     <div class="row">4.- Practicas en el aula aprende jugando primaria</div>
@@ -24,5 +24,7 @@
       <a href="" ><button  id='mostar_detalle' class="btn btn-info">Registrar</button></a>
     </div>
   </div>
+  <div id="visor_generico2"></div>
+  <script src="<?= base_url();?>assets/js/index/index.js"></script>
     
 

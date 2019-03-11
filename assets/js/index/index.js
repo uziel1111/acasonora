@@ -14,7 +14,7 @@ var Utiles = {
 };
 
 $("#btn_index_guiaspadres").click(function(e){
-    var ruta = base_url+"Index/guiaparapadres";
+    var ruta = base_url+"Index/visorpdf";
     $.ajax({
       url: ruta,
       method: 'POST',
@@ -29,7 +29,7 @@ $("#btn_index_guiaspadres").click(function(e){
       Utiles.showPDF("modal_visor_pdf", "Resumen_696.pdf");
     })
     .fail(function(e) {
-      console.error("Error in guiaparapadres()"); console.table(e);
+      console.error("Error in visorpdf()"); console.table(e);
     })
     .always(function() {
       swal.close();
@@ -37,8 +37,9 @@ $("#btn_index_guiaspadres").click(function(e){
 });
   
 
-$("#btn_index_calendario").click(function(e){
-    var ruta = base_url+"Index/guiaparapadres";
+$("#btn_boton_prueba").click(function(e){
+  console.log("calendario");
+    var ruta = base_url+"Index/visorpdf";
     $.ajax({
       url: ruta,
       method: 'POST',
@@ -53,7 +54,7 @@ $("#btn_index_calendario").click(function(e){
       Utiles.showPDF("modal_visor_pdf", "CALENDARIO-2016-2017.pdf");
     })
     .fail(function(e) {
-      console.error("Error in guiaparapadres()"); console.table(e);
+      console.error("Error in visorpdf()"); console.table(e);
     })
     .always(function() {
       swal.close();
@@ -68,7 +69,7 @@ $("#btn_index_calendario").click(function(e){
 
   
   $("#btn_pdf_modelo_educ").click(function(e){
-    var ruta = base_url+"Index/guiaparapadres";
+    var ruta = base_url+"Index/visorpdf";
     $.ajax({
       url: ruta,
       method: 'POST',
@@ -83,10 +84,147 @@ $("#btn_index_calendario").click(function(e){
       Utiles.showPDF("modal_visor_pdf", "ModeloEducativoSonora.pdf");
     })
     .fail(function(e) {
-      console.error("Error in guiaparapadres()"); console.table(e);
+      console.error("Error in visorpdf()"); console.table(e);
     })
     .always(function() {
       swal.close();
     });
 });
-    
+
+$("#btn_reporte_aca").click(function(e){
+    var ruta = base_url+"Index/visorpdf";
+    $.ajax({
+      url: ruta,
+      method: 'POST',
+      data: { 'folder':1, 'file':1 },
+      beforeSend: function(xhr) {
+        Notification.loading("");
+      }
+    })
+    .done(function( data ) {
+      $("#visor_generico2").empty();
+      $("#visor_generico2").append(data.strView);
+      Utiles.showPDF("modal_visor_pdf", "PRIMARIA_26EPR0001CTM11_01_1617.pdf");
+    })
+    .fail(function(e) {
+      console.error("Error in visorpdf()"); console.table(e);
+    })
+    .always(function() {
+      swal.close();
+    });
+});
+
+$("#btn_buenas_practicas").click(function(e){
+    var ruta = base_url+"Index/visorpdf";
+    $.ajax({
+      url: ruta,
+      method: 'POST',
+      data: { 'folder':1, 'file':1 },
+      beforeSend: function(xhr) {
+        Notification.loading("");
+      }
+    })
+    .done(function( data ) {
+      $("#visor_generico2").empty();
+      $("#visor_generico2").append(data.strView);
+      Utiles.showPDF("modal_visor_pdf", "BP_Educacion_Indigena.pdf");
+    })
+    .fail(function(e) {
+      console.error("Error in visorpdf()"); console.table(e);
+    })
+    .always(function() {
+      swal.close();
+    });
+});
+  
+$("#btn_programa_escuelas").click(function(e){
+    var ruta = base_url+"Index/visorpdf";
+    $.ajax({
+      url: ruta,
+      method: 'POST',
+      data: { 'folder':1, 'file':1 },
+      beforeSend: function(xhr) {
+        Notification.loading("");
+      }
+    })
+    .done(function( data ) {
+      $("#visor_generico2").empty();
+      $("#visor_generico2").append(data.strView);
+      Utiles.showPDF("modal_visor_pdf", "buenas_practicas2.pdf");
+    })
+    .fail(function(e) {
+      console.error("Error in visorpdf()"); console.table(e);
+    })
+    .always(function() {
+      swal.close();
+    });
+});
+
+$("#btn_guia_preescolar").click(function(e){
+    var ruta = base_url+"Index/visorpdf";
+    $.ajax({
+      url: ruta,
+      method: 'POST',
+      data: { 'folder':1, 'file':1 },
+      beforeSend: function(xhr) {
+        Notification.loading("");
+      }
+    })
+    .done(function( data ) {
+      $("#visor_generico3").empty();
+      $("#visor_generico3").append(data.strView);
+      Utiles.showPDF("modal_visor_pdf", "GUIA_Preescolar_FaseIntensiva2016.pdf");
+    })
+    .fail(function(e) {
+      console.error("Error in visorpdf()"); console.table(e);
+    })
+    .always(function() {
+      swal.close();
+    });
+});
+
+$("#btn_guia_primaria").click(function(e){
+    var ruta = base_url+"Index/visorpdf";
+    $.ajax({
+      url: ruta,
+      method: 'POST',
+      data: { 'folder':1, 'file':1 },
+      beforeSend: function(xhr) {
+        Notification.loading("");
+      }
+    })
+    .done(function( data ) {
+      $("#visor_generico3").empty();
+      $("#visor_generico3").append(data.strView);
+      Utiles.showPDF("modal_visor_pdf", "GUIA_Primaria_FaseIntensiva2016.pdf");
+    })
+    .fail(function(e) {
+      console.error("Error in visorpdf()"); console.table(e);
+    })
+    .always(function() {
+      swal.close();
+    });
+});
+
+$("#btn_guia_secundaria").click(function(e){
+    var ruta = base_url+"Index/visorpdf";
+    $.ajax({
+      url: ruta,
+      method: 'POST',
+      data: { 'folder':1, 'file':1 },
+      beforeSend: function(xhr) {
+        Notification.loading("");
+      }
+    })
+    .done(function( data ) {
+      $("#visor_generico3").empty();
+      $("#visor_generico3").append(data.strView);
+      Utiles.showPDF("modal_visor_pdf", "GUIA_Secundaria_FaseIntensiva2016.pdf");
+    })
+    .fail(function(e) {
+      console.error("Error in visorpdf()"); console.table(e);
+    })
+    .always(function() {
+      swal.close();
+    });
+});

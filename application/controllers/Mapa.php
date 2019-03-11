@@ -161,13 +161,7 @@ class Mapa extends CI_Controller {
 	public function estadistica(){
 		$id_cct=$this->input->post('id_cct');
 		$data=[];
-		// echo $id_cct;
-		// die();
-		// $id_municipio = $this->input->post('id_municipio');
-		// $id_nivel = $this->input->post('id_nivel');
-		// $zona_escolar = $this->input->post('zona_escolar');
-		// $nombre_cct = $this->input->post('nombre_cct');
-		// $clave_cct = $this->input->post('clave_cct');
+
 		$data["result"] = $this->Escuela_model->getInfo($id_cct);
 		// echo "<pre>";
 		// print_r($data);

@@ -523,14 +523,46 @@ function grafica_permanencia2() {
 
 }
 
-$("#ver_detalle").click(function(e){
-	console.log("llegue a la funcion");
+// $("#ver_detalle").click("#table_escuelas tbody tr",function(e){
+//   	e.preventDefault();
+//   	var idescuela = $(this).data('idescuela');
+//   	console.log("id_cct"+idescuela);
+//   	var obj_grafica = new Grafica();
+//   		$.ajax({
+// 		    url:base_url+"mapa/estadistica",
+// 		    method:"POST",
+// 		    data:{'id_cct':$("#id_cct").val()},
+// 		    beforeSend: function(xhr) {
+
+// 		    },
+// 		    success:function(data){
+// 				$("#visor_estadistica").empty();
+//         		$("#visor_estadistica").append(data.str_view);
+//         		obj_grafica.TablaEstadistica();
+//         		obj_grafica.TablaIndicadores();
+//         		obj_grafica.TablaIndicadores1();
+//         		obj_grafica.TablaRiesgo();
+//         		obj_grafica.TablaRiesgo1();
+//         		grafica_permanencia();
+//         		grafica_permanencia1();
+//         		grafica_permanencia2();
+//         		$("#modal_resultado_estadistica").modal("show");
+// 		    },
+// 		    error: function(error){
+// 		      console.log(error);
+// 		    }
+// 	  	});
+
+// });
+
+$(document).on("click", "#table_escuelas tbody tr", function(e) {
+    var idescuela = $(this).data('idescuela');
+    console.log(idescuela);
 	var obj_grafica = new Grafica();
-  	e.preventDefault();
   		$.ajax({
 		    url:base_url+"mapa/estadistica",
 		    method:"POST",
-		    data:{'id_cct':$("#id_cct").val()},
+		    data:{'id_cct':idescuela},
 		    beforeSend: function(xhr) {
 
 		    },
@@ -538,7 +570,6 @@ $("#ver_detalle").click(function(e){
 				$("#visor_estadistica").empty();
         		$("#visor_estadistica").append(data.str_view);
         		obj_grafica.TablaEstadistica();
-        		// obj_grafica.TablaIndicadoresPermanencia();
         		obj_grafica.TablaIndicadores();
         		obj_grafica.TablaIndicadores1();
         		obj_grafica.TablaRiesgo();
@@ -546,7 +577,6 @@ $("#ver_detalle").click(function(e){
         		grafica_permanencia();
         		grafica_permanencia1();
         		grafica_permanencia2();
-        		
         		$("#modal_resultado_estadistica").modal("show");
 		    },
 		    error: function(error){

@@ -10,21 +10,23 @@
     </div>
     <div class="row">
         <div class='col-md-4'>
-          <a  data-fancybox="images" data-caption="My caption"  href="<?=base_url('assets/docs/GUIA_Preescolar_FaseIntensiva2016.pdf')?>">
+          <a  class="navitem"  role="button" id="btn_guia_preescolar">
           <img src="<?=base_url('assets/img/GUIA_Preescolar_FaseIntensiva2016.png')?>" width="300" height="400" alt='CALENDARIO-2016-2017'>
           </a>
         </div>
 
         <div class='col-md-4'>
-          <a  data-fancybox="images" data-caption="My caption"  href="<?=base_url('assets/docs/GUIA_Primaria_FaseIntensiva2016.pdf')?>">
+          <a class="navitem"  role="button" id="btn_guia_primaria">
           <img src="<?=base_url('assets/img/GUIA_Primaria_FaseIntensiva2016.png')?>" width="300" height="400" alt='CALENDARIO-2016-2017'>
           </a>
         </div>
 
         <div class='col-md-4'>
-          <a  data-fancybox="images" data-caption="My caption" href="<?=base_url('assets/docs/GUIA_Secundaria_FaseIntensiva2016.pdf')?>">
+          <a  class="navitem"  role="button" id="btn_guia_secundaria">
           <img src="<?=base_url('assets/img/GUIA_Secundaria_FaseIntensiva2016.png')?>" width="300" height="400" alt='CALENDARIO-2016-2017'>
           </a>
         </div>
     </div>
   </div>
+  <div id="visor_generico3"></div>
+  <script src="<?= base_url();?>assets/js/index/index.js"></script>
