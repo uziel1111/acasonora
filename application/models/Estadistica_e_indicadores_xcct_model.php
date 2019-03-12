@@ -82,9 +82,9 @@ class Estadistica_e_indicadores_xcct_model extends CI_Model
 
     $query3 = $this->db->get_compiled_select();
     //
-    $this->db->query($query1 . ' UNION ALL ' . $query2. ' UNION ALL ' . $query3)->result_array();
-    $str = $this->db->last_query();
-    echo $str; die();
+    // $this->db->query($query1 . ' UNION ALL ' . $query2. ' UNION ALL ' . $query3)->result_array();
+    // $str = $this->db->last_query();
+    // echo $str; die();
 
 
     return $this->db->query($query1 . ' UNION ALL ' . $query2. ' UNION ALL ' . $query3)->result_array();

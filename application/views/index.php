@@ -24,7 +24,7 @@
         <p class="card-text text-justify">Conoce sobre programas educativos lo cuales permiten organizar y detallar los procesos pedagógicos.</p>
       </div>
       <ul class="list-group list-group-flush">
-    	  <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-genderless text-muted"></i> Apoyos a escuelas</a>
+    	  <a href="<?= base_url("index.php/Index/programas_apoyo"); ?>" class="list-group-item list-group-item-action"><i class="fas fa-genderless text-muted"></i> Apoyos a escuelas</a>
       </ul>
     </div>	
     <div class="card card-index shadow mb-4">

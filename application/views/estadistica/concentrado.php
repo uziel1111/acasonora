@@ -58,9 +58,9 @@
                               <td style="width: 5%"><i class="fa fa-female"></i></td>
                               <td style="width: 20%">60,000</td>
                               <td style="width: 65%">
-                              <div class="progress progress-xs">
-                              <div class="progress-bar progress-bar-danger" style="width: 60%"></div>
-                              </div>
+                                <div class="progress">
+                                  <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
                               </td>
                               <td style="width: 10%"><span class="badge bg-red">60%</span></td>
                             </tr>
@@ -68,8 +68,8 @@
                               <td><i class="fa fa-male"></i></td>
                               <td>40,000</td>
                               <td>
-                                <div class="progress progress-xs">
-                                <div class="progress-bar progress-bar-yellow" style="width: 40%"></div>
+                                <div class="progress">
+                                  <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                               </td>
                               <td><span class="badge bg-yellow">40%</span></td>
@@ -97,8 +97,8 @@
                               <td style="width: 5%"><i class="fa fa-female"></i></td>
                               <td style="width: 20%">60,000</td>
                               <td style="width: 65%">
-                                <div class="progress progress-xs">
-                                  <div class="progress-bar progress-bar-danger" style="width: 60%"></div>
+                                <div class="progress">
+                                  <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                               </td>
                               <td style="width: 10%"><span class="badge bg-red">60%</span></td>
@@ -107,8 +107,8 @@
                               <td><i class="fa fa-male"></i></td>
                               <td>40,000</td>
                               <td>
-                                <div class="progress progress-xs">
-                                  <div class="progress-bar progress-bar-yellow" style="width: 40%"></div>
+                                <div class="progress">
+                                  <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                               </td>
                               <td><span class="badge bg-yellow">40%</span></td>
@@ -136,8 +136,8 @@
                               <td style="width: 5%"><i class="fa fa-female"></i></td>
                               <td style="width: 20%">60,000</td>
                               <td style="width: 65%">
-                                <div class="progress progress-xs">
-                                  <div class="progress-bar progress-bar-danger" style="width: 60%"></div>
+                                <div class="progress">
+                                  <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                               </td>
                               <td style="width: 10%"><span class="badge bg-red">60%</span></td>
@@ -146,8 +146,8 @@
                               <td><i class="fa fa-male"></i></td>
                               <td>40,000</td>
                               <td>
-                                <div class="progress progress-xs">
-                                  <div class="progress-bar progress-bar-yellow" style="width: 40%"></div>
+                                <div class="progress">
+                                  <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                               </td>
                               <td><span class="badge bg-yellow">40%</span></td>
@@ -175,8 +175,8 @@
                               <td style="width: 5%"><i class="fa fa-female"></i></td>
                               <td style="width: 20%">60,000</td>
                               <td style="width: 65%">
-                                <div class="progress progress-xs">
-                                  <div class="progress-bar progress-bar-danger" style="width: 60%"></div>
+                                <div class="progress">
+                                  <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                               </td>
                               <td style="width: 10%"><span class="badge bg-red">60%</span></td>
@@ -185,8 +185,8 @@
                               <td><i class="fa fa-male"></i></td>
                               <td>40,000</td>
                               <td>
-                                <div class="progress progress-xs">
-                                  <div class="progress-bar progress-bar-yellow" style="width: 40%"></div>
+                                <div class="progress">
+                                  <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                               </td>
                               <td><span class="badge bg-yellow">40%</span></td>
@@ -212,7 +212,7 @@
                               <span class="info-box-text">Escuelas</span>
                               <span class="info-box-number">41,410</span>
                               <div class="progress">
-                                <div class="progress-bar" style="width: 70%"></div>
+                                <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
                               </div>
                               <span class="progress-description">
                                 70% del Presupuesto
@@ -227,7 +227,7 @@
                               <span class="info-box-text">Edificios</span>
                               <span class="info-box-number">41,410</span>
                               <div class="progress">
-                                <div class="progress-bar" style="width: 70%"></div>
+                                <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
                               </div>
                               <span class="progress-description">
                                 70% del Presupuesto
@@ -242,7 +242,7 @@
                               <span class="info-box-text">Aulas</span>
                               <span class="info-box-number">41,410</span>
                               <div class="progress">
-                                <div class="progress-bar" style="width: 70%"></div>
+                                <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
                               </div>
                               <span class="progress-description">
                                 70% del Presupuesto
@@ -258,7 +258,7 @@
                                 <span class="info-box-text">Grupos</span>
                                 <span class="info-box-number">41,410</span>
                                 <div class="progress">
-                                  <div class="progress-bar" style="width: 70%"></div>
+                                  <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                                 <span class="progress-description">
                                   70% del Presupuesto
@@ -311,8 +311,8 @@
                               <td style="width: 5%"><i class="fa fa-female"></i></td>
                               <td style="width: 20%">60,000</td>
                               <td style="width: 65%">
-                                <div class="progress progress-xs">
-                                  <div class="progress-bar progress-bar-danger" style="width: 60%"></div>
+                                <div class="progress">
+                                  <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                               </td>
                               <td style="width: 10%"><span class="badge bg-red">60%</span></td>
@@ -321,8 +321,8 @@
                               <td><i class="fa fa-male"></i></td>
                               <td>40,000</td>
                               <td>
-                                <div class="progress progress-xs">
-                                  <div class="progress-bar progress-bar-yellow" style="width: 40%"></div>
+                                <div class="progress">
+                                  <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                               </td>
                               <td><span class="badge bg-yellow">40%</span></td>
@@ -350,8 +350,8 @@
                               <td style="width: 5%"><i class="fa fa-female"></i></td>
                               <td style="width: 20%">60,000</td>
                               <td style="width: 65%">
-                                <div class="progress progress-xs">
-                                  <div class="progress-bar progress-bar-danger" style="width: 60%"></div>
+                                <div class="progress">
+                                  <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                               </td>
                               <td style="width: 10%"><span class="badge bg-red">60%</span></td>
@@ -360,8 +360,8 @@
                               <td><i class="fa fa-male"></i></td>
                               <td>40,000</td>
                               <td>
-                                <div class="progress progress-xs">
-                                  <div class="progress-bar progress-bar-yellow" style="width: 40%"></div>
+                                <div class="progress">
+                                  <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                               </td>
                               <td><span class="badge bg-yellow">40%</span></td>
@@ -389,8 +389,8 @@
                               <td style="width: 5%"><i class="fa fa-female"></i></td>
                               <td style="width: 20%">60,000</td>
                               <td style="width: 65%">
-                                <div class="progress progress-xs">
-                                  <div class="progress-bar progress-bar-danger" style="width: 60%"></div>
+                                <div class="progress">
+                                  <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                               </td>
                               <td style="width: 10%"><span class="badge bg-red">60%</span></td>
@@ -399,8 +399,8 @@
                               <td><i class="fa fa-male"></i></td>
                               <td>40,000</td>
                               <td>
-                                <div class="progress progress-xs">
-                                  <div class="progress-bar progress-bar-yellow" style="width: 40%"></div>
+                                <div class="progress">
+                                  <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                               </td>
                               <td><span class="badge bg-yellow">40%</span></td>
@@ -427,8 +427,8 @@
                                 <td style="width: 5%"><i class="fa fa-female"></i></td>
                                 <td style="width: 20%">60,000</td>
                                 <td style="width: 65%">
-                                  <div class="progress progress-xs">
-                                    <div class="progress-bar progress-bar-danger" style="width: 60%"></div>
+                                  <div class="progress">
+                                    <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                                   </div>
                                 </td>
                                 <td style="width: 10%"><span class="badge bg-red">60%</span></td>
@@ -437,8 +437,8 @@
                                 <td><i class="fa fa-male"></i></td>
                                 <td>40,000</td>
                                 <td>
-                                  <div class="progress progress-xs">
-                                    <div class="progress-bar progress-bar-yellow" style="width: 40%"></div>
+                                  <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
                                   </div>
                                 </td>
                                 <td><span class="badge bg-yellow">40%</span></td>
@@ -464,7 +464,7 @@
                               <span class="info-box-text">Escuelas</span>
                               <span class="info-box-number">41,410</span>
                               <div class="progress">
-                                <div class="progress-bar" style="width: 70%"></div>
+                                <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
                               </div>
                                 <span class="progress-description">
                                   70% del Presupuesto
@@ -479,7 +479,7 @@
                               <span class="info-box-text">Edificios</span>
                               <span class="info-box-number">41,410</span>
                               <div class="progress">
-                                <div class="progress-bar" style="width: 70%"></div>
+                                <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
                               </div>
                               <span class="progress-description">
                                 70% del Presupuesto
@@ -495,7 +495,7 @@
                                 <span class="info-box-text">Aulas</span>
                                 <span class="info-box-number">41,410</span>
                                 <div class="progress">
-                                  <div class="progress-bar" style="width: 70%"></div>
+                                  <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                                 <span class="progress-description">
                                   70% del Presupuesto
@@ -511,7 +511,7 @@
                                 <span class="info-box-text">Grupos</span>
                                 <span class="info-box-number">41,410</span>
                                 <div class="progress">
-                                  <div class="progress-bar" style="width: 70%"></div>
+                                  <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                                 <span class="progress-description">
                                   70% del Presupuesto
@@ -564,8 +564,8 @@
                               <td style="width: 5%"><i class="fa fa-female"></i></td>
                               <td style="width: 20%">60,000</td>
                               <td style="width: 65%">
-                                <div class="progress progress-xs">
-                                  <div class="progress-bar progress-bar-danger" style="width: 60%"></div>
+                                <div class="progress">
+                                  <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                               </td>
                               <td style="width: 10%"><span class="badge bg-red">60%</span></td>
@@ -574,8 +574,8 @@
                               <td><i class="fa fa-male"></i></td>
                               <td>40,000</td>
                               <td>
-                                <div class="progress progress-xs">
-                                  <div class="progress-bar progress-bar-yellow" style="width: 40%"></div>
+                                <div class="progress">
+                                  <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                               </td>
                               <td><span class="badge bg-yellow">40%</span></td>
@@ -597,7 +597,7 @@
                                                   <td style="width: 5%">1°</td>
                                                   <td style="width: 20%">10,000</td>
                                                   <td style="width: 65%">
-                                                    <div class="progress progress-xs">
+                                                    <div class="progress">
                                                       <div class="progress-bar progress-bar-danger" style="width: 55%"></div>
                                                     </div>
                                                   </td>
@@ -607,7 +607,7 @@
                                                   <td>2°</td>
                                                   <td>10,000</td>
                                                   <td>
-                                                    <div class="progress progress-xs">
+                                                    <div class="progress">
                                                       <div class="progress-bar progress-bar-yellow" style="width: 70%"></div>
                                                     </div>
                                                   </td>
@@ -652,8 +652,8 @@
                               <td style="width: 5%"><i class="fa fa-female"></i></td>
                               <td style="width: 20%">60,000</td>
                               <td style="width: 65%">
-                                <div class="progress progress-xs">
-                                  <div class="progress-bar progress-bar-danger" style="width: 60%"></div>
+                                <div class="progress">
+                                  <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                               </td>
                               <td style="width: 10%"><span class="badge bg-red">60%</span></td>
@@ -662,8 +662,8 @@
                               <td><i class="fa fa-male"></i></td>
                               <td>40,000</td>
                               <td>
-                                <div class="progress progress-xs">
-                                  <div class="progress-bar progress-bar-yellow" style="width: 40%"></div>
+                                <div class="progress">
+                                  <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                               </td>
                               <td><span class="badge bg-yellow">40%</span></td>
@@ -690,8 +690,8 @@
                             <td style="width: 5%"><i class="fa fa-female"></i></td>
                             <td style="width: 20%">60,000</td>
                             <td style="width: 65%">
-                              <div class="progress progress-xs">
-                                <div class="progress-bar progress-bar-danger" style="width: 60%"></div>
+                              <div class="progress">
+                                <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                               </div>
                             </td>
                             <td style="width: 10%"><span class="badge bg-red">60%</span></td>
@@ -700,8 +700,8 @@
                               <td><i class="fa fa-male"></i></td>
                               <td>40,000</td>
                               <td>
-                                <div class="progress progress-xs">
-                                  <div class="progress-bar progress-bar-yellow" style="width: 40%"></div>
+                                <div class="progress">
+                                  <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                               </td>
                               <td><span class="badge bg-yellow">40%</span></td>
@@ -728,8 +728,8 @@
                               <td style="width: 5%"><i class="fa fa-female"></i></td>
                               <td style="width: 20%">60,000</td>
                               <td style="width: 65%">
-                                <div class="progress progress-xs">
-                                  <div class="progress-bar progress-bar-danger" style="width: 60%"></div>
+                                <div class="progress">
+                                  <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                               </td>
                               <td style="width: 10%"><span class="badge bg-red">60%</span></td>
@@ -738,8 +738,8 @@
                               <td><i class="fa fa-male"></i></td>
                                 <td>40,000</td>
                               <td>
-                                <div class="progress progress-xs">
-                                  <div class="progress-bar progress-bar-yellow" style="width: 40%"></div>
+                                <div class="progress">
+                                  <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                               </td>
                               <td><span class="badge bg-yellow">40%</span></td>
@@ -764,7 +764,7 @@
                               <span class="info-box-text">Escuelas</span>
                               <span class="info-box-number">41,410</span>
                               <div class="progress">
-                                <div class="progress-bar" style="width: 70%"></div>
+                                <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
                               </div>
                               <span class="progress-description">
                                 70% del Presupuesto
@@ -779,7 +779,7 @@
                               <span class="info-box-text">Edificios</span>
                               <span class="info-box-number">41,410</span>
                               <div class="progress">
-                                <div class="progress-bar" style="width: 70%"></div>
+                                <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
                               </div>
                               <span class="progress-description">
                                 70% del Presupuesto
@@ -794,7 +794,7 @@
                               <span class="info-box-text">Aulas</span>
                               <span class="info-box-number">41,410</span>
                               <div class="progress">
-                                <div class="progress-bar" style="width: 70%"></div>
+                                <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
                               </div>
                               <span class="progress-description">
                                 70% del Presupuesto
@@ -809,7 +809,7 @@
                               <span class="info-box-text">Grupos</span>
                               <span class="info-box-number">41,410</span>
                               <div class="progress">
-                                <div class="progress-bar" style="width: 70%"></div>
+                                <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
                               </div>
                               <span class="progress-description">
                                 70% del Presupuesto
@@ -862,8 +862,8 @@
                               <td style="width: 5%"><i class="fa fa-female"></i></td>
                               <td style="width: 20%">60,000</td>
                               <td style="width: 65%">
-                                <div class="progress progress-xs">
-                                  <div class="progress-bar progress-bar-danger" style="width: 60%"></div>
+                                <div class="progress">
+                                  <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                               </td>
                               <td style="width: 10%"><span class="badge bg-red">60%</span></td>
@@ -872,8 +872,8 @@
                               <td><i class="fa fa-male"></i></td>
                               <td>40,000</td>
                               <td>
-                                <div class="progress progress-xs">
-                                  <div class="progress-bar progress-bar-yellow" style="width: 40%"></div>
+                                <div class="progress">
+                                  <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                               </td>
                               <td><span class="badge bg-yellow">40%</span></td>
@@ -895,7 +895,7 @@
                                         <td style="width: 5%">1°</td>
                                         <td style="width: 20%">10,000</td>
                                         <td style="width: 65%">
-                                          <div class="progress progress-xs">
+                                          <div class="progress">
                                             <div class="progress-bar progress-bar-danger" style="width: 55%"></div>
                                           </div>
                                         </td>
@@ -905,7 +905,7 @@
                                         <td>2°</td>
                                         <td>10,000</td>
                                         <td>
-                                          <div class="progress progress-xs">
+                                          <div class="progress">
                                             <div class="progress-bar progress-bar-yellow" style="width: 70%"></div>
                                           </div>
                                         </td>
@@ -980,8 +980,8 @@
                               <td style="width: 5%"><i class="fa fa-female"></i></td>
                               <td style="width: 20%">60,000</td>
                               <td style="width: 65%">
-                                <div class="progress progress-xs">
-                                  <div class="progress-bar progress-bar-danger" style="width: 60%"></div>
+                                <div class="progress">
+                                  <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                               </td>
                               <td style="width: 10%"><span class="badge bg-red">60%</span></td>
@@ -990,8 +990,8 @@
                               <td><i class="fa fa-male"></i></td>
                               <td>40,000</td>
                               <td>
-                                <div class="progress progress-xs">
-                                  <div class="progress-bar progress-bar-yellow" style="width: 40%"></div>
+                                <div class="progress">
+                                  <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                               </td>
                               <td><span class="badge bg-yellow">40%</span></td>
@@ -1018,8 +1018,8 @@
                               <td style="width: 5%"><i class="fa fa-female"></i></td>
                               <td style="width: 20%">60,000</td>
                               <td style="width: 65%">
-                                <div class="progress progress-xs">
-                                  <div class="progress-bar progress-bar-danger" style="width: 60%"></div>
+                                <div class="progress">
+                                  <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                               </td>
                               <td style="width: 10%"><span class="badge bg-red">60%</span></td>
@@ -1028,8 +1028,8 @@
                               <td><i class="fa fa-male"></i></td>
                               <td>40,000</td>
                               <td>
-                                <div class="progress progress-xs">
-                                  <div class="progress-bar progress-bar-yellow" style="width: 40%"></div>
+                                <div class="progress">
+                                  <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                               </td>
                               <td><span class="badge bg-yellow">40%</span></td>
@@ -1056,8 +1056,8 @@
                               <td style="width: 5%"><i class="fa fa-female"></i></td>
                               <td style="width: 20%">60,000</td>
                               <td style="width: 65%">
-                                <div class="progress progress-xs">
-                                  <div class="progress-bar progress-bar-danger" style="width: 60%"></div>
+                                <div class="progress">
+                                  <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                               </td>
                               <td style="width: 10%"><span class="badge bg-red">60%</span></td>
@@ -1066,8 +1066,8 @@
                               <td><i class="fa fa-male"></i></td>
                               <td>40,000</td>
                               <td>
-                                <div class="progress progress-xs">
-                                  <div class="progress-bar progress-bar-yellow" style="width: 40%"></div>
+                                <div class="progress">
+                                  <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                               </td>
                                <td><span class="badge bg-yellow">40%</span></td>
@@ -1092,7 +1092,7 @@
                               <span class="info-box-text">Escuelas</span>
                               <span class="info-box-number">41,410</span>
                               <div class="progress">
-                                 <div class="progress-bar" style="width: 70%"></div>
+                                 <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
                               </div>
                               <span class="progress-description">
                                   70% del Presupuesto
@@ -1107,7 +1107,7 @@
                               <span class="info-box-text">Edificios</span>
                               <span class="info-box-number">41,410</span>
                               <div class="progress">
-                                <div class="progress-bar" style="width: 70%"></div>
+                                <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                                 <span class="progress-description">
                                   70% del Presupuesto
@@ -1122,7 +1122,7 @@
                               <span class="info-box-text">Aulas</span>
                               <span class="info-box-number">41,410</span>
                               <div class="progress">
-                                <div class="progress-bar" style="width: 70%"></div>
+                                <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
                               </div>
                               <span class="progress-description">
                                 70% del Presupuesto
@@ -1137,7 +1137,7 @@
                                 <span class="info-box-text">Grupos</span>
                                 <span class="info-box-number">41,410</span>
                                 <div class="progress">
-                                  <div class="progress-bar" style="width: 70%"></div>
+                                  <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                                 <span class="progress-description">
                                   70% del Presupuesto
@@ -1190,8 +1190,8 @@
                               <td style="width: 5%"><i class="fa fa-female"></i></td>
                               <td style="width: 20%">60,000</td>
                               <td style="width: 65%">
-                                <div class="progress progress-xs">
-                                  <div class="progress-bar progress-bar-danger" style="width: 60%"></div>
+                                <div class="progress">
+                                  <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                               </td>
                               <td style="width: 10%"><span class="badge bg-red">60%</span></td>
@@ -1200,8 +1200,8 @@
                               <td><i class="fa fa-male"></i></td>
                               <td>40,000</td>
                               <td>
-                                <div class="progress progress-xs">
-                                  <div class="progress-bar progress-bar-yellow" style="width: 40%"></div>
+                                <div class="progress">
+                                  <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                               </td>
                               <td><span class="badge bg-yellow">40%</span></td>
@@ -1223,7 +1223,7 @@
                                         <td style="width: 5%">1°</td>
                                         <td style="width: 20%">10,000</td>
                                         <td style="width: 65%">
-                                          <div class="progress progress-xs">
+                                          <div class="progress">
                                             <div class="progress-bar progress-bar-danger" style="width: 55%"></div>
                                           </div>
                                         </td>
@@ -1233,7 +1233,7 @@
                                         <td>2°</td>
                                         <td>10,000</td>
                                         <td>
-                                          <div class="progress progress-xs">
+                                          <div class="progress">
                                             <div class="progress-bar progress-bar-yellow" style="width: 70%"></div>
                                           </div>
                                         </td>
@@ -1278,8 +1278,8 @@
                               <td style="width: 5%"><i class="fa fa-female"></i></td>
                               <td style="width: 20%">60,000</td>
                               <td style="width: 65%">
-                                <div class="progress progress-xs">
-                                  <div class="progress-bar progress-bar-danger" style="width: 60%"></div>
+                                <div class="progress">
+                                  <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                               </td>
                               <td style="width: 10%"><span class="badge bg-red">60%</span></td>
@@ -1288,8 +1288,8 @@
                               <td><i class="fa fa-male"></i></td>
                               <td>40,000</td>
                               <td>
-                                <div class="progress progress-xs">
-                                  <div class="progress-bar progress-bar-yellow" style="width: 40%"></div>
+                                <div class="progress">
+                                  <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                               </td>
                               <td><span class="badge bg-yellow">40%</span></td>
@@ -1316,8 +1316,8 @@
                               <td style="width: 5%"><i class="fa fa-female"></i></td>
                               <td style="width: 20%">60,000</td>
                               <td style="width: 65%">
-                                <div class="progress progress-xs">
-                                  <div class="progress-bar progress-bar-danger" style="width: 60%"></div>
+                                <div class="progress">
+                                  <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                               </td>
                               <td style="width: 10%"><span class="badge bg-red">60%</span></td>
@@ -1326,8 +1326,8 @@
                               <td><i class="fa fa-male"></i></td>
                               <td>40,000</td>
                               <td>
-                                <div class="progress progress-xs">
-                                  <div class="progress-bar progress-bar-yellow" style="width: 40%"></div>
+                                <div class="progress">
+                                  <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                               </td>
                               <td><span class="badge bg-yellow">40%</span></td>
@@ -1354,8 +1354,8 @@
                               <td style="width: 5%"><i class="fa fa-female"></i></td>
                               <td style="width: 20%">60,000</td>
                               <td style="width: 65%">
-                                <div class="progress progress-xs">
-                                  <div class="progress-bar progress-bar-danger" style="width: 60%"></div>
+                                <div class="progress">
+                                  <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                               </td>
                               <td style="width: 10%"><span class="badge bg-red">60%</span></td>
@@ -1364,8 +1364,8 @@
                               <td><i class="fa fa-male"></i></td>
                               <td>40,000</td>
                               <td>
-                                <div class="progress progress-xs">
-                                  <div class="progress-bar progress-bar-yellow" style="width: 40%"></div>
+                                <div class="progress">
+                                  <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                               </td>
                               <td><span class="badge bg-yellow">40%</span></td>
@@ -1390,7 +1390,7 @@
                               <span class="info-box-text">Escuelas</span>
                               <span class="info-box-number">41,410</span>
                               <div class="progress">
-                                <div class="progress-bar" style="width: 70%"></div>
+                                <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
                               </div>
                               <span class="progress-description">
                                 70% del Presupuesto
@@ -1405,7 +1405,7 @@
                               <span class="info-box-text">Edificios</span>
                               <span class="info-box-number">41,410</span>
                               <div class="progress">
-                                <div class="progress-bar" style="width: 70%"></div>
+                                <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
                               </div>
                               <span class="progress-description">
                                 70% del Presupuesto
@@ -1420,7 +1420,7 @@
                               <span class="info-box-text">Aulas</span>
                               <span class="info-box-number">41,410</span>
                               <div class="progress">
-                                <div class="progress-bar" style="width: 70%"></div>
+                                <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
                               </div>
                               <span class="progress-description">
                                 70% del Presupuesto
@@ -1435,7 +1435,7 @@
                               <span class="info-box-text">Grupos</span>
                               <span class="info-box-number">41,410</span>
                               <div class="progress">
-                                <div class="progress-bar" style="width: 70%"></div>
+                                <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
                               </div>
                               <span class="progress-description">
                                 70% del Presupuesto
@@ -1488,8 +1488,8 @@
                               <td style="width: 5%"><i class="fa fa-female"></i></td>
                               <td style="width: 20%">60,000</td>
                               <td style="width: 65%">
-                                <div class="progress progress-xs">
-                                  <div class="progress-bar progress-bar-danger" style="width: 60%"></div>
+                                <div class="progress">
+                                  <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                               </td>
                               <td style="width: 10%"><span class="badge bg-red">60%</span></td>
@@ -1498,8 +1498,8 @@
                               <td><i class="fa fa-male"></i></td>
                               <td>40,000</td>
                               <td>
-                                <div class="progress progress-xs">
-                                  <div class="progress-bar progress-bar-yellow" style="width: 40%"></div>
+                                <div class="progress">
+                                  <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                               </td>
                               <td><span class="badge bg-yellow">40%</span></td>
@@ -1521,7 +1521,7 @@
                                       <td style="width: 5%">1°</td>
                                       <td style="width: 20%">10,000</td>
                                       <td style="width: 65%">
-                                        <div class="progress progress-xs">
+                                        <div class="progress">
                                           <div class="progress-bar progress-bar-danger" style="width: 55%"></div>
                                         </div>
                                       </td>
@@ -1531,7 +1531,7 @@
                                       <td>2°</td>
                                       <td>10,000</td>
                                       <td>
-                                        <div class="progress progress-xs">
+                                        <div class="progress">
                                           <div class="progress-bar progress-bar-yellow" style="width: 70%"></div>
                                         </div>
                                       </td>
@@ -1576,8 +1576,8 @@
                               <td style="width: 5%"><i class="fa fa-female"></i></td>
                               <td style="width: 20%">60,000</td>
                               <td style="width: 65%">
-                                <div class="progress progress-xs">
-                                  <div class="progress-bar progress-bar-danger" style="width: 60%"></div>
+                                <div class="progress">
+                                  <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                               </td>
                               <td style="width: 10%"><span class="badge bg-red">60%</span></td>
@@ -1586,8 +1586,8 @@
                               <td><i class="fa fa-male"></i></td>
                               <td>40,000</td>
                               <td>
-                                <div class="progress progress-xs">
-                                  <div class="progress-bar progress-bar-yellow" style="width: 40%"></div>
+                                <div class="progress">
+                                  <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                               </td>
                               <td><span class="badge bg-yellow">40%</span></td>
@@ -1614,8 +1614,8 @@
                               <td style="width: 5%"><i class="fa fa-female"></i></td>
                               <td style="width: 20%">60,000</td>
                               <td style="width: 65%">
-                                <div class="progress progress-xs">
-                                  <div class="progress-bar progress-bar-danger" style="width: 60%"></div>
+                                <div class="progress">
+                                  <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                               </td>
                               <td style="width: 10%"><span class="badge bg-red">60%</span></td>
@@ -1624,8 +1624,8 @@
                               <td><i class="fa fa-male"></i></td>
                               <td>40,000</td>
                               <td>
-                                <div class="progress progress-xs">
-                                  <div class="progress-bar progress-bar-yellow" style="width: 40%"></div>
+                                <div class="progress">
+                                  <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                               </td>
                               <td><span class="badge bg-yellow">40%</span></td>
@@ -1652,8 +1652,8 @@
                               <td style="width: 5%"><i class="fa fa-female"></i></td>
                               <td style="width: 20%">60,000</td>
                               <td style="width: 65%">
-                                <div class="progress progress-xs">
-                                  <div class="progress-bar progress-bar-danger" style="width: 60%"></div>
+                                <div class="progress">
+                                  <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                               </td>
                               <td style="width: 10%"><span class="badge bg-red">60%</span></td>
@@ -1662,8 +1662,8 @@
                               <td><i class="fa fa-male"></i></td>
                               <td>40,000</td>
                               <td>
-                                <div class="progress progress-xs">
-                                  <div class="progress-bar progress-bar-yellow" style="width: 40%"></div>
+                                <div class="progress">
+                                  <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                               </td>
                               <td><span class="badge bg-yellow">40%</span></td>
@@ -1688,7 +1688,7 @@
                               <span class="info-box-text">Escuelas</span>
                               <span class="info-box-number">41,410</span>
                               <div class="progress">
-                                <div class="progress-bar" style="width: 70%"></div>
+                                <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
                               </div>
                               <span class="progress-description">
                                 70% del Presupuesto
@@ -1703,7 +1703,7 @@
                               <span class="info-box-text">Edificios</span>
                               <span class="info-box-number">41,410</span>
                               <div class="progress">
-                                <div class="progress-bar" style="width: 70%"></div>
+                                <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
                               </div>
                               <span class="progress-description">
                                 70% del Presupuesto
@@ -1718,7 +1718,7 @@
                               <span class="info-box-text">Aulas</span>
                               <span class="info-box-number">41,410</span>
                               <div class="progress">
-                                <div class="progress-bar" style="width: 70%"></div>
+                                <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
                               </div>
                               <span class="progress-description">
                                 70% del Presupuesto
@@ -1733,7 +1733,7 @@
                               <span class="info-box-text">Grupos</span>
                               <span class="info-box-number">41,410</span>
                               <div class="progress">
-                                <div class="progress-bar" style="width: 70%"></div>
+                                <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
                               </div>
                               <span class="progress-description">
                                 70% del Presupuesto
@@ -1786,8 +1786,8 @@
                               <td style="width: 5%"><i class="fa fa-female"></i></td>
                               <td style="width: 20%">60,000</td>
                               <td style="width: 65%">
-                                <div class="progress progress-xs">
-                                  <div class="progress-bar progress-bar-danger" style="width: 60%"></div>
+                                <div class="progress">
+                                  <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                               </td>
                               <td style="width: 10%"><span class="badge bg-red">60%</span></td>
@@ -1796,8 +1796,8 @@
                               <td><i class="fa fa-male"></i></td>
                               <td>40,000</td>
                               <td>
-                                <div class="progress progress-xs">
-                                  <div class="progress-bar progress-bar-yellow" style="width: 40%"></div>
+                                <div class="progress">
+                                  <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                               </td>
                               <td><span class="badge bg-yellow">40%</span></td>
@@ -1824,8 +1824,8 @@
                               <td style="width: 5%"><i class="fa fa-female"></i></td>
                               <td style="width: 20%">60,000</td>
                               <td style="width: 65%">
-                                <div class="progress progress-xs">
-                                  <div class="progress-bar progress-bar-danger" style="width: 60%"></div>
+                                <div class="progress">
+                                  <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                               </td>
                               <td style="width: 10%"><span class="badge bg-red">60%</span></td>
@@ -1834,8 +1834,8 @@
                               <td><i class="fa fa-male"></i></td>
                               <td>40,000</td>
                               <td>
-                                <div class="progress progress-xs">
-                                  <div class="progress-bar progress-bar-yellow" style="width: 40%"></div>
+                                <div class="progress">
+                                  <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                               </td>
                               <td><span class="badge bg-yellow">40%</span></td>
@@ -1862,8 +1862,8 @@
                               <td style="width: 5%"><i class="fa fa-female"></i></td>
                               <td style="width: 20%">60,000</td>
                               <td style="width: 65%">
-                                <div class="progress progress-xs">
-                                  <div class="progress-bar progress-bar-danger" style="width: 60%"></div>
+                                <div class="progress">
+                                  <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                               </td>
                               <td style="width: 10%"><span class="badge bg-red">60%</span></td>
@@ -1872,8 +1872,8 @@
                               <td><i class="fa fa-male"></i></td>
                               <td>40,000</td>
                               <td>
-                                <div class="progress progress-xs">
-                                  <div class="progress-bar progress-bar-yellow" style="width: 40%"></div>
+                                <div class="progress">
+                                  <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                               </td>
                               <td><span class="badge bg-yellow">40%</span></td>
@@ -1900,8 +1900,8 @@
                               <td style="width: 5%"><i class="fa fa-female"></i></td>
                               <td style="width: 20%">60,000</td>
                               <td style="width: 65%">
-                                <div class="progress progress-xs">
-                                  <div class="progress-bar progress-bar-danger" style="width: 60%"></div>
+                                <div class="progress">
+                                  <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                               </td>
                               <td style="width: 10%"><span class="badge bg-red">60%</span></td>
@@ -1910,8 +1910,8 @@
                               <td><i class="fa fa-male"></i></td>
                               <td>40,000</td>
                               <td>
-                                <div class="progress progress-xs">
-                                  <div class="progress-bar progress-bar-yellow" style="width: 40%"></div>
+                                <div class="progress">
+                                  <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                               </td>
                               <td><span class="badge bg-yellow">40%</span></td>
@@ -1936,7 +1936,7 @@
                               <span class="info-box-text">Escuelas</span>
                               <span class="info-box-number">41,410</span>
                               <div class="progress">
-                                <div class="progress-bar" style="width: 70%"></div>
+                                <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
                               </div>
                               <span class="progress-description">
                                 70% del Presupuesto
@@ -1951,7 +1951,7 @@
                               <span class="info-box-text">Edificios</span>
                               <span class="info-box-number">41,410</span>
                               <div class="progress">
-                                <div class="progress-bar" style="width: 70%"></div>
+                                <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
                               </div>
                               <span class="progress-description">
                                 70% del Presupuesto
@@ -1966,7 +1966,7 @@
                               <span class="info-box-text">Aulas</span>
                               <span class="info-box-number">41,410</span>
                               <div class="progress">
-                                <div class="progress-bar" style="width: 70%"></div>
+                                <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
                               </div>
                               <span class="progress-description">
                                 70% del Presupuesto
@@ -1981,7 +1981,7 @@
                               <span class="info-box-text">Grupos</span>
                               <span class="info-box-number">41,410</span>
                               <div class="progress">
-                                <div class="progress-bar" style="width: 70%"></div>
+                                <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
                               </div>
                               <span class="progress-description">
                               70% del Presupuesto

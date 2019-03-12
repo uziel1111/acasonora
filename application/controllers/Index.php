@@ -85,6 +85,15 @@ class Index extends CI_Controller
         Utilerias::pagina_basica($this,"mapa/catalogo_escolar", $data);
     }
 
+    public function programas_apoyo()
+    {
+       
+        Utilerias::pagina_basica($this,"programa_apoyos/prog_apoyo", array());
+    }
+
+
+
+
 }
 
 
