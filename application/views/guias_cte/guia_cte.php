@@ -1,32 +1,71 @@
-<h2 align="center">Portal de Información y Gestión Educativa</h2>
-<h2 align="center">Guías CTE 2016-2017</h2>   
-<h1 align="center">FASE INTENSIVA 2016-2017</h1>
-<br>
-  <div class="container">
-    <div class='row'>
-      <div class='col-md-4'> GUÍA Preescolar Fase Intensiva 2016</div>
-      <div class='col-md-4'> GUÍA Primaria Fase Intensiva 2016</div>
-      <div class='col-md-4'> GUÍA Secundaria Fase Intensiva 2016</div>
-    </div>
-    <div class="row">
-        <div class='col-md-4'>
-          <a  class="navitem"  role="button" id="btn_guia_preescolar">
-          <img src="<?=base_url('assets/img/GUIA_Preescolar_FaseIntensiva2016.png')?>" width="300" height="400" alt='CALENDARIO-2016-2017'>
-          </a>
-        </div>
-
-        <div class='col-md-4'>
-          <a class="navitem"  role="button" id="btn_guia_primaria">
-          <img src="<?=base_url('assets/img/GUIA_Primaria_FaseIntensiva2016.png')?>" width="300" height="400" alt='CALENDARIO-2016-2017'>
-          </a>
-        </div>
-
-        <div class='col-md-4'>
-          <a  class="navitem"  role="button" id="btn_guia_secundaria">
-          <img src="<?=base_url('assets/img/GUIA_Secundaria_FaseIntensiva2016.png')?>" width="300" height="400" alt='CALENDARIO-2016-2017'>
-          </a>
-        </div>
-    </div>
+<div id="content"> 
+<div class="card section-header">
+	<div class="card-body">
+	  <div class="row justify-content-end">
+		<div class="col-12 col-md">  
+		  <div class="section-name">
+			Guías CTE
+		  </div>
+		</div>
+	<div class="col-12 col-md-auto">	  
+	  <div>
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="<?= base_url("index.php"); ?>">Inicio</a></li>
+    <li class="breadcrumb-item active">Consejo Técnico</li>
+    <li class="breadcrumb-item active" aria-current="page">Guías</li>
+  </ol>
+</nav>
+	  </div>
+	</div>	
   </div>
+</div>
+</div>
+
+<div class="alert alert-danger" role="alert">
+  <h5 class="fz-18"><i class="fas fa-hand-point-right"></i> Portal de Información y Gestión Educativa
+</div>		
+	  
+  <div class="card-columns">
+    <div class="card card-index shadow mb-4">
+    	<div class="inner">
+    		<img src="<?=base_url('assets/img/home/box1.jpg')?>" class="card-img-top" alt="...">
+    	</div>
+      <div class="card-body pb-0 pt-3">
+        <h5 class="card-title">Preescolar</h5>
+      </div>
+      <ul class="list-group list-group-flush">
+    	  <a href="" class="list-group-item list-group-item-action" id="btn_guia_preescolar"><i class="fas fa-genderless text-muted"></i> Fase Intensiva 2016</a>
+  
+      </ul>
+    </div>
+	  
+    <div class="card card-index shadow mb-4">
+    	<div class="inner">
+    		<img src="<?=base_url('assets/img/home/box4.jpg')?>" class="card-img-top" alt="...">
+    	</div>
+      <div class="card-body pb-0 pt-3">
+        <h5 class="card-title">Primaria</h5>
+      </div>
+      <ul class="list-group list-group-flush">
+    	  <a href="" class="list-group-item list-group-item-action" id="btn_guia_primaria"><i class="fas fa-genderless text-muted"></i> Fase Intensiva 2016</a>
+      </ul>
+    </div>
+	  
+    <div class="card card-index shadow mb-4">
+    	<div class="inner">
+    		<img src="<?=base_url('assets/img/home/box2.jpg')?>" class="card-img-top" alt="...">
+    	</div>
+      <div class="card-body pb-0 pt-3">
+        <h5 class="card-title">Secundaria</h5>
+      </div>
+      <ul class="list-group list-group-flush">
+    	  <a href="" class="list-group-item list-group-item-action" id="btn_guia_secundaria"><i class="fas fa-genderless text-muted"></i> Fase Intensiva 2016</a>	  
+      </ul>
+    </div>
+
+  </div>									
+
   <div id="visor_generico3"></div>
+</div>	
   <script src="<?= base_url();?>assets/js/index/index.js"></script>

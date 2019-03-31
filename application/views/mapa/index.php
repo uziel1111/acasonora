@@ -2,10 +2,35 @@
       /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
       #map{
-        height: 100%;
-        width: 100%;
+		position: inherit;
+   		height: 100%;
+        width: auto;
+		margin: 0px 20px 20px 20px;
       }
     </style>
+<div id="content"> 
+<div class="card section-header">
+	<div class="card-body">
+	  <div class="row justify-content-end">
+		<div class="col-12 col-md">  
+		  <div class="section-name">
+			Localiza tu escuela
+		  </div>
+		</div>
+	<div class="col-12 col-md-auto">	  
+	  <div>
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="<?= base_url("index.php"); ?>">Inicio</a></li>
+    <li class="breadcrumb-item active">Información</li>
+    <li class="breadcrumb-item active" aria-current="page">Escuela en el mapa</li>
+  </ol>
+</nav>
+	  </div>
+	</div>	
+  </div>
+</div>
+</div>	
     <div class="col-xs">
       <button class="btn btn_primary" id="btn_getvistabuscador">Buscar</button>
     </div>
@@ -49,6 +74,7 @@
      </div>
       </div>
     </div>
+	</div>
     <div id="map"></div>
 
   <div class="modal fade bd-example-modal-lg" id="modalbuscador" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">

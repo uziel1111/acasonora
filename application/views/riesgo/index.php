@@ -11,9 +11,9 @@
         margin-top: 10px;
       }
     </style>
-    <section class="main-area">
+    
           <?=$buscador;?>
-      <div class="container">
+      
          <div class="card mb-3 card-style-1 mt-3">
             <div class="card-header card-1-header bgcolor-2 text-white">Resultados de búsqueda</div>
                 <div class="card-body">
@@ -26,5 +26,5 @@
         </div>
 
 
-    </div>
- </section>
+   
+</div>	

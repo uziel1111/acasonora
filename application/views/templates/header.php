@@ -11,7 +11,7 @@
 
   <!-- GOOGLE FONT -->
   <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:400,500,700" rel="stylesheet"> 
-  <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet">	  
+  <link href="https://fonts.googleapis.com/css?family=Passion+One" rel="stylesheet">  
 
     <!-- Bootstrap core CSS -->
     <!-- <link href="https://getbootstrap.com/docs/4.1/dist/css/bootstrap.min.css" rel="stylesheet"> -->
@@ -21,7 +21,7 @@
 
     <script src="<?=base_url('assets/jquery/jquery-3.2.1.min.js')?>"></script>
     <script src="<?=base_url('assets/jquery/jquery.validate.js')?>"></script>
-    <link href="<?= base_url('assets/css/main.css'); ?>" rel="stylesheet" media="screen">
+    <!--<link href="<?= base_url('assets/css/main.css'); ?>" rel="stylesheet" media="screen">-->
     <link rel="stylesheet" href="<?= base_url('assets/css/linearicons.css'); ?>">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="<?= base_url('assets/bootstrap-411/css/bootstrap.min.css'); ?>" rel="stylesheet" media="screen">
@@ -58,7 +58,7 @@
             <ul class="list-unstyled components">
                 <li class="active">
                     <div class="sidebar-header p-0 bg-transparent">
-                    <a href="<?= base_url("index"); ?>" >
+                    <a href="<?= base_url("index.php"); ?>" >
                         <i class="fas fa-home"></i>
                         <span>Inicio</span>
                     </a>
@@ -114,7 +114,7 @@
                 </li>
 				<li>
 					<div class="sidebar-header p-0 bg-transparent">
-                    <a href="<?= base_url("index.php/Index/buenas_practicas"); ?>"" class="navitem">
+                    <a href="<?= base_url("index.php/Index/buenas_practicas"); ?>" class="navitem">
                         <i class="fas fa-image"></i>
                         <span>Buenas prácticas</span>
                     </a>

@@ -1,5 +1,28 @@
+<div id="content">
+<div class="card section-header mb-0">
+  <div class="card-body">
+	  <div class="row justify-content-end">
+		<div class="col-12 col-md">  
+		  <div class="section-name">
+			Estadística educativa específica
+		  </div>
+		</div>
+	<div class="col-12 col-md-auto">	  
+	  <div>
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="<?= base_url("index.php"); ?>">Inicio</a></li>
+    <li class="breadcrumb-item active">Estadística</li>
+    <li class="breadcrumb-item active" aria-current="page">Específica</li>
+  </ol>
+</nav>
+	  </div>
+	</div>	
+  </div>
+</div>
+</div>	
 <div id="resultado_estadistica"></div>
-<div class="modal fade" id="modal_visor_xedoxmuni" tabindex="-1" role="dialog" aria-hidden="true" style="overflow-y: scroll;">
+<!--<div class="modal fade" id="modal_visor_xedoxmuni" tabindex="-1" role="dialog" aria-hidden="true" style="overflow-y: scroll;">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content modal-style-1">
       <div class="modal-header bgcolor-2">
@@ -10,15 +33,15 @@
           </button>
  
  
-      </div>
+      </div>-->
 
         <!-- Start Main Area -->
       <div class="container">
         <div class="row">
-
+		<div class="col-12">
           <div id="demo" class="collapse show">
       <?= form_label('', 'lb_titbusq') ?>
-        <ul class="nav nav-tabs nav-tabs-style-1" id="tab_busqg" role="tablist">
+        <ul class="nav nav-tabs nav-tabs-style-1 " id="tab_busqg" role="tablist">
           <li class="nav-item">
             <a class='<?=$tmuni?>' id="xest_muni-tab" data-toggle="tab" href="#xest_muni" role="tab" aria-controls="xest_muni" aria-selected="true">Por Estado / Municipio</a>
           </li>
@@ -70,11 +93,11 @@
                   <div class="row">
                     <div class="col-0 col-sm-0 col-md-8 col-lg-8 mt-2"></div><!--  col-0 -->
                     <div class="col-6 col-sm-6 col-md-2 col-lg-2 mt-2">
-                      <?= anchor(base_url(), 'Regresar', array('class' => 'btn btn-light btn-block btn-style-1')) ?>
+                      <?= anchor(base_url(), 'Regresar', array('class' => 'btn btn-light btn-sm btn-block btn-style-1')) ?>
                     </div><!--  col-sm-6 -->
 
                     <div class="col-6 col-sm-6 col-md-2 col-lg-2 mt-2">
-                      <?= form_submit('mysubmit', 'Buscar', array('id' => 'btn_buscar_mun_est', 'class'=>'btn btn-info btn-block btn-style-1' )); ?>
+                      <?= form_submit('mysubmit', 'Buscar', array('id' => 'btn_buscar_mun_est', 'class'=>'btn btn-sm btn-success btn-block btn-style-1' )); ?>
                     </div><!--  col-sm-6 -->
                   </div><!-- row -->
 
@@ -136,29 +159,26 @@
                       <div class="form-group form-group-style-1">
 
 
-                    <div class="row">
-                      <div class="col-12 col-sm-6 col-md-6 col-lg-6 mt-2">
-                        <div class="form-group form-group-style-1">
+                    <div class="row align-items-end">
+                      <div class="col-12 col-md-6">
+					  <div class="form-group form-group-style-1">
                             <?= form_label('Escriba su CCT', 'itxt_busquedalista_cct') ?>
-                            <div class="input-group mb-3">
+                            <div class="input-group">
                               <div class="input-group-prepend">
-                                  <span class="input-group-text label_cct">26</span>
+                                  <span class="input-group-text label_cct"><strong>26</strong></span>
                               </div>
                                 <?= form_input('itxt_busquedalista_cct', '', array('id' => 'itxt_busquedalista_cct', 'class'=>'form-control input_cct' )) ?>
                           </div>
                         </div>
                       </div><!--  col-sm-12 -->
-                    </div><!-- row -->
-
-                    <div class="row">
-                      <div class="col-0 col-sm-0 col-md-8 col-lg-8 mt-2"></div><!--  col-0 -->
-                      <div class="col-6 col-sm-6 col-md-2 col-lg-2 mt-2">
+                      <div class="col mb-3">
                         <?= anchor(base_url(), 'Regresar', array('class' => 'btn btn-light btn-block btn-style-1')) ?>
-                      </div><!--  col-sm-6 -->
-
-                      <div class="col-6 col-sm-6 col-md-2 col-lg-2 mt-2">
-                        <?= form_submit('mysubmit', 'Buscar', array('id' => 'btn_buscar_xcct', 'class'=>'btn btn-info btn-block btn-style-1' )); ?>
-                      </div><!--  col-sm-6 -->
+						
+                      </div><!--  col-sm-6 -->	  												
+					  <div class="col mb-3">
+                       
+						<?= form_submit('mysubmit', 'Buscar', array('id' => 'btn_buscar_xcct', 'class'=>'btn btn-info btn-block btn-style-1' )); ?>  
+                      </div><!--  col-sm-6 -->		
                     </div><!-- row -->
 
                   </div>
@@ -168,11 +188,13 @@
                 </div>
                 </div>
               </div>
-        </div>
+			</div><!--  col-12 -->
+        </div><!-- row -->
       </div>
 
-    </div>
+<!--    </div>
   </div>
+</div>-->
 </div>
 
 <script src="<?= base_url('assets/js/est_e_ind/est_e_ind_g.js'); ?>"></script>

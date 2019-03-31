@@ -1,30 +1,46 @@
-<div class="container">
-  <h2 align="center">Buenas prácticas escolares</h2>
-</div>
-  <h2 align="center"> o Conoce las 5 mejores prácticas escolares del estado de Sonora</h2>
-  <br>
-  <div class="container">
-    <div class='row'>
-        <a class="navitem"  role="button" id="btn_reporte_aca"  style="" > 1.- Reporte ACA riesgo de abandono escolar primaria</a>
-    </div>
-    <div class="row">
-      <a class="navitem"  role="button" id="btn_buenas_practicas"> 
-        2.- Buenas prácticas sobre educación indígena UNICEF</a>
-    </div>
-    <div class="row">
-        3.- <a class="navitem"  role="button" id="btn_programa_escuelas"> Programa Escuelas de Tiempo Completo
-        </a>
-    </div>
-    <div class="row">4.- Practicas en el aula aprende jugando primaria</div>
-    <div class="row">5.- practicas en el aula autodidacta secundaria</div>
-    <div class="row">
-      <p> o Registra la mejor práctica escolar de tu escuela y comparte tu orgullo de ser maestro</p>
-    </div>
-    <div class="row">
-      <a href="" ><button  id='mostar_detalle' class="btn btn-info">Registrar</button></a>
-    </div>
+<div id="content"> 
+<div class="card section-header">
+	<div class="card-body">
+	  <div class="row justify-content-end">
+		<div class="col-12 col-md">  
+		  <div class="section-name">
+			Riesgo de abandono escolar
+		  </div>
+		</div>
+	<div class="col-12 col-md-auto">	  
+	  <div>
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="<?= base_url("index.php"); ?>">Inicio</a></li>
+    <li class="breadcrumb-item active">Buenas prácticas</li>
+  </ol>
+</nav>
+	  </div>
+	</div>	
   </div>
-  <div id="visor_generico2"></div>
+</div>
+</div>	
+<div class="alert alert-danger" role="alert">
+  <h5 class="fz-18"><i class="fas fa-thumbs-up"></i> Conoce las 5 mejores prácticas escolares del estado de Sonora</h5>
+</div>	
+<div class="list-group">
+  <a href="#" class="list-group-item list-group-item-action" id="btn_reporte_aca"><i class="far fa-dot-circle"></i> Reporte ACA riesgo de abandono escolar primaria</a>
+  <a href="#" class="list-group-item list-group-item-action" id="btn_buenas_practicas"><i class="far fa-dot-circle"></i> Buenas prácticas sobre educación indígena UNICEF</a>
+  <a href="#" class="list-group-item list-group-item-action" id="btn_programa_escuelas"><i class="far fa-dot-circle"></i> Programa escuelas de tiempo completo</a>
+  <a href="#" class="list-group-item list-group-item-action"><i class="far fa-dot-circle"></i> Prácticas en el aula aprende jugando primaria</a>
+  <a href="#" class="list-group-item list-group-item-action"><i class="far fa-dot-circle"></i> Prácticas en el aula autodidacta secundaria</a>
+</div>		
+<div class="alert alert-dark mt-3" role="alert">
+  <p class="fz-16 mb-0">
+	Puedes registrar la mejor práctica escolar de tu escuela y comparte tu orgullo de ser maestro 
+	  <button type="button" class="btn btn-secondary btn-sm" id='mostar_detalle'>Registrar <i class="fas fa-pen-square"></i></button>
+	  
+	</p>
+</div>	
+		
+	
+	
+</div>	
   <script src="<?= base_url();?>assets/js/index/index.js"></script>
     
 

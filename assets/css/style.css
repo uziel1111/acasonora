@@ -1,6 +1,5 @@
 /* Aside nav sytle */
 
-@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 body {
     font-family: 'Fira Sans Condensed', sans-serif;
     background: #fafafa;
@@ -213,7 +212,7 @@ a.article:hover {
 	
 
 }
-#rightside button {
+#sidebarCollapse {
 	background: rgba(30, 30, 30, 0.6);
 	color: #FCFCFC;
 	padding-left: 5px;
@@ -254,7 +253,6 @@ box-shadow: 1px -1px 3px rgba(0, 0, 0, 0.1);
 margin: 0;
 	padding-top: 15px;
 	padding-bottom: 0;
-
 	font-size: 14px;
 }
 /* ---------------------------------------------------
@@ -262,7 +260,7 @@ margin: 0;
 ----------------------------------------------------- */
 
 #content {
-    padding: 20px 20px 50px 20px;
+    padding: 10px 20px 50px 20px;
 }
 /* ---------------------------------------------------
     INDEX CARDS
@@ -288,6 +286,33 @@ font-size: 16px;
   @include media-breakpoint-only(xl) {
     column-count: 2;
   }
+}
+/* ---------------------------------------------------
+    SECTION TITLE
+----------------------------------------------------- */
+.section-header{
+background-color: transparent;
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
+	border-bottom: 2px solid #ccc;
+	border-radius: 0px;
+	margin-bottom: 20px;
+}
+.section-header .card-body{
+padding: 0;
+}
+
+.section-header .section-name{
+font-size: 24px;
+	font-weight: 700;
+	color: #58595b;
+}
+
+.section-header .breadcrumb{
+margin-top: 5px;
+padding: 0;
+background-color: transparent;
 }
 /* ---------------------------------------------------
     MEDIAQUERIES
