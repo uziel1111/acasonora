@@ -58,7 +58,7 @@
             <ul class="list-unstyled components">
                 <li class="active">
                     <div class="sidebar-header p-0 bg-transparent">
-                    <a href="<?= base_url("index.php"); ?>" >
+                    <a href="<?= base_url("index.php"); ?>"  class="navitem">
                         <i class="fas fa-home"></i>
                         <span>Inicio</span>
                     </a>

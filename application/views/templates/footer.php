@@ -1,10 +1,10 @@
 
     <div id="footer">
-  		<div class="container">
+  		<div class="content">
     		<div class="row justify-content-between">
-          <div class="col-12 col-lg">
-        	  <p class="ml-3 mb-1 h6 text-muted">Secretaría de Educación y Cultura</p>
-        	  <hr class="ml-3 my-2"/>
+          <div class="col">
+        	  <p class="mb-1 h4 text-muted">Secretaría de Educación y Cultura</p>
+        	  <hr class="my-2"/>
         	  <ul class="fa-ul">
             <li><span class="fa-li text-success"><i class="fas fa-map-marker-alt"></i></span>Blvd. Luis Donaldo Colosio, Col. Las Quintas. Hermosillo, Sonora. C.P. 83240</li>
             <li><span class="fa-li text-success"><i class="fas fa-phone"></i></span>01 800 623 77 00</li>
@@ -12,7 +12,7 @@
             <li class="text-muted"><span class="fa-li"><i class="fas fa-copyright"></i></span>Todos los Derechos Reservados</li>
             </ul>
           </div>
-          <div class="col-12 col-lg mx-3 mb-4 text-left text-lg-right align-self-end">
+          <div class="col-auto mb-4 text-left text-lg-right">
             <img src="<?=base_url('assets/img/template/sec-sonora.png')?>" class="mb-4" alt="Responsive image" height="60px;">
       	    <br>
             <a href="https://www.facebook.com/SECSonoraOficial/" target="_blank" class="btn btn-sm btn-secondary text-light" style="width: 37px;"><i class="fab fa-facebook-f"></i></a>

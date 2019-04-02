@@ -4,7 +4,7 @@
 	  <div class="row justify-content-end">
 		<div class="col-12 col-md">  
 		  <div class="section-name">
-			Riesgo de abandono escolar
+			Buenas prácticas
 		  </div>
 		</div>
 	<div class="col-12 col-md-auto">	  

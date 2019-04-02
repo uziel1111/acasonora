@@ -36,7 +36,7 @@
       </div>-->
 
         <!-- Start Main Area -->
-      <div class="container">
+      
         <div class="row">
 		<div class="col-12">
           <div id="demo" class="collapse show">
@@ -190,7 +190,7 @@
               </div>
 			</div><!--  col-12 -->
         </div><!-- row -->
-      </div>
+     
 
 <!--    </div>
   </div>

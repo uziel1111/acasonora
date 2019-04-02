@@ -1,6 +1,29 @@
 			<!-- Content  -->
-<div id="content">   
-  <div class="card-columns">
+<div id="content">  
+<div class="card section-header mb-0">
+  <div class="card-body">
+	  <div class="row justify-content-end">
+		<div class="col-12 col-md">  
+		  <div class="section-name">
+			Bienvenido
+		  </div>
+		</div>
+	<div class="col-12 col-md-auto">	  
+	  <div>
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item active">Inicio</li>
+  </ol>
+</nav>
+	  </div>
+	</div>	
+  </div>
+</div>
+</div>	
+	
+	
+	
+  <div class="card-columns mt-3">
     <div class="card card-index shadow mb-4">
     	<div class="inner">
     		<img src="<?=base_url('assets/img/home/box1.jpg')?>" class="card-img-top" alt="...">
