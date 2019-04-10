@@ -1,4 +1,4 @@
-$("#modal_visor_xedoxmuni").modal("show");
+// $("#modal_visor_xedoxmuni").modal("show");
 
 
 $("#close_destin").click(function(e){
@@ -6,10 +6,10 @@ $("#close_destin").click(function(e){
   window.location=base_url;
 });
 
-$("#close_modal_visor_xedoxmuni").click(function(e){
-  e.preventDefault();
-  window.location=base_url;
-});
+// $("#close_modal_visor_xedoxmuni").click(function(e){
+//   e.preventDefault();
+//   window.location=base_url;
+// });
 
 function Regularexpression(){
 }
@@ -234,7 +234,7 @@ $("#btn_buscar_zona").click(function(){
         console.log(data);
         $("#resultado_estadistica").empty();
         $("#resultado_estadistica").append(data.str_view);
-        $("#modal_visor_xedoxmuni").modal("hide");
+        // $("#modal_visor_xedoxmuni").modal("hide");
  
       })
       .fail(function(e) {
@@ -266,7 +266,7 @@ $("#btn_buscar_mun_est").click(function(){
         // console.log(data);
         $("#resultado_estadistica").empty();
         $("#resultado_estadistica").append(data.str_view);
-        $("#modal_visor_xedoxmuni").modal("hide");
+        // $("#modal_visor_xedoxmuni").modal("hide");
         // $('.modal-backdrop').remove(); 
  
       })
@@ -353,7 +353,7 @@ $("#btn_buscar_xcct").click(function(){
     console.log(data);
     $("#resultado_estadistica").empty();
     $("#resultado_estadistica").append(data.str_view);
-    $("#modal_visor_xedoxmuni").modal("hide");
+    // $("#modal_visor_xedoxmuni").modal("hide");
   })
   .fail(function(e) {
     console.error("Error in xest_zona_x()"); 

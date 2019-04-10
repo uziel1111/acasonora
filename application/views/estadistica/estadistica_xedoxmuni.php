@@ -124,7 +124,8 @@
               </div>
 
 
-              <div class="dv_tablas_estzona">
+              <!-- <div class="dv_tablas_estzona"> -->
+              <div class="col-sm-12 col-lg-12 dv_flotante">
                 <div class="card mb-3 card-style-1">
                   <div class="card-header card-1-header bgcolor-2 text-white">Alumnos</div>
                   <div class="card-body">
