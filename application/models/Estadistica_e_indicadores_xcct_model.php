@@ -712,6 +712,24 @@ SUM(est.directivo_m_singrup) as directivo_m_singrup, SUM(est.directivo_h_singrup
 
   }// get_infraest_xzona
 
+function get_datos_generales($municipio,$ciclo){
+    $concat="";
+    if($municipio!=0){
+        $concat=" and id_municipio=$municipio";
+    }
+    if($ciclo=!0){
+        $concat.=" and ciclo='$ciclo'";
+    }
+    $query="SELECT sum(t_mujeres_alumnos) AS total_alumnos_mujeres,
+    sum(t_hombres_alumnos) AS t_alumnos_hombres,sum(t_alumnos)as t_alumnos,
+    sum(directivo_con_grupo_m) as directivo_con_grupo_m,
+    sum(directivo_con_grupo_h) as directivo_con_grupo_h,sum(t_directivo_con_grupo) as t_directivo_con_grupo,sum(directivo_sin_grupo_m) as directivo_sin_grupo_m,
+    sum(directivo_sin_grupo_h)as directivo_sin_grupo_h,sum(t_directivo_sin_grupo)as t_directivo_sin_grupo,sum(docente_m),sum(docente_h),
+    sum(t_docente),sum(t_aulas_existentes) AS infraestructura 
+    FROM estadistica_e_indicadoresxesc where 1=1 $concat";
+    $res['datos'] = $this->db->query($query)->result_array();
+}
+
   function get_nalumnos_xesc($id_cct){
     $this->db->select('alumn_t_1,alumn_t_2,alumn_t_3,alumn_t_4,alumn_t_5,alumn_t_6,alumn_t_t');
     $this->db->from('estadistica_e_indicadores_xcct');

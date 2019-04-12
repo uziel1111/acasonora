@@ -267,7 +267,7 @@
                         <div class="box-body no-padding">
                           <table class="table">
                             <tr>
-                              <td style="width: 5%"><i class="fa fa-female"></i></td>
+                              <td style="width: 5%"><i class="fa fa-school"></i></td>
                               <td style="width: 20%">60,000</td>
                               <td style="width: 65%">
                                 <div class="progress">
@@ -277,7 +277,7 @@
                               <td style="width: 10%"><span class="badge bg-red">60%</span></td>
                             </tr>
                             <tr>
-                              <td><i class="fa fa-male"></i></td>
+                              <td><i class="fa fa-edit"></i></td>
                               <td>40,000</td>
                               <td>
                                 <div class="progress">
@@ -1303,3 +1303,5 @@
 </div>
 
 </div>
+
+<script src="<?= base_url('assets/js/est_e_ind/concentrado.js'); ?>"></script>
