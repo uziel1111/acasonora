@@ -159,7 +159,7 @@
                 </li>				
                 <li>
 					<div class="sidebar-header p-0 bg-transparent">
-                    <a role="button" id="btn_index_calendario" class="navitem">
+                    <a role="button" id="btn_boton_prueba" class="navitem">
                         <i class="fas fa-paper-plane"></i>
                         <span>Calendario</span>
                     </a>

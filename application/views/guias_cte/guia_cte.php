@@ -35,7 +35,7 @@
         <h5 class="card-title">Preescolar</h5>
       </div>
       <ul class="list-group list-group-flush">
-    	  <a href="" class="list-group-item list-group-item-action" id="btn_guia_preescolar"><i class="fas fa-genderless text-muted"></i> Fase Intensiva 2016</a>
+    	  <a href="#" class="list-group-item list-group-item-action" id="btn_guia_preescolar"><i class="fas fa-genderless text-muted"></i> Fase Intensiva 2016</a>
   
       </ul>
     </div>
@@ -48,7 +48,7 @@
         <h5 class="card-title">Primaria</h5>
       </div>
       <ul class="list-group list-group-flush">
-    	  <a href="" class="list-group-item list-group-item-action" id="btn_guia_primaria"><i class="fas fa-genderless text-muted"></i> Fase Intensiva 2016</a>
+    	  <a href="#" class="list-group-item list-group-item-action" id="btn_guia_primaria"><i class="fas fa-genderless text-muted"></i> Fase Intensiva 2016</a>
       </ul>
     </div>
 	  
@@ -60,12 +60,12 @@
         <h5 class="card-title">Secundaria</h5>
       </div>
       <ul class="list-group list-group-flush">
-    	  <a href="" class="list-group-item list-group-item-action" id="btn_guia_secundaria"><i class="fas fa-genderless text-muted"></i> Fase Intensiva 2016</a>	  
+    	  <a href="#" class="list-group-item list-group-item-action" id="btn_guia_secundaria"><i class="fas fa-genderless text-muted"></i> Fase Intensiva 2016</a>	  
       </ul>
     </div>
 
   </div>									
 
-  <div id="visor_generico3"></div>
 </div>	
+  <div id="visor_generico3"></div>
   <script src="<?= base_url();?>assets/js/index/index.js"></script>

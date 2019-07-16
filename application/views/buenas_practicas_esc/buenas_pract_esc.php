@@ -40,7 +40,8 @@
 		
 	
 	
-</div>	
+</div>
+<div id="visor_generico2"></div>	
   <script src="<?= base_url();?>assets/js/index/index.js"></script>
     
 

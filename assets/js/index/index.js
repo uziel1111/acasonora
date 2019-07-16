@@ -171,6 +171,7 @@ $("#btn_guia_preescolar").click(function(e){
       }
     })
     .done(function( data ) {
+      console.log("llego a la funcion");
       $("#visor_generico3").empty();
       $("#visor_generico3").append(data.strView);
       Utiles.showPDF("modal_visor_pdf", "GUIA_Preescolar_FaseIntensiva2016.pdf");
