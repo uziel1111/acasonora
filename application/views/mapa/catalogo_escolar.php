@@ -90,10 +90,13 @@
             <?= form_submit('mysubmit', 'Buscar', array('id' => 'btn_localizar_escuela', 'class'=>'btn btn-info btn-block btn-style-1' )); ?>
           </div>
         </div>
-           </div>
-        </div>     
+        <div id="resultado_busqueda"></div>
+      </div>
+      </div>     
 <!--    </div>
   </div>
 </div>-->
-</div>   	
+
+</div>
+
 <script src="<?= base_url('assets/js/mapa/localiza.js'); ?>"></script>
