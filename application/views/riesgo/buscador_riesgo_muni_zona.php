@@ -1,26 +1,26 @@
-<div id="content"> 
+<div id="content">
 <div class="card section-header">
 	<div class="card-body">
 	  <div class="row justify-content-end">
-		<div class="col-12 col-md">  
+		<div class="col-12 col-md">
 		  <div class="section-name">
 			Riesgo de abandono escolar
 		  </div>
 		</div>
-	<div class="col-12 col-md-auto">	  
+	<div class="col-12 col-md-auto">
 	  <div>
 <nav aria-label="breadcrumb">
   <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a href="<?= base_url("index.php"); ?>">Inicio</a></li>
+    <li class="breadcrumb-item"><a href="<?= base_url("/"); ?>">Inicio</a></li>
     <li class="breadcrumb-item active">Estadística</li>
     <li class="breadcrumb-item active" aria-current="page">Riesgo de abandono</li>
   </ol>
 </nav>
 	  </div>
-	</div>	
+	</div>
   </div>
 </div>
-</div>	
+</div>
 <!--<div class="modal fade" id="modal_visor_riesgo" tabindex="-1" role="dialog" aria-hidden="true" style="overflow-y: scroll;">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content modal-style-1">
@@ -30,10 +30,10 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>-->
-      
+
         <div class="card mb-3 card-style-1">
         <div class="card-header card-1-header bg-light">Módulo de Búsqueda</div>
-        <div class="card-body">      
+        <div class="card-body">
         <div class="row">
           <div class="col-12 col-sm-12 col-md-3 col-lg-3 mt-2">
             <div class="form-group form-group-style-1">
@@ -72,7 +72,7 @@
         </div>
         </div>
         </div>
-      
+
 <!--    </div>
   </div>
 </div>-->

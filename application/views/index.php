@@ -1,14 +1,14 @@
 			<!-- Content  -->
-<div id="content">  
+<div id="content">
 <div class="card section-header mb-0">
   <div class="card-body">
 	  <div class="row justify-content-end">
-		<div class="col-12 col-md">  
+		<div class="col-12 col-md">
 		  <div class="section-name">
 			Bienvenido
 		  </div>
 		</div>
-	<div class="col-12 col-md-auto">	  
+	<div class="col-12 col-md-auto">
 	  <div>
 <nav aria-label="breadcrumb">
   <ol class="breadcrumb">
@@ -16,13 +16,13 @@
   </ol>
 </nav>
 	  </div>
-	</div>	
+	</div>
   </div>
 </div>
-</div>	
-	
-	
-	
+</div>
+
+
+
   <div class="card-columns mt-3">
     <div class="card card-index shadow mb-4">
     	<div class="inner">
@@ -33,9 +33,9 @@
         <p class="card-text text-justify">Integra datos las estadísticas básicas que describen la situación actual y los avances en la prestación de los servicios educativos.</p>
       </div>
       <ul class="list-group list-group-flush">
-    	  <a href="<?= base_url("index.php/Estadistica/estadistica_general"); ?>" class="list-group-item list-group-item-action"><i class="fas fa-genderless text-muted"></i> General</a>
-    	  <a href="<?= base_url("index.php/Estadistica/estad_indi_generales"); ?>" class="list-group-item list-group-item-action"><i class="fas fa-genderless text-muted"></i> Específica (por búsqueda)</a>
-    	  <a href="<?= base_url("index.php/Riesgo/riesgo_x_muni_zona"); ?>" class="list-group-item list-group-item-action"><i class="fas fa-genderless text-muted"></i> Riesgo de abandono escolar</a>
+    	  <a href="<?= base_url("Estadistica/estadistica_general"); ?>" class="list-group-item list-group-item-action"><i class="fas fa-genderless text-muted"></i> General</a>
+    	  <a href="<?= base_url("Estadistica/estad_indi_generales"); ?>" class="list-group-item list-group-item-action"><i class="fas fa-genderless text-muted"></i> Específica (por búsqueda)</a>
+    	  <a href="<?= base_url("Riesgo/riesgo_x_muni_zona"); ?>" class="list-group-item list-group-item-action"><i class="fas fa-genderless text-muted"></i> Riesgo de abandono escolar</a>
       </ul>
     </div>
     <div class="card card-index shadow mb-4">
@@ -47,9 +47,9 @@
         <p class="card-text text-justify">Conoce sobre programas educativos lo cuales permiten organizar y detallar los procesos pedagógicos.</p>
       </div>
       <ul class="list-group list-group-flush">
-    	  <a href="<?= base_url("index.php/Index/programas_apoyo"); ?>" class="list-group-item list-group-item-action"><i class="fas fa-genderless text-muted"></i> Apoyos a escuelas</a>
+    	  <a href="<?= base_url("Index/programas_apoyo"); ?>" class="list-group-item list-group-item-action"><i class="fas fa-genderless text-muted"></i> Apoyos a escuelas</a>
       </ul>
-    </div>	
+    </div>
     <div class="card card-index shadow mb-4">
     	<div class="inner">
     		<img src="<?=base_url('assets/img/home/box2.jpg')?>" class="card-img-top" alt="...">
@@ -74,7 +74,7 @@
       <ul class="list-group list-group-flush">
     	  <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-genderless text-muted"></i> Graficas</a>
       </ul>
-    </div>	
+    </div>
     <div class="card card-index shadow mb-4">
     	<div class="inner">
     		<img src="<?=base_url('assets/img/home/box3.jpg')?>" class="card-img-top" alt="...">
@@ -84,8 +84,8 @@
         <p class="card-text text-justify">Información referente a escuelas oficiales y particulares que se encuentran incorporadas al Sistema Educativo.</p>
       </div>
       <ul class="list-group list-group-flush">
-    	  <a href="<?= base_url("index.php/Index/localiza_tu_escuela"); ?>" class="list-group-item list-group-item-action"><i class="fas fa-genderless text-muted"></i> Localiza tu escuela</a>
-    	  <a href="<?= base_url("index.php/Mapa/index"); ?>" class="list-group-item list-group-item-action"><i class="fas fa-genderless text-muted"></i> Tu escuela en el mapa</a>
+    	  <a href="<?= base_url("Index/localiza_tu_escuela"); ?>" class="list-group-item list-group-item-action"><i class="fas fa-genderless text-muted"></i> Localiza tu escuela</a>
+    	  <a href="<?= base_url("Mapa/index"); ?>" class="list-group-item list-group-item-action"><i class="fas fa-genderless text-muted"></i> Tu escuela en el mapa</a>
       </ul>
     </div>
 
@@ -101,7 +101,7 @@
         <a id="btn_boton_prueba" class="list-group-item list-group-item-action"><i class="fas fa-genderless text-muted"></i> 2019-2020</a>
       </ul>
     </div>
-  </div>									
+  </div>
 </div>
 <!-- END Content  -->
 <div id="visor_generico"></div>

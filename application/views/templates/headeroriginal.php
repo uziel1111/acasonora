@@ -39,7 +39,7 @@
 	      	<div class="navbar-custom-menu" >
 	            <a href="http://www.sonora.gob.mx/" target="_blank" class="dropdown-toggle">
 	              <img id="img_logo" src="<?=base_url('assets/img/gob_sonora-m.png')?>" alt="Sonora">
-	            </a> 
+	            </a>
 	      	</div>
 	    </nav>
   </header>
@@ -60,9 +60,9 @@
 		                            <a class="nav-link hcolor-2" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 		                                          Estadística educativa
 		                            </a>
-		                            <div class="dropdown-menu dropdown-menu-right ddm-color-2" aria-labelledby="navbarDropdownMenuLink"><a class="dropdown-item hcolor-1" href="<?= base_url("index.php/Estadistica/estad_indi_general"); ?>">General</a>
-		                                <a class="dropdown-item hcolor-2" href="<?= base_url("index.php/Estadistica/estad_indi_generales"); ?>">Específica (por búsqueda)</a>
-		                                <a class="dropdown-item hcolor-2" href="<?= base_url("index.php/Riesgo/riesgo_x_muni_zona"); ?>">Riesgo de abandono escolar</a>
+		                            <div class="dropdown-menu dropdown-menu-right ddm-color-2" aria-labelledby="navbarDropdownMenuLink"><a class="dropdown-item hcolor-1" href="<?= base_url("Estadistica/estad_indi_general"); ?>">General</a>
+		                                <a class="dropdown-item hcolor-2" href="<?= base_url("Estadistica/estad_indi_generales"); ?>">Específica (por búsqueda)</a>
+		                                <a class="dropdown-item hcolor-2" href="<?= base_url("Riesgo/riesgo_x_muni_zona"); ?>">Riesgo de abandono escolar</a>
 		                            </div>
 		                        </li>
 		                        <li class="nav-item dropdown">
@@ -123,7 +123,7 @@
 		                                <a class="dropdown-item hcolor-2" id="btn_index_modeloeducativo" href="<?=base_url("index/vista_calendario");?>"> 2016-2017</a>
 		                            </div>
 		                        </li>
-		                    </ul>        
+		                    </ul>
 		                </nav>
 		            </div>
 		        </div>

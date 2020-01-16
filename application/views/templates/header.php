@@ -10,12 +10,12 @@
     <title>ACA | Sonora</title>
 
   <!-- GOOGLE FONT -->
-  <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:400,500,700" rel="stylesheet"> 
-  <link href="https://fonts.googleapis.com/css?family=Passion+One" rel="stylesheet">  
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:400,500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Passion+One" rel="stylesheet">
 
     <!-- Bootstrap core CSS -->
     <!-- <link href="https://getbootstrap.com/docs/4.1/dist/css/bootstrap.min.css" rel="stylesheet"> -->
-	  
+
 	<!--Fontawesome  -->
 	  <script defer src="https://use.fontawesome.com/releases/v5.7.1/js/all.js" integrity="sha384-eVEQC9zshBn0rFj4+TU78eNA19HMNigMviK/PU/FFjLXqa/GKPgX58rvt5Z8PLs7" crossorigin="anonymous"></script>
 
@@ -33,8 +33,8 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
     <script src="<?= base_url();?>assets/js/load.js"></script>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-	<link rel="stylesheet" href="<?=base_url('assets/css/style.css')?>"> 
-	  
+	<link rel="stylesheet" href="<?=base_url('assets/css/style.css')?>">
+
     <script type="text/javascript">
         $(function() {
             base_url = live_url = "<?=base_url()?>";
@@ -58,11 +58,11 @@
             <ul class="list-unstyled components">
                 <li class="active">
                     <div class="sidebar-header p-0 bg-transparent">
-                    <a href="<?= base_url("index.php"); ?>"  class="navitem">
+                    <a href="<?= base_url("/"); ?>"  class="navitem">
                         <i class="fas fa-home"></i>
                         <span>Inicio</span>
                     </a>
-                    </div>  
+                    </div>
                 </li>
                 <li>
 					<div class="sidebar-header p-0 bg-transparent">
@@ -70,16 +70,16 @@
                         <i class="fa fa-signal"></i>
                         <span>Estadística</span>
 					</a>
-					</div>	
+					</div>
                     <ul class="collapse list-unstyled" id="navEstadistica">
                         <li>
-                            <a href="<?= base_url("index.php/Estadistica/estadistica_general"); ?>">General</a>
+                            <a href="<?= base_url("Estadistica/estadistica_general"); ?>">General</a>
                         </li>
                         <li>
-                            <a href="<?= base_url("index.php/Estadistica/estad_indi_generales"); ?>" role="button" id="est_gral">Específica</a>
+                            <a href="<?= base_url("Estadistica/estad_indi_generales"); ?>" role="button" id="est_gral">Específica</a>
                         </li>
                         <li>
-                            <a href="<?= base_url("index.php/Riesgo/riesgo_x_muni_zona"); ?>">Riesgo de Abandono</a>
+                            <a href="<?= base_url("Riesgo/riesgo_x_muni_zona"); ?>">Riesgo de Abandono</a>
                         </li>
                     </ul>
                 </li>
@@ -89,13 +89,13 @@
                         <i class="fas fa-copy"></i>
                         <span>Información</span>
                     </a>
-					</div>	
+					</div>
                     <ul class="collapse list-unstyled" id="navInformacion">
                         <li>
-                            <a href="<?= base_url("index.php/Index/localiza_tu_escuela"); ?>">Localiza tu escuela</a>
+                            <a href="<?= base_url("Index/localiza_tu_escuela"); ?>">Localiza tu escuela</a>
                         </li>
                         <li>
-                            <a href="<?= base_url("index.php/Mapa/index"); ?>">Escuela en el mapa</a>
+                            <a href="<?= base_url("Mapa/index"); ?>">Escuela en el mapa</a>
                         </li>
                     </ul>
                 </li>
@@ -105,7 +105,7 @@
                         <i class="fas fa-copy"></i>
                         <span>Familia</span>
                     </a>
-					</div>	
+					</div>
                     <ul class="collapse list-unstyled" id="navFamilia">
                         <li>
                             <a  role="button" id="btn_index_guiaspadres">¿Sabía usted que?</a>
@@ -114,7 +114,7 @@
                 </li>
 				<li>
 					<div class="sidebar-header p-0 bg-transparent">
-                    <a href="<?= base_url("index.php/Index/buenas_practicas"); ?>" class="navitem">
+                    <a href="<?= base_url("Index/buenas_practicas"); ?>" class="navitem">
                         <i class="fas fa-image"></i>
                         <span>Buenas prácticas</span>
                     </a>
@@ -127,43 +127,43 @@
                         <span>Modelo Educativo</span>
                     </a>
 					</div>
-				</li>	
+				</li>
                 <li>
 					<div class="sidebar-header p-0 bg-transparent">
                     <a href="#navCTec" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle navitem">
                         <i class="fas fa-copy"></i>
                         <span>Consejo Técnico</span>
                     </a>
-					</div>	
+					</div>
                     <ul class="collapse list-unstyled" id="navCTec">
                         <li>
-                            <a href="<?= base_url("index.php/Index/guia_cte"); ?>">Guías CTE</a>
+                            <a href="<?= base_url("Index/guia_cte"); ?>">Guías CTE</a>
                         </li>
                     </ul>
-                </li>	
+                </li>
                 <li>
 					<div class="sidebar-header p-0 bg-transparent">
                     <a href="#navCE" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle navitem">
                         <i class="fas fa-copy"></i>
                         <span>Control Escolar</span>
                     </a>
-					</div>	
+					</div>
                     <ul class="collapse list-unstyled" id="navCE">
                         <li>
                             <a href="http://www.sicres.gob.mx/" target="_blank">SICRES</a>
                         </li>
                         <li>
                             <a href="https://www.yoremia.org/" target="_blank">ACA Yoremia</a>
-                        </li>						
-                    </ul>					
-                </li>				
+                        </li>
+                    </ul>
+                </li>
                 <li>
 					<div class="sidebar-header p-0 bg-transparent">
                     <a role="button" id="btn_boton_prueba" class="navitem">
                         <i class="fas fa-paper-plane"></i>
                         <span>Calendario</span>
                     </a>
-					</div>	
+					</div>
                 </li>
             </ul>
         </nav>
@@ -180,7 +180,7 @@
 
 					<div class="ml-auto my-1">
 						<img src="<?=base_url('assets/img/template/logo-sonora-color.png')?>" alt="Responsive image" height="30px;">
-					</div>	
+					</div>
 
                 </div>
             </nav>

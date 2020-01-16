@@ -2,27 +2,27 @@
   <div class="card section-header mb-0">
     <div class="card-body">
   	  <div class="row justify-content-end">
-    		<div class="col-12 col-md">  
+    		<div class="col-12 col-md">
     		  <div class="section-name">
     			Estadística educativa específica
     		  </div>
     		</div>
-      	<div class="col-12 col-md-auto">	  
+      	<div class="col-12 col-md-auto">
       	  <div>
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="<?= base_url("index.php"); ?>">Inicio</a></li>
+                <li class="breadcrumb-item"><a href="<?= base_url("/"); ?>">Inicio</a></li>
                 <li class="breadcrumb-item active">Estadística</li>
                 <li class="breadcrumb-item active" aria-current="page">Específica</li>
               </ol>
             </nav>
       	  </div>
-      	</div>	
+      	</div>
       </div>
     </div>
-  </div>	
+  </div>
 
-      
+
   <div class="row">
 		<div class="col-12">
         <div id="demo" class="collapse show">
@@ -40,7 +40,7 @@
           </ul>
           <div class="tab-content tab-content-style-1" id="myTabContent_busqg">
             <div class="tab-pane fade show <?=$tmuni?>" id="xest_muni" role="tabpanel" aria-labelledby="xest_muni-tab">
-            
+
               <div class="row">
                 <div class="col-12 col-sm-12 col-md-3 col-lg-3 mt-2">
                   <div class="form-group form-group-style-1">
@@ -152,10 +152,10 @@
                   </div><!--  col-sm-12 -->
                   <div class="col mb-3">
                     <?= anchor(base_url(), 'Regresar', array('class' => 'btn btn-light btn-block btn-style-1')) ?>
-                  </div>	  												
-    					    <div class="col mb-3">        
-    						    <?= form_submit('mysubmit', 'Buscar', array('id' => 'btn_buscar_xcct', 'class'=>'btn btn-info btn-block btn-style-1' )); ?>  
-                  </div><!--  col-sm-6 -->		
+                  </div>
+    					    <div class="col mb-3">
+    						    <?= form_submit('mysubmit', 'Buscar', array('id' => 'btn_buscar_xcct', 'class'=>'btn btn-info btn-block btn-style-1' )); ?>
+                  </div><!--  col-sm-6 -->
                 </div><!-- row -->
               </div>
               </div>
@@ -167,10 +167,7 @@
     </div><!-- row -->
     <br>
     <div id="resultado_estadistica"></div>
-     
+
 </div>
 
 <script src="<?= base_url('assets/js/est_e_ind/est_e_ind_g.js'); ?>"></script>
-
-
-

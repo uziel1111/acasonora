@@ -8,29 +8,29 @@
 		margin: 0px 20px 20px 20px;
       }
     </style>
-<div id="content"> 
+<div id="content">
 <div class="card section-header">
 	<div class="card-body">
 	  <div class="row justify-content-end">
-		<div class="col-12 col-md">  
+		<div class="col-12 col-md">
 		  <div class="section-name">
 			Localiza tu escuela
 		  </div>
 		</div>
-	<div class="col-12 col-md-auto">	  
+	<div class="col-12 col-md-auto">
 	  <div>
 <nav aria-label="breadcrumb">
   <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a href="<?= base_url("index.php"); ?>">Inicio</a></li>
+    <li class="breadcrumb-item"><a href="<?= base_url("/"); ?>">Inicio</a></li>
     <li class="breadcrumb-item active">Información</li>
     <li class="breadcrumb-item active" aria-current="page">Escuela en el mapa</li>
   </ol>
 </nav>
 	  </div>
-	</div>	
+	</div>
   </div>
 </div>
-</div>	
+</div>
     <div class="col-xs">
       <button class="btn btn_primary" id="btn_getvistabuscador">Buscar</button>
     </div>
@@ -107,4 +107,3 @@
     <script src="<?= base_url();?>assets/js/mapa/mapaindex.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqGxPT1KkV0q3eSoIOpuZeSrsLm_A5Uhs&callback=initMap"
     async defer></script>
-
