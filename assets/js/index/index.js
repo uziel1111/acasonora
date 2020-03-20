@@ -1,6 +1,6 @@
 
 var Utiles = {
-  path_docs : "http://localhost/acasonora/assets/docs/",
+  path_docs : "https://proyectoeducativo.org/demo/acasonora/assets/docs/",
 
   showPDF : function(idModal, urlPdf){
     //var dom = '<iframe src="https://docs.google.com/viewerng/viewer?url='+this.path_docs+urlPdf+'&embedded=true" width="100%" height="500" style="border: none;"></iframe>';
@@ -35,7 +35,7 @@ $("#btn_index_guiaspadres").click(function(e){
       swal.close();
     });
 });
-  
+
 
 $("#btn_boton_prueba").click(function(e){
   console.log("calendario");
@@ -60,14 +60,14 @@ $("#btn_boton_prueba").click(function(e){
       swal.close();
     });
 });
-  
-  
+
+
 
 // $("#close_modal_visor_xedoxmuni").click(function(e){
-  
+
 // });
 
-  
+
   $("#btn_pdf_modelo_educ").click(function(e){
     var ruta = base_url+"Index/visorpdf";
     $.ajax({
@@ -136,7 +136,7 @@ $("#btn_buenas_practicas").click(function(e){
       swal.close();
     });
 });
-  
+
 $("#btn_programa_escuelas").click(function(e){
     var ruta = base_url+"Index/visorpdf";
     $.ajax({
